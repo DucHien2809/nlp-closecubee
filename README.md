@@ -205,10 +205,18 @@ python -m vsl_gloss.evaluate --compare
 python scripts/run_pipeline.py --train --config configs/default.yaml
 
 # Trên Modal GPU (sau khi modal token set ...)
-# Có 2 entrypoint nên phải chỉ rõ ::main (seq2seq) hoặc ::felix (edit model)
+# Phải chỉ rõ entrypoint: ::main (seq2seq full), ::train (1 backbone),
+# ::felix (edit model), ::ensemble (MBR ensemble các backbone đã train).
 modal run --detach modal_app.py::main --config configs/default.yaml --gpu A10G
 modal run --detach modal_app.py::main --config configs/vit5_large.yaml
 modal run --detach modal_app.py::felix --gpu A100
+
+# Cải tiến BARTpho + MBR-ensemble (chạy TUẦN TỰ, đừng song song chung Volume):
+#   1) train backbone thứ 2 (BARTpho) -> outputs/bartpho_syllable
+modal run --detach modal_app.py::train --config configs/bartpho.yaml --gpu A10G
+#   2) MBR-ensemble ViT5 (đã có) + BARTpho -> outputs/ensemble_mbr
+modal run --detach modal_app.py::ensemble --config configs/ensemble_mbr.yaml --gpu A10G
+
 modal volume get vsl-artifacts /reports ./reports_remote
 ```
 
@@ -224,6 +232,8 @@ python -m vsl_gloss.predict --model outputs/vit5_base_15ep/model --text "Tôi 19
 - Mallinson et al., FELIX, Findings of EMNLP 2020; Malmi et al., LaserTagger,
   EMNLP 2019 (chỉnh sửa văn bản dạng tag).
 - Hokamp & Liu 2017; Post & Vilar 2018 (constrained decoding).
+- Eikema & Aziz, *Is MAP Decoding All You Need?*, EMNLP 2020 (MBR decoding —
+  cơ sở cho hệ `ensemble_mbr` gộp candidate của ViT5 + BARTpho).
 - Post, A Call for Clarity in Reporting BLEU, WMT 2018 (sacreBLEU).
 - Yin & Read, STMC-Transformer, COLING 2020; Müller et al., ACL 2023 (về giới hạn
   của gloss, lý do không tuyên bố "chuẩn tuyệt đối").

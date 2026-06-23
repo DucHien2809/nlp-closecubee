@@ -1,0 +1,24 @@
+# =====================================================================
+# MBR ensemble of two already-trained seq2seq members (ViT5 + BARTpho).
+# Members are referenced by their outputs/<name> directory; each member's
+# own config_used.yaml supplies its source_prefix + tokenizer type, so the
+# heterogeneous ViT5 (sentencepiece) and BARTpho (BPE) combine without any
+# logit averaging. See vsl_gloss/ensemble.py.
+#
+#   python -m vsl_gloss.ensemble --config configs/ensemble_mbr.yaml --split test
+# =====================================================================
+experiment_name: ensemble_mbr
+
+ensemble:
+  members:
+    - vit5_base_15ep        # current champion (BLEU 96.98)
+    - bartpho_syllable      # second backbone, trained from configs/bartpho.yaml
+  num_samples: 16           # ancestral samples drawn per member -> 32-strong MBR pool
+  top_p: 0.95
+  temperature: 1.0
+  include_beam: true        # also let each member's beam-1-best win
+  num_beams: 5
+  utility: chrf             # sentence-level MBR utility (chrf is robust on small vocab)
+  batch_size: 16
+  name: ensemble_mbr
+  seed: 42

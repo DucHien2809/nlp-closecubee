@@ -140,6 +140,27 @@ class FelixConfig:
 
 
 @dataclass
+class EnsembleConfig:
+    """Candidate-pool MBR ensemble of already-trained seq2seq members.
+
+    Members are referenced by their ``output_dir`` name (e.g. ``vit5_base_15ep``);
+    each member's own ``config_used.yaml`` supplies its ``source_prefix`` and
+    tokenizer type, so heterogeneous backbones (ViT5 sentencepiece + BARTpho BPE)
+    combine without averaging logits. See ``vsl_gloss.ensemble``.
+    """
+    members: List[str] = field(default_factory=lambda: ["vit5_base_15ep", "bartpho_syllable"])
+    num_samples: int = 16        # ancestral samples drawn per member (the MBR pool)
+    top_p: float = 0.95          # nucleus sampling cutoff
+    temperature: float = 1.0
+    include_beam: bool = True     # also add each member's beam-1-best to the hypothesis set
+    num_beams: int = 5
+    utility: str = "chrf"         # sentence-level utility for MBR: chrf | bleu
+    batch_size: int = 16
+    name: str = "ensemble_mbr"    # output_dir name for the combined system
+    seed: int = 42
+
+
+@dataclass
 class EvalConfig:
     # Report metrics broken down by these transformation categories.
     report_categories: bool = True
@@ -159,6 +180,7 @@ class Config:
     decode: DecodeConfig = field(default_factory=DecodeConfig)
     eval: EvalConfig = field(default_factory=EvalConfig)
     felix: FelixConfig = field(default_factory=FelixConfig)
+    ensemble: EnsembleConfig = field(default_factory=EnsembleConfig)
 
     # ---- (de)serialisation helpers ------------------------------------------------
     @staticmethod
@@ -183,6 +205,7 @@ class Config:
             decode=cls._build(DecodeConfig, d.get("decode")),
             eval=cls._build(EvalConfig, d.get("eval")),
             felix=cls._build(FelixConfig, d.get("felix")),
+            ensemble=cls._build(EnsembleConfig, d.get("ensemble")),
         )
 
     @classmethod

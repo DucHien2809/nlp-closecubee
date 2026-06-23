@@ -3,64 +3,50 @@
     "n": 949,
     "bleu": 96.976,
     "wer": 1.916,
-    "exact_match": 93.151,
-    "chrf": 98.32,
-    "ter": 1.731
+    "exact_match": 93.151
   },
   "overall_lowercased": {
     "n": 949,
     "bleu": 97.043,
     "wer": 1.873,
-    "exact_match": 93.256,
-    "chrf": 98.353,
-    "ter": 1.731
+    "exact_match": 93.256
   },
   "by_category": {
     "deletion_only": {
       "n": 592,
       "bleu": 98.072,
       "wer": 1.013,
-      "exact_match": 94.764,
-      "chrf": 98.976,
-      "ter": 0.991
+      "exact_match": 94.764
     },
     "deletion_reorder": {
       "n": 106,
       "bleu": 94.443,
       "wer": 3.431,
-      "exact_match": 87.736,
-      "chrf": 97.049,
-      "ter": 3.05
+      "exact_match": 87.736
     },
     "identical": {
       "n": 225,
       "bleu": 99.097,
       "wer": 0.522,
-      "exact_match": 96.444,
-      "chrf": 99.482,
-      "ter": 0.457
+      "exact_match": 96.444
     },
     "lexical": {
       "n": 16,
       "bleu": 58.527,
       "wer": 33.898,
-      "exact_match": 50.0,
-      "chrf": 76.798,
-      "ter": 31.356
+      "exact_match": 50.0
     },
     "reorder_only": {
       "n": 10,
       "bleu": 64.967,
       "wer": 20.588,
-      "exact_match": 50.0,
-      "chrf": 80.329,
-      "ter": 13.235
+      "exact_match": 50.0
     }
   },
   "_meta": {
     "system": "vit5_base_15ep",
     "split": "test",
     "n": 949,
-    "predictions": "/artifacts/outputs/vit5_base_15ep/predictions_test.jsonl"
+    "predictions": "outputs\\vit5_base_15ep\\predictions_test.jsonl"
   }
 }

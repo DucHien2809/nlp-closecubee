@@ -125,17 +125,65 @@ def run_all(config: str = "configs/default.yaml", extra_overrides=None):
     print("Done. Artifacts committed to volume 'vsl-artifacts'.")
 
 
-@app.function(gpu="A100", timeout=60 * 60 * 5, volumes={REMOTE_ARTIFACTS: artifacts})
+@app.function(gpu="A10G", timeout=60 * 60 * 5, volumes={REMOTE_ARTIFACTS: artifacts})
 def train_only(config: str = "configs/default.yaml", extra_overrides=None):
+    """Train a single seq2seq backbone (also writes + scores test predictions),
+    then refresh the leaderboard. Used to add e.g. BARTpho without re-running the
+    baselines. Idempotently ensures the leakage-free splits exist first."""
     import os
     import sys
 
     os.chdir(REMOTE_APP)
     sys.path.insert(0, REMOTE_APP)
+    from vsl_gloss.data import prepare, split
+    from vsl_gloss.evaluate import build_leaderboard
     from vsl_gloss import train as train_mod
 
-    train_mod.run(_load_cfg(config, extra_overrides))
+    cfg = _load_cfg(config, extra_overrides)
+    if not (cfg.paths.resolved("splits_dir") / "test.jsonl").exists():
+        prepare.run(cfg)
+        split.run(cfg)
+    train_mod.run(cfg)
+    artifacts.reload()
+    build_leaderboard(cfg, split="test")
     artifacts.commit()
+    print(f"Done. Trained {cfg.experiment_name}; leaderboard refreshed.")
+
+
+@app.function(gpu="A10G", timeout=60 * 60 * 2, volumes={REMOTE_ARTIFACTS: artifacts})
+def run_ensemble(config: str = "configs/ensemble_mbr.yaml", extra_overrides=None,
+                 split: str = "test"):
+    """MBR-ensemble already-trained members (no training) + refresh leaderboard.
+
+    Requires every ``ensemble.members`` entry to already exist as
+    ``outputs/<name>/model`` in the volume.
+    """
+    import os
+    import sys
+
+    os.chdir(REMOTE_APP)
+    sys.path.insert(0, REMOTE_APP)
+    from vsl_gloss.data import prepare, split as split_mod
+    from vsl_gloss import ensemble as ensemble_mod
+    from vsl_gloss.evaluate import build_leaderboard
+
+    cfg = _load_cfg(config, extra_overrides)
+    artifacts.reload()   # see members/splits committed by earlier jobs
+    missing = [m for m in cfg.ensemble.members
+               if not (cfg.paths.resolved("output_dir") / m / "model").exists()]
+    if missing:
+        raise FileNotFoundError(
+            f"Ensemble members not found in volume: {missing}. Train them first "
+            f"(e.g. modal run modal_app.py::train --config configs/bartpho.yaml)."
+        )
+    if not (cfg.paths.resolved("splits_dir") / f"{split}.jsonl").exists():
+        prepare.run(cfg)
+        split_mod.run(cfg)
+    ensemble_mod.run(cfg, split=split)
+    artifacts.reload()
+    build_leaderboard(cfg, split=split)
+    artifacts.commit()
+    print(f"Done. MBR ensemble '{cfg.ensemble.name}' written; leaderboard refreshed.")
 
 
 @app.function(gpu="A10G", timeout=60 * 60 * 4, volumes={REMOTE_ARTIFACTS: artifacts})
@@ -179,6 +227,30 @@ def main(config: str = "configs/vit5_large.yaml", gpu: str = "A100", set: str = 
     extra = set.split() if set else []
     fn = run_all.with_options(gpu=gpu) if gpu else run_all
     fn.remote(config=config, extra_overrides=extra)
+
+
+@app.local_entrypoint()
+def train(config: str = "configs/bartpho.yaml", gpu: str = "A10G", set: str = ""):
+    """Train a single backbone (default: BARTpho) + refresh the leaderboard.
+
+        modal run modal_app.py::train --config configs/bartpho.yaml
+    """
+    extra = set.split() if set else []
+    fn = train_only.with_options(gpu=gpu) if gpu else train_only
+    fn.remote(config=config, extra_overrides=extra)
+
+
+@app.local_entrypoint()
+def ensemble(config: str = "configs/ensemble_mbr.yaml", gpu: str = "A10G",
+             split: str = "test", set: str = ""):
+    """MBR-ensemble already-trained members + refresh the leaderboard.
+
+        modal run modal_app.py::ensemble
+        modal run modal_app.py::ensemble --set "ensemble.num_samples=32"
+    """
+    extra = set.split() if set else []
+    fn = run_ensemble.with_options(gpu=gpu) if gpu else run_ensemble
+    fn.remote(config=config, extra_overrides=extra, split=split)
 
 
 @app.local_entrypoint()

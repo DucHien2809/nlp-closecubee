@@ -59,15 +59,22 @@ def _report_markdown(system: str, split: str, report: Dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _error_markdown(system: str, split: str, rows: List[Dict], per_cat: int) -> str:
-    out = [f"# {system} — error examples ({split})", ""]
+def _example_markdown(system: str, split: str, rows: List[Dict], per_cat: int,
+                      correct: bool) -> str:
+    """Per-category qualitative examples. ``correct=False`` dumps mismatches
+    (HYP != REF); ``correct=True`` dumps exact hits (for report section "diễn
+    giải một số mẫu đúng và sai")."""
+    kind = "correct" if correct else "error"
+    out = [f"# {system} — {kind} examples ({split})", ""]
     for cat in ALL_CATEGORIES:
-        wrong = [r for r in rows if r["category"] == cat and r["pred"].strip() != r["vsl"].strip()]
-        if not wrong:
+        sel = [r for r in rows if r["category"] == cat
+               and (r["pred"].strip() == r["vsl"].strip()) == correct]
+        if not sel:
             continue
-        out.append(f"## {cat}  ({len(wrong)} mismatched)")
+        label = "matched" if correct else "mismatched"
+        out.append(f"## {cat}  ({len(sel)} {label})")
         out.append("")
-        for r in wrong[:per_cat]:
+        for r in sel[:per_cat]:
             out.append(f"- SRC : `{r['vie']}`")
             out.append(f"  REF : `{r['vsl']}`")
             out.append(f"  HYP : `{r['pred']}`")
@@ -100,7 +107,10 @@ def score_file(
     out_dir = predictions_path.parent
     write_json(out_dir / f"metrics_{split}.json", report)
     write_text(out_dir / f"report_{split}.md", _report_markdown(system, split, report))
-    write_text(out_dir / f"errors_{split}.md", _error_markdown(system, split, rows, error_examples))
+    write_text(out_dir / f"errors_{split}.md",
+               _example_markdown(system, split, rows, error_examples, correct=False))
+    write_text(out_dir / f"correct_{split}.md",
+               _example_markdown(system, split, rows, error_examples, correct=True))
     LOG.info("[%s] overall: %s", system, report["overall"])
     return report
 
