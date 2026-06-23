@@ -1,0 +1,66 @@
+{
+  "overall": {
+    "n": 949,
+    "bleu": 96.379,
+    "wer": 2.299,
+    "exact_match": 90.832,
+    "chrf": 97.821,
+    "ter": 2.072
+  },
+  "overall_lowercased": {
+    "n": 949,
+    "bleu": 96.446,
+    "wer": 2.256,
+    "exact_match": 90.938,
+    "chrf": 97.854,
+    "ter": 2.072
+  },
+  "by_category": {
+    "deletion_only": {
+      "n": 592,
+      "bleu": 97.597,
+      "wer": 1.233,
+      "exact_match": 92.399,
+      "chrf": 98.607,
+      "ter": 1.189
+    },
+    "deletion_reorder": {
+      "n": 106,
+      "bleu": 93.608,
+      "wer": 4.32,
+      "exact_match": 83.962,
+      "chrf": 96.375,
+      "ter": 3.939
+    },
+    "identical": {
+      "n": 225,
+      "bleu": 98.033,
+      "wer": 0.979,
+      "exact_match": 95.111,
+      "chrf": 98.741,
+      "ter": 0.979
+    },
+    "lexical": {
+      "n": 16,
+      "bleu": 58.527,
+      "wer": 33.898,
+      "exact_match": 50.0,
+      "chrf": 76.798,
+      "ter": 31.356
+    },
+    "reorder_only": {
+      "n": 10,
+      "bleu": 60.504,
+      "wer": 25.0,
+      "exact_match": 40.0,
+      "chrf": 77.668,
+      "ter": 13.235
+    }
+  },
+  "_meta": {
+    "system": "bartpho_syllable",
+    "split": "test",
+    "n": 949,
+    "predictions": "/artifacts/outputs/bartpho_syllable/predictions_test.jsonl"
+  }
+}

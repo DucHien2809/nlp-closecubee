@@ -1,0 +1,93 @@
+experiment_name: bartpho_syllable
+paths:
+  raw_dir: /root/Parallel-Corpus-Vie-VSL-main
+  processed_dir: /artifacts/data/processed
+  splits_dir: /artifacts/data/splits
+  output_dir: /artifacts/outputs
+  reports_dir: /artifacts/reports
+data:
+  vie_file: Vie10k.txt
+  vsl_file: VSL10k.txt
+  vie_tree_file: Vie10k_phantich.txt
+  vsl_tree_file: VSL10k_phantich.txt
+  lowercase: false
+  fix_punct_spacing: true
+  collapse_whitespace: true
+  drop_empty: true
+  seed: 42
+  val_ratio: 0.1
+  test_ratio: 0.1
+  group_by_source: true
+  stratify_by_category: true
+  dedup_exact_pairs: true
+model:
+  name_or_path: vinai/bartpho-syllable
+  source_prefix: ''
+  max_source_length: 96
+  max_target_length: 96
+  use_fast_tokenizer: true
+train:
+  num_train_epochs: 15.0
+  learning_rate: 5.0e-05
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 32
+  gradient_accumulation_steps: 1
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  label_smoothing_factor: 0.1
+  lr_scheduler_type: cosine
+  optim: adamw_torch
+  bf16: true
+  fp16: false
+  gradient_checkpointing: false
+  eval_strategy: epoch
+  save_strategy: epoch
+  save_total_limit: 2
+  save_safetensors: false
+  logging_steps: 50
+  metric_for_best_model: bleu
+  greater_is_better: true
+  load_best_model_at_end: true
+  predict_with_generate: true
+  early_stopping_patience: 3
+  dataloader_num_workers: 2
+  seed: 42
+decode:
+  num_beams: 5
+  max_new_tokens: 96
+  length_penalty: 1.0
+  no_repeat_ngram_size: 0
+  early_stopping: true
+  constrained: false
+eval:
+  report_categories: true
+  report_normalized: true
+  error_examples_per_category: 15
+felix:
+  encoder_name: xlm-roberta-base
+  max_source_length: 128
+  pointer_dim: 256
+  dropout: 0.1
+  pointer_loss_weight: 1.0
+  num_train_epochs: 10.0
+  learning_rate: 2.0e-05
+  batch_size: 16
+  eval_batch_size: 64
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  max_grad_norm: 1.0
+  seed: 42
+  truecase: true
+ensemble:
+  members:
+  - vit5_base_15ep
+  - bartpho_syllable
+  num_samples: 16
+  top_p: 0.95
+  temperature: 1.0
+  include_beam: true
+  num_beams: 5
+  utility: chrf
+  batch_size: 16
+  name: ensemble_mbr
+  seed: 42
