@@ -1,0 +1,30 @@
+{
+  "sizes": {
+    "train": 7586,
+    "val": 942,
+    "test": 949
+  },
+  "category_pct": {
+    "train": {
+      "deletion_only": 62.54,
+      "deletion_reorder": 11.1,
+      "identical": 23.56,
+      "lexical": 1.66,
+      "reorder_only": 1.15
+    },
+    "val": {
+      "deletion_only": 62.74,
+      "deletion_reorder": 11.15,
+      "identical": 23.35,
+      "lexical": 1.7,
+      "reorder_only": 1.06
+    },
+    "test": {
+      "deletion_only": 62.38,
+      "deletion_reorder": 11.17,
+      "identical": 23.71,
+      "lexical": 1.69,
+      "reorder_only": 1.05
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# =====================================================================
+# FELIX edit model: tagging (KEEP/DELETE) + pointer reordering.
+# A second, non-seq2seq system. Corpus coverage (reports/felix_coverage.json)
+# shows ~98% of pairs are a re-ordered subset of the source, so the edit
+# inductive bias fits and the oracle ceiling is BLEU ~99 / WER ~0.5.
+#   python -m vsl_gloss.felix.train --config configs/felix.yaml
+# =====================================================================
+experiment_name: felix
+
+paths:
+  raw_dir: ../Parallel-Corpus-Vie-VSL-main
+  processed_dir: data/processed
+  splits_dir: data/splits
+  output_dir: outputs
+  reports_dir: reports
+
+felix:
+  encoder_name: xlm-roberta-base   # fast tokenizer (word_ids) + multilingual; PhoBERT is an alt
+  max_source_length: 128
+  pointer_dim: 256
+  dropout: 0.1
+  pointer_loss_weight: 1.0
+  num_train_epochs: 10
+  learning_rate: 2.0e-5            # encoder LR; new heads run at 20x internally
+  batch_size: 16
+  eval_batch_size: 64
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  max_grad_norm: 1.0
+  seed: 42
+  truecase: true
+
+eval:
+  report_categories: true
+  report_normalized: true
+  error_examples_per_category: 15

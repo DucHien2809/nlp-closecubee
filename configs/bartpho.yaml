@@ -1,0 +1,10 @@
+# BARTpho-syllable backbone (architecture-comparison arm of the ablation).
+experiment_name: bartpho_syllable
+model:
+  name_or_path: vinai/bartpho-syllable
+  source_prefix: ""            # BARTpho was not pre-trained with task prefixes
+  use_fast_tokenizer: true
+train:
+  learning_rate: 5.0e-5
+  optim: adamw_torch
+  label_smoothing_factor: 0.1

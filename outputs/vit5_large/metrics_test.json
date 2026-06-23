@@ -1,0 +1,66 @@
+{
+  "overall": {
+    "n": 949,
+    "bleu": 96.06,
+    "wer": 2.427,
+    "exact_match": 90.095,
+    "chrf": 97.709,
+    "ter": 2.157
+  },
+  "overall_lowercased": {
+    "n": 949,
+    "bleu": 96.293,
+    "wer": 2.285,
+    "exact_match": 90.938,
+    "chrf": 97.805,
+    "ter": 2.157
+  },
+  "by_category": {
+    "deletion_only": {
+      "n": 592,
+      "bleu": 97.116,
+      "wer": 1.387,
+      "exact_match": 91.216,
+      "chrf": 98.329,
+      "ter": 1.255
+    },
+    "deletion_reorder": {
+      "n": 106,
+      "bleu": 94.044,
+      "wer": 4.32,
+      "exact_match": 85.849,
+      "chrf": 97.043,
+      "ter": 3.939
+    },
+    "identical": {
+      "n": 225,
+      "bleu": 98.035,
+      "wer": 1.11,
+      "exact_match": 94.222,
+      "chrf": 98.67,
+      "ter": 0.914
+    },
+    "lexical": {
+      "n": 16,
+      "bleu": 57.444,
+      "wer": 35.593,
+      "exact_match": 43.75,
+      "chrf": 76.554,
+      "ter": 33.051
+    },
+    "reorder_only": {
+      "n": 10,
+      "bleu": 61.404,
+      "wer": 22.059,
+      "exact_match": 50.0,
+      "chrf": 77.943,
+      "ter": 16.176
+    }
+  },
+  "_meta": {
+    "system": "vit5_large",
+    "split": "test",
+    "n": 949,
+    "predictions": "/artifacts/outputs/vit5_large/predictions_test.jsonl"
+  }
+}

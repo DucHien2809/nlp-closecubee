@@ -1,0 +1,9 @@
+# ViT5-base + lexically-constrained decoding (improvement over the baseline).
+# Inherits all defaults; only the fields below differ.
+experiment_name: vit5_base_constrained
+model:
+  name_or_path: VietAI/vit5-base
+  source_prefix: "chuyen gloss: "
+decode:
+  num_beams: 5
+  constrained: true

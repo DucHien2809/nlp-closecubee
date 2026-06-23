@@ -1,0 +1,52 @@
+{
+  "overall": {
+    "n": 949,
+    "bleu": 33.632,
+    "wer": 48.843,
+    "exact_match": 6.639
+  },
+  "overall_lowercased": {
+    "n": 949,
+    "bleu": 36.197,
+    "wer": 43.451,
+    "exact_match": 9.273
+  },
+  "by_category": {
+    "deletion_only": {
+      "n": 592,
+      "bleu": 31.465,
+      "wer": 50.308,
+      "exact_match": 0.0
+    },
+    "deletion_reorder": {
+      "n": 106,
+      "bleu": 22.4,
+      "wer": 68.234,
+      "exact_match": 0.0
+    },
+    "identical": {
+      "n": 225,
+      "bleu": 50.762,
+      "wer": 32.507,
+      "exact_match": 27.111
+    },
+    "lexical": {
+      "n": 16,
+      "bleu": 14.445,
+      "wer": 84.746,
+      "exact_match": 0.0
+    },
+    "reorder_only": {
+      "n": 10,
+      "bleu": 53.861,
+      "wer": 32.353,
+      "exact_match": 20.0
+    }
+  },
+  "_meta": {
+    "system": "rule_no_delete",
+    "split": "test",
+    "n": 949,
+    "predictions": "D:\\Natural Language Processing\\CS221\\Đồ án\\vsl-text2gloss\\outputs\\rule_no_delete\\predictions_test.jsonl"
+  }
+}

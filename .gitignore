@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data artifacts (the *raw* corpus stays outside this repo)
+data/processed/
+data/splits/
+*.csv
+*.arrow
+
+# Experiment outputs: keep lightweight result files, drop heavy weights
+outputs/**/model/
+outputs/**/checkpoint-*/
+checkpoints/
+runs/
+logs/
+wandb/
+*.bin
+*.safetensors
+
+# Reports (leaderboard, metrics, stats) are kept for the write-up
+
+# OS
+.DS_Store
+Thumbs.db

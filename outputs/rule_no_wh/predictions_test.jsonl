@@ -1,0 +1,949 @@
+{"id": 11, "vie": "Con gà ăn thóc .", "vsl": "Con gà thóc ăn .", "category": "reorder_only", "pred": "Con gà thóc ăn ."}
+{"id": 14, "vie": "Bạn học lớp mấy ?", "vsl": "Bạn học lớp mấy ?", "category": "identical", "pred": "Bạn lớp mấy học ?"}
+{"id": 19, "vie": "1 tuần có 7 ngày .", "vsl": "1 tuần ngày 7 .", "category": "deletion_reorder", "pred": "Tuần 1 ngày 7 có ."}
+{"id": 28, "vie": "1 năm có mấy tháng ?", "vsl": "1 năm tháng mấy ?", "category": "deletion_reorder", "pred": "Năm 1 mấy tháng có ?"}
+{"id": 44, "vie": "Nhà bạn có mấy người ?", "vsl": "Gia đình bạn người mấy ?", "category": "lexical", "pred": "Nhà bạn mấy người có ?"}
+{"id": 59, "vie": "Bạn sinh năm bao nhiêu ?", "vsl": "Bạn sinh năm mấy ?", "category": "lexical", "pred": "Bạn năm bao nhiêu sinh ?"}
+{"id": 60, "vie": "Ai thích nhìn thác nước ?", "vsl": "Thác nước nhìn thích ai ?", "category": "reorder_only", "pred": "Ai thích thác nước nhìn ?"}
+{"id": 65, "vie": "Trường của tôi có 3 tầng .", "vsl": "Trường tôi tầng 3 .", "category": "deletion_reorder", "pred": "Trường của tôi tầng 3 có ."}
+{"id": 67, "vie": "Tôi thích nhất màu trắng .", "vsl": "Tôi màu trắng thích nhất .", "category": "reorder_only", "pred": "Tôi màu trắng thích nhất ."}
+{"id": 71, "vie": "Bạn biết lái xe hơi không ?", "vsl": "Bạn lái xe hơi biết ?", "category": "deletion_reorder", "pred": "Bạn biết xe hơi lái không ?"}
+{"id": 76, "vie": "Tên ký hiệu của bạn là gì ?", "vsl": "Tên ký hiệu bạn gì ?", "category": "deletion_only", "pred": "Tên ký hiệu của bạn là gì ?"}
+{"id": 88, "vie": "Mẹ tôi 50 tuổi , đẹp và hiền .", "vsl": "Mẹ tôi tuổi 50 đẹp , hiền .", "category": "deletion_reorder", "pred": "Mẹ tôi tuổi 50 , đẹp hiền ."}
+{"id": 107, "vie": "Tôi học 5 môn : toán , văn , lý , hóa , sinh .", "vsl": "Tôi học môn 5 : toán , văn , lý , hóa , sinh .", "category": "reorder_only", "pred": "Tôi môn : toán , văn , lý , hóa , sinh 5 học ."}
+{"id": 113, "vie": "Người yêu của chị tôi xấu , cao và mập .", "vsl": "Chị tôi người yêu xấu , cao , mập .", "category": "lexical", "pred": "Người yêu của chị tôi xấu , cao mập ."}
+{"id": 114, "vie": "Hôm qua là chủ nhật ngày 21 tháng 7 năm 2013", "vsl": "Hôm qua chủ nhật ngày 21 tháng 7 năm 2013", "category": "deletion_only", "pred": "Hôm qua là chủ nhật ngày 21 tháng 7 năm 2013"}
+{"id": 121, "vie": "Tôi đi học .", "vsl": "Tôi đi học .", "category": "identical", "pred": "Tôi đi học ."}
+{"id": 136, "vie": "Hãy mở cửa sổ ra !", "vsl": "Cửa sổ mở !", "category": "deletion_reorder", "pred": "Hãy cửa sổ mở ra !"}
+{"id": 139, "vie": "Tôi nhìn thấy bố rất buồn .", "vsl": "Tôi nhìn bố buồn .", "category": "deletion_only", "pred": "Tôi nhìn thấy bố buồn ."}
+{"id": 141, "vie": "Mẹ nấu cơm ngon .", "vsl": "Mẹ cơm ngon nấu .", "category": "reorder_only", "pred": "Mẹ cơm nấu ngon ."}
+{"id": 153, "vie": "Nhanh lên nào !", "vsl": "Nhanh lên .", "category": "lexical", "pred": "Nhanh lên nào !"}
+{"id": 177, "vie": "Lại đây đi .", "vsl": "đây đi .", "category": "deletion_only", "pred": "Lại đây đi ."}
+{"id": 187, "vie": "Lùi lại .", "vsl": "Lùi .", "category": "deletion_only", "pred": "Lùi lại ."}
+{"id": 193, "vie": "Ở nhà .", "vsl": "Ở nhà .", "category": "identical", "pred": "Ở nhà ."}
+{"id": 206, "vie": "Anh phải lòng em .", "vsl": "Anh phải lòng em .", "category": "identical", "pred": "Anh lòng em phải ."}
+{"id": 210, "vie": "Tôi béo vãi .", "vsl": "Tôi béo vãi .", "category": "identical", "pred": "Tôi béo vãi ."}
+{"id": 212, "vie": "Để tôi thử .", "vsl": "tôi thử .", "category": "deletion_only", "pred": "Để tôi thử ."}
+{"id": 216, "vie": "Hết thời gian .", "vsl": "Hết thời gian .", "category": "identical", "pred": "Thời gian Hết ."}
+{"id": 222, "vie": "Đừng có mà đánh nhau .", "vsl": "Đừng có mà đánh nhau .", "category": "identical", "pred": "Đừng có mà nhau đánh ."}
+{"id": 225, "vie": "Đừng bỏ đi !", "vsl": "Đừng bỏ đi .", "category": "lexical", "pred": "Đừng bỏ đi !"}
+{"id": 245, "vie": "Tôi có thể bắt đầu được không ?", "vsl": "Tôi có thể bắt đầu được không ?", "category": "identical", "pred": "Tôi có thể bắt đầu được không ?"}
+{"id": 246, "vie": "Tôi bắt đầu được không ạ ?", "vsl": "Tôi bắt đầu được không ?", "category": "deletion_only", "pred": "Tôi bắt đầu được không ạ ?"}
+{"id": 254, "vie": "Hãy nói chậm thôi .", "vsl": "nói chậm .", "category": "deletion_only", "pred": "Hãy chậm nói thôi ."}
+{"id": 255, "vie": "Nam đã trông thấy bạn .", "vsl": "Nam trông thấy bạn .", "category": "deletion_only", "pred": "Nam đã bạn trông thấy ."}
+{"id": 257, "vie": "Hãy bầu cho tôi !", "vsl": "bầu cho tôi .", "category": "lexical", "pred": "Hãy cho tôi bầu !"}
+{"id": 262, "vie": "Em là của anh .", "vsl": "Em anh .", "category": "deletion_only", "pred": "Em của anh là ."}
+{"id": 283, "vie": "Tôi thích bánh mì .", "vsl": "Tôi thích bánh mì .", "category": "identical", "pred": "Tôi bánh mì thích ."}
+{"id": 285, "vie": "Tôi không thua đâu !", "vsl": "Tôi thua đâu không", "category": "deletion_reorder", "pred": "Tôi không thua đâu !"}
+{"id": 289, "vie": "Tôi không có tội !", "vsl": "Tôi tội không", "category": "deletion_reorder", "pred": "Tôi không tội có !"}
+{"id": 294, "vie": "Mình không rảnh .", "vsl": "Mình rảnh không", "category": "deletion_reorder", "pred": "Mình không rảnh ."}
+{"id": 311, "vie": "Để tôi mơ đi .", "vsl": "tôi mơ đi .", "category": "deletion_only", "pred": "Để tôi mơ đi ."}
+{"id": 315, "vie": "Mắt tôi bị đau .", "vsl": "Mắt tôi đau .", "category": "deletion_only", "pred": "Mắt tôi bị đau ."}
+{"id": 318, "vie": "Cô ấy yêu tôi .", "vsl": "Cô yêu tôi .", "category": "deletion_only", "pred": "Cô ấy tôi yêu ."}
+{"id": 321, "vie": "Cái đó là của tôi .", "vsl": "Cái đó tôi .", "category": "deletion_only", "pred": "Cái đó của tôi là ."}
+{"id": 326, "vie": "Đừng tin một ai .", "vsl": "Đừng tin một ai", "category": "deletion_only", "pred": "Đừng một ai tin ."}
+{"id": 342, "vie": "Lại đây đi .", "vsl": "Lại đây .", "category": "deletion_only", "pred": "Lại đây đi ."}
+{"id": 347, "vie": "Tôi đã có thể làm điều này .", "vsl": "Tôi có thể làm điều .", "category": "deletion_only", "pred": "Tôi đã có thể điều này làm ."}
+{"id": 369, "vie": "Rất hiệu quả .", "vsl": "hiệu quả .", "category": "deletion_only", "pred": "Hiệu quả ."}
+{"id": 377, "vie": "Ở yên đó .", "vsl": "Ở yên đó .", "category": "identical", "pred": "Ở yên đó ."}
+{"id": 379, "vie": "Giữ liên lạc nhé .", "vsl": "Giữ liên lạc .", "category": "deletion_only", "pred": "Giữ liên lạc nhé ."}
+{"id": 398, "vie": "Quét phòng tôi đi .", "vsl": "Quét phòng tôi đi .", "category": "identical", "pred": "Quét phòng tôi đi ."}
+{"id": 399, "vie": "Hãy đưa tôi đến đó .", "vsl": "đưa tôi đến đó .", "category": "deletion_only", "pred": "Hãy tôi đến đó đưa ."}
+{"id": 405, "vie": "Đó là một cách chơi chữ .", "vsl": "Đó một cách chơi chữ .", "category": "deletion_only", "pred": "Đó cách chơi chữ một là ."}
+{"id": 412, "vie": "Nam đã lại thắng một lần nữa .", "vsl": "Nam thắng một lần nữa .", "category": "deletion_only", "pred": "Nam đã lại lần nữa một thắng ."}
+{"id": 414, "vie": "Chúng tôi sẽ giấu nó .", "vsl": "Chúng tôi giấu nó .", "category": "deletion_only", "pred": "Chúng tôi sẽ nó giấu ."}
+{"id": 418, "vie": "Bạn đang ở đâu ?", "vsl": "Bạn ở đâu ?", "category": "deletion_only", "pred": "Bạn đang ở đâu ?"}
+{"id": 419, "vie": "Ai nói thế ?", "vsl": "nói ai ?", "category": "deletion_reorder", "pred": "Ai nói thế ?"}
+{"id": 422, "vie": "Bạn trông tái nhợt .", "vsl": "Bạn trông tái nhợt .", "category": "identical", "pred": "Bạn trông tái nhợt ."}
+{"id": 432, "vie": "Bạn nhớ tôi không ?", "vsl": "Bạn nhớ tôi không ?", "category": "identical", "pred": "Bạn tôi nhớ không ?"}
+{"id": 443, "vie": "Tôi là một thằng nhóc hay mắc cỡ .", "vsl": "Tôi một thằng nhóc hay mắc cỡ .", "category": "deletion_only", "pred": "Tôi thằng nhóc hay mắc cỡ một là ."}
+{"id": 445, "vie": "Tôi không lái .", "vsl": "Tôi lái không", "category": "deletion_reorder", "pred": "Tôi không lái ."}
+{"id": 447, "vie": "Tôi không lấy được nó .", "vsl": "Tôi lấy được nó không", "category": "deletion_reorder", "pred": "Tôi không nó lấy được ."}
+{"id": 454, "vie": "Tôi ghét đời tôi .", "vsl": "Tôi ghét đời tôi .", "category": "identical", "pred": "Tôi đời tôi ghét ."}
+{"id": 462, "vie": "Tôi muốn một con dao .", "vsl": "Tôi muốn một con dao .", "category": "identical", "pred": "Tôi con dao một muốn ."}
+{"id": 464, "vie": "Tôi đeo đồng hồ", "vsl": "Tôi đeo đồng hồ .", "category": "lexical", "pred": "Tôi đeo đồng hồ"}
+{"id": 468, "vie": "Tôi đợi ở đây nhé .", "vsl": "Tôi đợi ở đây .", "category": "deletion_only", "pred": "Tôi ở đây đợi nhé ."}
+{"id": 489, "vie": "Cô ấy thích điều đó .", "vsl": "Cô thích điều đó .", "category": "deletion_only", "pred": "Cô ấy điều đó thích ."}
+{"id": 503, "vie": "tại sao bạn hỏi", "vsl": "tại sao bạn hỏi .", "category": "lexical", "pred": "Tại sao bạn hỏi"}
+{"id": 518, "vie": "Đừng nhìn xuống .", "vsl": "Đừng nhìn xuống .", "category": "identical", "pred": "Đừng nhìn xuống ."}
+{"id": 523, "vie": "Tất cả mọi người đều đã chờ đợi .", "vsl": "Tất cả người đều chờ đợi .", "category": "deletion_only", "pred": "Tất cả mọi người đều đã chờ đợi ."}
+{"id": 543, "vie": "Tôi có thể đã chết .", "vsl": "Tôi có thể chết .", "category": "deletion_only", "pred": "Tôi có thể đã chết ."}
+{"id": 548, "vie": "Tôi có hai con mèo .", "vsl": "Tôi có hai con mèo .", "category": "identical", "pred": "Tôi con mèo hai có ."}
+{"id": 591, "vie": "Họ sẽ giúp bọn mình", "vsl": "Họ giúp bọn mình .", "category": "lexical", "pred": "Họ sẽ giúp bọn mình"}
+{"id": 606, "vie": "Nam đã đạt được một thỏa thuận .", "vsl": "Nam đạt được một thỏa thuận .", "category": "deletion_only", "pred": "Nam đã thỏa thuận một đạt được ."}
+{"id": 615, "vie": "Nam đã bị choáng .", "vsl": "Nam choáng .", "category": "deletion_only", "pred": "Nam đã bị choáng ."}
+{"id": 629, "vie": "Bạn sẽ bị lạc đấy .", "vsl": "Bạn lạc đấy .", "category": "deletion_only", "pred": "Bạn sẽ bị lạc đấy ."}
+{"id": 631, "vie": "Bạn chẳng là ai cả .", "vsl": "Bạn chẳng ai", "category": "deletion_only", "pred": "Bạn ai cả chẳng là ."}
+{"id": 659, "vie": "Nó ghét cà rốt .", "vsl": "Nó ghét cà rốt .", "category": "identical", "pred": "Nó ghét cà rốt ."}
+{"id": 667, "vie": "Giữ nó cho mình .", "vsl": "Giữ nó cho mình .", "category": "identical", "pred": "Nó cho mình Giữ ."}
+{"id": 670, "vie": "Công việc của mày dư lào ?", "vsl": "Công việc mày dư lào ?", "category": "deletion_only", "pred": "Công việc của mày dư lào ?"}
+{"id": 684, "vie": "Tôi thích đi du lịch .", "vsl": "Tôi thích đi du lịch .", "category": "identical", "pred": "Tôi thích đi du lịch ."}
+{"id": 688, "vie": "Tôi thích công viên này", "vsl": "Tôi thích công viên .", "category": "lexical", "pred": "Tôi thích công viên này"}
+{"id": 697, "vie": "Tôi sẽ bắn anh ta .", "vsl": "Tôi bắn anh ta .", "category": "deletion_only", "pred": "Tôi sẽ anh ta bắn ."}
+{"id": 721, "vie": "Chó của bạn có hung dữ không ?", "vsl": "Chó bạn có hung dữ không ?", "category": "deletion_only", "pred": "Chó của bạn hung dữ có không ?"}
+{"id": 724, "vie": "Đừng cho chó vào trong .", "vsl": "Đừng cho chó vào trong .", "category": "identical", "pred": "Cho chó vào trong Đừng ."}
+{"id": 734, "vie": "Những con vẹt hát được .", "vsl": "con vẹt hát được .", "category": "deletion_only", "pred": "Con vẹt hát được ."}
+{"id": 737, "vie": "Đặt cái hộp xuống .", "vsl": "Đặt cái hộp xuống .", "category": "identical", "pred": "Cái hộp xuống Đặt ."}
+{"id": 770, "vie": "Chúng tôi từng cãi nhau .", "vsl": "Chúng tôi cãi nhau .", "category": "deletion_only", "pred": "Chúng tôi từng nhau cãi ."}
+{"id": 787, "vie": "Con chó của cậu đâu rồi ?", "vsl": "Con chó cậu đâu rồi ?", "category": "deletion_only", "pred": "Con chó của cậu đâu rồi ?"}
+{"id": 793, "vie": "Mùa đông đang tới .", "vsl": "Mùa đông tới .", "category": "deletion_only", "pred": "Mùa đông đang tới ."}
+{"id": 820, "vie": "Thôi nào , nhanh lên đi .", "vsl": "Thôi nhanh lên đi .", "category": "deletion_only", "pred": "Thôi nào , nhanh lên đi ."}
+{"id": 862, "vie": "Tôi bị đau đầu .", "vsl": "Tôi đau đầu .", "category": "deletion_only", "pred": "Tôi bị đau đầu ."}
+{"id": 885, "vie": "Chúng ta phải làm nó .", "vsl": "Chúng ta phải làm nó .", "category": "identical", "pred": "Chúng ta phải nó làm ."}
+{"id": 889, "vie": "Thật vui .", "vsl": "Thật vui .", "category": "identical", "pred": "Thật vui ."}
+{"id": 899, "vie": "Đừng làm điều đó .", "vsl": "Đừng làm điều đó .", "category": "identical", "pred": "Đừng điều đó làm ."}
+{"id": 913, "vie": "Cô gái kia là Mary .", "vsl": "Cô gái kia Mary .", "category": "deletion_only", "pred": "Cô gái kia Mary là ."}
+{"id": 918, "vie": "Cái va li đang mở .", "vsl": "Cái va li mở .", "category": "deletion_only", "pred": "Cái va li đang mở ."}
+{"id": 919, "vie": "Cái thùng xe hơi đang mở .", "vsl": "Cái thùng xe hơi mở .", "category": "deletion_only", "pred": "Cái thùng xe hơi đang mở ."}
+{"id": 926, "vie": "Họ lấy nhau rồi .", "vsl": "Họ lấy nhau rồi .", "category": "identical", "pred": "Họ nhau lấy rồi ."}
+{"id": 930, "vie": "Nam không cười .", "vsl": "Nam cười không", "category": "deletion_reorder", "pred": "Nam không cười ."}
+{"id": 937, "vie": "Nam không nghỉ .", "vsl": "Nam nghỉ không", "category": "deletion_reorder", "pred": "Nam không nghỉ ."}
+{"id": 938, "vie": "Nam không nghỉ ngơi .", "vsl": "Nam nghỉ ngơi không", "category": "deletion_reorder", "pred": "Nam không nghỉ ngơi ."}
+{"id": 940, "vie": "Nam đã bị chán nản .", "vsl": "Nam chán nản .", "category": "deletion_only", "pred": "Nam đã bị chán nản ."}
+{"id": 941, "vie": "Nam đã ở trên thiên đường .", "vsl": "Nam ở trên thiên đường .", "category": "deletion_only", "pred": "Nam đã trên thiên đường ở ."}
+{"id": 960, "vie": "Bạn phải nhanh lên .", "vsl": "Bạn phải nhanh lên .", "category": "identical", "pred": "Bạn nhanh lên phải ."}
+{"id": 966, "vie": "Sách của bạn ở đây .", "vsl": "Sách bạn ở đây .", "category": "deletion_only", "pred": "Sách của bạn ở đây ."}
+{"id": 972, "vie": "Hãy cho tôi xem cái kia .", "vsl": "cho tôi xem cái kia .", "category": "deletion_only", "pred": "Hãy tôi cho cái kia xem ."}
+{"id": 990, "vie": "Ông ta không biết tôi là ai .", "vsl": "Ông ta biết tôi ai", "category": "deletion_only", "pred": "Ông ta không biết tôi ai là ."}
+{"id": 1013, "vie": "Tôi không đeo cà vạt .", "vsl": "Tôi đeo cà vạt không", "category": "deletion_reorder", "pred": "Tôi không cà vạt đeo ."}
+{"id": 1017, "vie": "Tôi bảo Nam làm rồi .", "vsl": "Tôi bảo Nam làm rồi .", "category": "identical", "pred": "Tôi bảo Nam làm rồi ."}
+{"id": 1028, "vie": "Tôi yêu căn nhà đó .", "vsl": "Tôi yêu căn nhà đó .", "category": "identical", "pred": "Tôi căn nhà đó yêu ."}
+{"id": 1029, "vie": "Tôi đã bắt Nam làm điều đó .", "vsl": "Tôi bắt Nam làm điều đó .", "category": "deletion_only", "pred": "Tôi đã Nam bắt điều đó làm ."}
+{"id": 1046, "vie": "Tôi là một phó nháy .", "vsl": "Tôi một phó nháy .", "category": "deletion_only", "pred": "Tôi phó nháy một là ."}
+{"id": 1052, "vie": "Tôi là trợ lý của bạn .", "vsl": "Tôi trợ lý bạn .", "category": "deletion_only", "pred": "Tôi trợ lý của bạn là ."}
+{"id": 1055, "vie": "Sẽ ổn thôi .", "vsl": "ổn thôi .", "category": "deletion_only", "pred": "Sẽ ổn thôi ."}
+{"id": 1070, "vie": "Cô ấy có đôi mắt xanh .", "vsl": "Cô có đôi mắt xanh .", "category": "deletion_only", "pred": "Cô ấy mắt xanh đôi có ."}
+{"id": 1090, "vie": "Họ vẫn muốn nó .", "vsl": "Họ muốn nó .", "category": "deletion_only", "pred": "Họ vẫn nó muốn ."}
+{"id": 1114, "vie": "Nam đã tự tử .", "vsl": "Nam tự tử .", "category": "deletion_only", "pred": "Nam đã tự tử ."}
+{"id": 1128, "vie": "Ngày mai là Chủ nhật .", "vsl": "Ngày mai Chủ nhật .", "category": "deletion_only", "pred": "Ngày mai Chủ nhật là ."}
+{"id": 1129, "vie": "Chúng ta có thể dựa vào Nam .", "vsl": "Chúng ta có thể dựa vào Nam .", "category": "identical", "pred": "Chúng ta có thể vào Nam dựa ."}
+{"id": 1147, "vie": "Tách nào của bạn ?", "vsl": "Tách bạn ?", "category": "deletion_only", "pred": "Tách nào của bạn ?"}
+{"id": 1155, "vie": "Tại sao bạn khóc ?", "vsl": "Tại sao bạn khóc ?", "category": "identical", "pred": "Tại sao bạn khóc ?"}
+{"id": 1164, "vie": "Bạn đang buồn ngủ có phải không ?", "vsl": "Bạn buồn ngủ có phải không ?", "category": "deletion_only", "pred": "Bạn đang buồn ngủ phải không có ?"}
+{"id": 1165, "vie": "Bạn phải về nhà .", "vsl": "Bạn phải về nhà .", "category": "identical", "pred": "Bạn phải nhà về ."}
+{"id": 1166, "vie": "Bạn phải trở về nhà .", "vsl": "Bạn phải trở về nhà .", "category": "identical", "pred": "Bạn phải về nhà trở ."}
+{"id": 1168, "vie": "Bạn nên hỏi Nam .", "vsl": "Bạn nên hỏi Nam .", "category": "identical", "pred": "Bạn nên Nam hỏi ."}
+{"id": 1171, "vie": "Bạn sẽ cảm thấy tốt hơn .", "vsl": "Bạn cảm thấy tốt hơn .", "category": "deletion_only", "pred": "Bạn sẽ tốt hơn cảm thấy ."}
+{"id": 1173, "vie": "Bạn là một chàng trai thông minh .", "vsl": "Bạn một chàng trai thông minh .", "category": "deletion_only", "pred": "Bạn chàng trai thông minh một là ."}
+{"id": 1177, "vie": "Tất cả những gì tôi có là sách vở .", "vsl": "Tất cả tôi có sách vở gì", "category": "deletion_reorder", "pred": "Tất cả gì tôi có sách vở là ."}
+{"id": 1187, "vie": "Anh đã đọc hết quyển đó rồi à ?", "vsl": "Anh đọc hết quyển đó rồi ?", "category": "deletion_only", "pred": "Anh đã quyển đó đọc hết rồi à ?"}
+{"id": 1188, "vie": "Làm bất cứ điều gì mà bạn có thể .", "vsl": "Làm bất cứ điều mà bạn có thể gì", "category": "deletion_reorder", "pred": "Điều gì Làm bất cứ mà bạn có thể ."}
+{"id": 1196, "vie": "Nam sống một mình à ?", "vsl": "Nam sống một mình ?", "category": "deletion_only", "pred": "Nam sống một mình à ?"}
+{"id": 1219, "vie": "Con chó của bạn bao nhiêu tuổi ?", "vsl": "Con chó bạn tuổi bao nhiêu ?", "category": "deletion_reorder", "pred": "Con chó của bạn bao nhiêu tuổi ?"}
+{"id": 1221, "vie": "Tôi đã mua một vé VIP .", "vsl": "Tôi mua một vé VIP .", "category": "deletion_only", "pred": "Tôi đã vé VIP một mua ."}
+{"id": 1232, "vie": "Tôi đã có một đêm tuyệt vời .", "vsl": "Tôi có một đêm tuyệt vời .", "category": "deletion_only", "pred": "Tôi đã đêm tuyệt vời một có ."}
+{"id": 1242, "vie": "Tôi có thể sẽ cần một luật sư .", "vsl": "Tôi có thể một luật sư .", "category": "deletion_only", "pred": "Tôi có thể sẽ luật sư một cần ."}
+{"id": 1243, "vie": "Có thể tôi sẽ cần một luật sư .", "vsl": "Có thể tôi một luật sư .", "category": "deletion_only", "pred": "Có thể tôi sẽ luật sư một cần ."}
+{"id": 1315, "vie": "Cô ấy sẽ không thích việc này .", "vsl": "Cô thích việc không", "category": "deletion_reorder", "pred": "Cô ấy sẽ không việc này thích ."}
+{"id": 1337, "vie": "Nam là một phi công giỏi .", "vsl": "Nam một phi công giỏi .", "category": "deletion_only", "pred": "Nam phi công giỏi một là ."}
+{"id": 1339, "vie": "Bây giờ Nam là người lớn .", "vsl": "Bây giờ Nam người lớn .", "category": "deletion_only", "pred": "Bây giờ Nam người lớn là ."}
+{"id": 1346, "vie": "Nam đã mở cổng .", "vsl": "Nam mở cổng .", "category": "deletion_only", "pred": "Nam đã cổng mở ."}
+{"id": 1398, "vie": "Bạn có còn đói không ?", "vsl": "Bạn có còn đói không ?", "category": "identical", "pred": "Bạn có còn đói không ?"}
+{"id": 1400, "vie": "Bác có còn đói không ạ ?", "vsl": "Bác có còn đói không ?", "category": "deletion_only", "pred": "Bác có còn đói không ạ ?"}
+{"id": 1422, "vie": "Bạn có nói tiếng Anh không ?", "vsl": "Bạn có nói tiếng Anh không ?", "category": "identical", "pred": "Bạn có tiếng Anh nói không ?"}
+{"id": 1426, "vie": "Hãy mang chúng ra khỏi đây .", "vsl": "mang chúng ra khỏi đây .", "category": "deletion_only", "pred": "Hãy mang chúng ra khỏi đây ."}
+{"id": 1440, "vie": "Anh ấy thích cái đàn guitar này .", "vsl": "Anh thích cái đàn guitar .", "category": "deletion_only", "pred": "Anh ấy đàn guitar này thích cái ."}
+{"id": 1458, "vie": "Tao đã làm bể đồ gạt tàn thuốc của mày rồi .", "vsl": "Tao làm bể đồ gạt tàn thuốc mày rồi .", "category": "deletion_only", "pred": "Tao đã đồ thuốc gạt tàn của mày rồi làm bể ."}
+{"id": 1492, "vie": "Hôm nay tôi sẽ ở nhà .", "vsl": "Hôm nay tôi ở nhà .", "category": "deletion_only", "pred": "Hôm nay tôi sẽ nhà ở ."}
+{"id": 1497, "vie": "Thật mừng là tôi đã ở đó .", "vsl": "Thật mừng tôi ở đó .", "category": "deletion_only", "pred": "Thật mừng là tôi đã đó ở ."}
+{"id": 1498, "vie": "Tôi mừng là tôi không phải Nam .", "vsl": "Tôi mừng tôi phải Nam không", "category": "deletion_reorder", "pred": "Tôi mừng là tôi không Nam phải ."}
+{"id": 1499, "vie": "Tôi có khả năng tương tác xã hội tốt .", "vsl": "Tôi có khả năng tương tác xã hội tốt .", "category": "identical", "pred": "Tôi khả năng xã hội tốt tương tác có ."}
+{"id": 1548, "vie": "Hãy cho tôi xem nó hoạt động thế nào .", "vsl": "cho tôi xem nó hoạt động thế nào .", "category": "deletion_only", "pred": "Hãy cho tôi xem nó hoạt động thế nào ."}
+{"id": 1558, "vie": "Đó là sự lựa chọn của bạn .", "vsl": "Đó sự lựa chọn bạn .", "category": "deletion_only", "pred": "Đó sự lựa chọn của bạn là ."}
+{"id": 1559, "vie": "Thằng nhóc vui hẳn lên .", "vsl": "Thằng nhóc vui hẳn lên .", "category": "identical", "pred": "Thằng nhóc vui hẳn lên ."}
+{"id": 1564, "vie": "Lão già ngồi xuống .", "vsl": "Lão già ngồi xuống .", "category": "identical", "pred": "Lão già ngồi xuống ."}
+{"id": 1574, "vie": "Trái táo này bị hư rồi .", "vsl": "Trái táo hư rồi .", "category": "deletion_only", "pred": "Trái táo này hư rồi bị ."}
+{"id": 1594, "vie": "Nam có hai người em trai .", "vsl": "Nam có hai người em trai .", "category": "identical", "pred": "Nam người em trai hai có ."}
+{"id": 1596, "vie": "Nam là một ca sĩ dân ca .", "vsl": "Nam một ca sĩ dân ca .", "category": "deletion_only", "pred": "Nam ca sĩ dân ca một là ."}
+{"id": 1597, "vie": "Nam là sinh viên mới .", "vsl": "Nam sinh viên .", "category": "deletion_only", "pred": "Nam sinh viên mới là ."}
+{"id": 1605, "vie": "Rồi Nam sẽ hối hận về điều này .", "vsl": "Rồi Nam hối hận về điều .", "category": "deletion_only", "pred": "Rồi Nam sẽ về điều này hối hận ."}
+{"id": 1606, "vie": "Rồi Nam sẽ biết tay tôi .", "vsl": "Rồi Nam biết tay tôi .", "category": "deletion_only", "pred": "Rồi Nam sẽ tôi biết tay ."}
+{"id": 1608, "vie": "Nam sẽ không chờ đợi đâu .", "vsl": "Nam chờ đợi đâu không", "category": "deletion_reorder", "pred": "Nam sẽ không đâu chờ đợi ."}
+{"id": 1614, "vie": "Chúng tôi luôn đi bằng xe buýt .", "vsl": "Chúng tôi luôn đi bằng xe buýt .", "category": "identical", "pred": "Chúng tôi luôn bằng xe buýt đi ."}
+{"id": 1641, "vie": "Sao cửa lại mở vậy ?", "vsl": "Sao cửa mở ?", "category": "deletion_only", "pred": "Sao cửa lại vậy mở ?"}
+{"id": 1646, "vie": "Hôm nay cậu có vẻ vui nhỉ .", "vsl": "Hôm nay cậu có vẻ vui .", "category": "deletion_only", "pred": "Hôm nay cậu có vẻ vui nhỉ ."}
+{"id": 1670, "vie": "Bạn đến lúc nào cũng được .", "vsl": "Bạn đến lúc cũng được .", "category": "deletion_only", "pred": "Bạn đến lúc nào cũng được ."}
+{"id": 1694, "vie": "Anh ấy là người cười cuối cùng .", "vsl": "Anh người cười cuối cùng .", "category": "deletion_only", "pred": "Anh ấy người cười cuối cùng là ."}
+{"id": 1705, "vie": "Lớp mới của bạn thế nào ?", "vsl": "Lớp bạn thế nào ?", "category": "deletion_only", "pred": "Lớp mới của bạn thế nào ?"}
+{"id": 1706, "vie": "Cái nhẫn này bao nhiêu tiền ?", "vsl": "Cái nhẫn tiền bao nhiêu ?", "category": "deletion_reorder", "pred": "Cái nhẫn này bao nhiêu tiền ?"}
+{"id": 1709, "vie": "Tôi không thể nói chuyện với các cô gái .", "vsl": "Tôi không thể nói chuyện với cô gái .", "category": "deletion_only", "pred": "Tôi không thể chuyện với cô gái nói ."}
+{"id": 1720, "vie": "Tôi có lớp ngày mai .", "vsl": "Tôi có lớp ngày mai .", "category": "identical", "pred": "Tôi lớp ngày mai có ."}
+{"id": 1721, "vie": "Tôi phải làm bài tập .", "vsl": "Tôi phải làm bài tập .", "category": "identical", "pred": "Tôi phải bài tập làm ."}
+{"id": 1726, "vie": "Tôi đã mất hứng .", "vsl": "Tôi mất hứng .", "category": "deletion_only", "pred": "Tôi đã mất hứng ."}
+{"id": 1736, "vie": "Tôi tưởng ông ấy bệnh", "vsl": "Tôi tưởng ông bệnh .", "category": "lexical", "pred": "Tôi ông ấy tưởng bệnh"}
+{"id": 1747, "vie": "Tôi sẽ không dừng lại .", "vsl": "Tôi dừng không", "category": "deletion_reorder", "pred": "Tôi sẽ không dừng lại ."}
+{"id": 1750, "vie": "Tôi đã mượn một chiếc bàn .", "vsl": "Tôi mượn một chiếc bàn .", "category": "deletion_only", "pred": "Tôi đã chiếc bàn một mượn ."}
+{"id": 1752, "vie": "Có đau không ?", "vsl": "Có đau không ?", "category": "identical", "pred": "Đau không Có ?"}
+{"id": 1768, "vie": "Hổ phụ sinh hổ tử .", "vsl": "Hổ phụ sinh hổ tử .", "category": "identical", "pred": "Hổ phụ sinh hổ tử ."}
+{"id": 1800, "vie": "Nam đã từng cố tự tử .", "vsl": "Nam cố tự tử .", "category": "deletion_only", "pred": "Nam đã từng cố tự tử ."}
+{"id": 1809, "vie": "Nam là một người can đảm .", "vsl": "Nam một người can đảm .", "category": "deletion_only", "pred": "Nam người can đảm một là ."}
+{"id": 1816, "vie": "Nam vô cùng lười biếng .", "vsl": "Nam vô cùng lười biếng .", "category": "identical", "pred": "Nam vô cùng lười biếng ."}
+{"id": 1817, "vie": "Nam đang đi theo Mary .", "vsl": "Nam đi theo Mary .", "category": "deletion_only", "pred": "Nam đang theo Mary đi ."}
+{"id": 1855, "vie": "Khi nào thì Nam cần nó ?", "vsl": "Khi Nam nó ?", "category": "deletion_only", "pred": "Khi nào Nam nó cần ?"}
+{"id": 1869, "vie": "Sao mày không lớn lên ?", "vsl": "Sao mày lớn lên không ?", "category": "reorder_only", "pred": "Sao mày không lớn lên ?"}
+{"id": 1875, "vie": "Bạn có muốn ăn gì không ?", "vsl": "Bạn có muốn ăn không ?", "category": "deletion_only", "pred": "Bạn có muốn ăn gì không ?"}
+{"id": 1877, "vie": "Bạn đã uống cốc của tôi .", "vsl": "Bạn uống cốc tôi .", "category": "deletion_only", "pred": "Bạn đã cốc của tôi uống ."}
+{"id": 1886, "vie": "Mũi của cậu đang chảy máu .", "vsl": "Mũi cậu chảy máu .", "category": "deletion_only", "pred": "Mũi của cậu đang chảy máu ."}
+{"id": 1887, "vie": "Điện thoại của bạn đang reo kìa .", "vsl": "Điện thoại bạn reo .", "category": "deletion_only", "pred": "Điện thoại của bạn đang kìa reo ."}
+{"id": 1888, "vie": "Một người lạ đã bắt chuyện với tôi .", "vsl": "Một người lạ bắt chuyện với tôi .", "category": "deletion_only", "pred": "Người lạ Một đã với tôi bắt chuyện ."}
+{"id": 1892, "vie": "Chủ Nhật quán có làm không ?", "vsl": "Chủ Nhật quán có làm không ?", "category": "identical", "pred": "Chủ Nhật quán có làm không ?"}
+{"id": 1896, "vie": "Chậm còn hơn không .", "vsl": "Chậm còn hơn không", "category": "deletion_only", "pred": "Chậm còn hơn không ."}
+{"id": 1905, "vie": "Bạn có thể nhắc lại không ?", "vsl": "Bạn có thể nhắc không ?", "category": "deletion_only", "pred": "Bạn có thể nhắc lại không ?"}
+{"id": 1923, "vie": "Vui lòng cho tôi một chai bia .", "vsl": "cho tôi một chai bia .", "category": "deletion_only", "pred": "Vui lòng tôi chai bia một cho ."}
+{"id": 1941, "vie": "Anh ấy hối tiếc lỗi lầm của anh ta .", "vsl": "Anh hối tiếc lỗi lầm anh ta .", "category": "deletion_only", "pred": "Anh ấy lỗi lầm của anh ta hối tiếc ."}
+{"id": 1952, "vie": "Chiếc đầm của nó trông có vẻ rẻ tiền .", "vsl": "Chiếc đầm nó trông có vẻ rẻ tiền .", "category": "deletion_only", "pred": "Chiếc đầm của nó có vẻ rẻ tiền trông ."}
+{"id": 1995, "vie": "Tôi muốn bạn gặp Nam .", "vsl": "Tôi muốn bạn gặp Nam .", "category": "identical", "pred": "Tôi bạn Nam gặp muốn ."}
+{"id": 2006, "vie": "tôi sẽ gọi lại nhanh thôi .", "vsl": "tôi gọi nhanh thôi .", "category": "deletion_only", "pred": "Tôi sẽ nhanh thôi gọi lại ."}
+{"id": 2011, "vie": "phòng tắm ở đâu ?", "vsl": "phòng tắm ở đâu ?", "category": "identical", "pred": "Phòng tắm ở đâu ?"}
+{"id": 2022, "vie": "đi bộ ở kia sẽ mất bao lâu ?", "vsl": "đi bộ ở kia mất bao lâu ?", "category": "deletion_only", "pred": "Ở kia đi bộ sẽ mất bao lâu ?"}
+{"id": 2023, "vie": "tôi muốn thực hiện trò chơi trượt tuyết thả từ máy bay .", "vsl": "tôi muốn thực hiện trò chơi trượt tuyết thả từ máy bay .", "category": "identical", "pred": "Tôi muốn trò chơi trượt tuyết từ máy bay thả thực hiện ."}
+{"id": 2031, "vie": "chúng tôi đã bán hết bây giờ .", "vsl": "chúng tôi bán hết bây giờ .", "category": "deletion_only", "pred": "Chúng tôi đã bây giờ bán hết ."}
+{"id": 2045, "vie": "xin làm ơn , tôi muốn lấy cái rộng hơn .", "vsl": "xin làm ơn tôi muốn lấy cái rộng hơn .", "category": "deletion_only", "pred": "Xin làm ơn , tôi muốn cái rộng hơn lấy ."}
+{"id": 2046, "vie": "tôi nên trả lại chiếc xe này ở đâu ?", "vsl": "tôi trả chiếc xe ở đâu ?", "category": "deletion_only", "pred": "Tôi nên chiếc xe này ở đâu trả lại ?"}
+{"id": 2048, "vie": "tện trộm là loại người nào ?", "vsl": "tện trộm loại người ?", "category": "deletion_only", "pred": "Tện trộm loại người nào là ?"}
+{"id": 2057, "vie": "xin vui lòng liên lạc với tôi ngay khi bạn tìm thấy nó .", "vsl": "xin liên lạc với tôi khi bạn tìm thấy nó .", "category": "deletion_only", "pred": "Xin vui lòng với tôi ngay khi bạn nó tìm thấy liên lạc ."}
+{"id": 2071, "vie": "nếu bạn đi thẳng bạn sẽ đến đó .", "vsl": "bạn đi thẳng bạn đến đó .", "category": "deletion_only", "pred": "Nếu bạn đi thẳng bạn sẽ đó đến ."}
+{"id": 2074, "vie": "bạn không sao chứ ?", "vsl": "bạn sao không ?", "category": "deletion_reorder", "pred": "Bạn không sao chứ ?"}
+{"id": 2078, "vie": "nó bắt đầu và kết thúc lúc mấy giờ ?", "vsl": "nó bắt đầu kết thúc lúc giờ mấy ?", "category": "deletion_reorder", "pred": "Nó bắt đầu lúc mấy giờ kết thúc ?"}
+{"id": 2082, "vie": "cửa hàng bán quà ở đâu ?", "vsl": "cửa hàng bán quà ở đâu ?", "category": "identical", "pred": "Cửa hàng quà ở đâu bán ?"}
+{"id": 2105, "vie": "bạn có giữ chỗ này không ?", "vsl": "bạn có giữ chỗ không ?", "category": "deletion_only", "pred": "Bạn có chỗ này giữ không ?"}
+{"id": 2149, "vie": "tôi có thể mở cửa sổ không ?", "vsl": "tôi có thể mở cửa sổ không ?", "category": "identical", "pred": "Tôi có thể cửa sổ mở không ?"}
+{"id": 2165, "vie": "bạn đóng cửa ngày nào ?", "vsl": "bạn đóng cửa ngày ?", "category": "deletion_only", "pred": "Bạn cửa ngày nào đóng ?"}
+{"id": 2182, "vie": "bạn có những loại chuyến đi du lịch trong ngày nào ?", "vsl": "bạn có loại chuyến đi du lịch trong ngày ?", "category": "deletion_only", "pred": "Bạn loại chuyến trong ngày nào đi du lịch có ?"}
+{"id": 2183, "vie": "đấy là cái lớn .", "vsl": "đấy cái lớn .", "category": "deletion_only", "pred": "Đấy cái lớn là ."}
+{"id": 2198, "vie": "đây là chìa khóa phòng của bạn .", "vsl": "chìa khóa phòng bạn .", "category": "deletion_only", "pred": "Đây là khóa phòng của bạn chìa ."}
+{"id": 2209, "vie": "bạn có chuyến tua du lịch nào không ?", "vsl": "bạn có chuyến tua du lịch không ?", "category": "deletion_only", "pred": "Bạn chuyến tua du lịch có nào không ?"}
+{"id": 2222, "vie": "việc đó không phải là sự thật .", "vsl": "việc đó phải sự thật không", "category": "deletion_reorder", "pred": "Việc đó không phải sự thật là ."}
+{"id": 2237, "vie": "túi của tôi bị đánh cắp .", "vsl": "túi tôi đánh cắp .", "category": "deletion_only", "pred": "Túi của tôi bị đánh cắp ."}
+{"id": 2259, "vie": "chúng ta hãy đưa cho bạn một phiếu tính tiền .", "vsl": "chúng ta đưa cho bạn một phiếu tính tiền .", "category": "deletion_only", "pred": "Chúng ta hãy cho bạn phiếu tiền tính một đưa ."}
+{"id": 2263, "vie": "tôi muốn một chuyến đi thám hiểm .", "vsl": "tôi muốn một chuyến đi thám hiểm .", "category": "identical", "pred": "Tôi chuyến đi thám hiểm một muốn ."}
+{"id": 2264, "vie": "có những loại hình tua du lịch nào ?", "vsl": "có loại hình tua du lịch ?", "category": "deletion_only", "pred": "Loại hình tua du lịch nào có ?"}
+{"id": 2278, "vie": "hãy lấy ra .", "vsl": "lấy ra .", "category": "deletion_only", "pred": "Hãy lấy ra ."}
+{"id": 2284, "vie": "chỗ ngay có người ngồi chưa ?", "vsl": "chỗ có người ngồi chưa ?", "category": "deletion_only", "pred": "Chỗ ngay người ngồi có chưa ?"}
+{"id": 2301, "vie": "những con cá bạc sáng tươi ngon .", "vsl": "con cá bạc sáng tươi ngon .", "category": "deletion_only", "pred": "Con cá bạc sáng tươi ngon ."}
+{"id": 2305, "vie": "tỷ lệ lãi suất đang đi xuống .", "vsl": "tỷ lệ lãi suất đi xuống .", "category": "deletion_only", "pred": "Tỷ lệ lãi suất đang đi xuống ."}
+{"id": 2316, "vie": "có bao gồm bữa sáng không ?", "vsl": "có bao gồm bữa sáng không ?", "category": "identical", "pred": "Có bữa sáng bao gồm không ?"}
+{"id": 2319, "vie": "đây là đường nào ?", "vsl": "đường ?", "category": "deletion_only", "pred": "Đây đường nào là ?"}
+{"id": 2323, "vie": "mấy giờ buổi biểu diễn bắt đầu ?", "vsl": "giờ buổi biểu diễn bắt đầu mấy ?", "category": "reorder_only", "pred": "Mấy giờ buổi biểu diễn bắt đầu ?"}
+{"id": 2328, "vie": "tôi đã có một vòng thú vị hôm nay .", "vsl": "tôi có một vòng thú vị hôm nay .", "category": "deletion_only", "pred": "Tôi đã vòng thú vị hôm nay một có ."}
+{"id": 2330, "vie": "hãy bắt một cái .", "vsl": "bắt một cái .", "category": "deletion_only", "pred": "Hãy cái một bắt ."}
+{"id": 2346, "vie": "bạn cũng sẽ đưa tôi về lại đó chues ?", "vsl": "bạn cũng đưa tôi về đó chues ?", "category": "deletion_only", "pred": "Bạn cũng sẽ tôi đưa đó chues về lại ?"}
+{"id": 2353, "vie": "có địa điểm nào có khung cảnh đẹp không ?", "vsl": "có địa điểm có khung cảnh đẹp không ?", "category": "deletion_only", "pred": "Có địa điểm nào khung cảnh đẹp có không ?"}
+{"id": 2355, "vie": "những chiếc thang máy hôm nay có hoạt động không ?", "vsl": "chiếc thang máy hôm nay có hoạt động không ?", "category": "deletion_only", "pred": "Chiếc thang máy hôm nay có hoạt động không ?"}
+{"id": 2361, "vie": "xin làm ơn cho một cốc khác .", "vsl": "xin làm ơn cho một cốc khác .", "category": "identical", "pred": "Cho cốc khác một xin làm ơn ."}
+{"id": 2367, "vie": "bạn có thể cho tôi ít thuốc được không ?", "vsl": "bạn có thể cho tôi ít thuốc được không ?", "category": "identical", "pred": "Bạn có thể tôi ít thuốc cho được không ?"}
+{"id": 2369, "vie": "nồi cơm ở đâu ?", "vsl": "nồi cơm ở đâu ?", "category": "identical", "pred": "Nồi cơm ở đâu ?"}
+{"id": 2380, "vie": "tôi có đôi tai chán .", "vsl": "tôi có đôi tai chán .", "category": "identical", "pred": "Tôi tai chán đôi có ."}
+{"id": 2387, "vie": "bạn có thể nói to lên được không ?", "vsl": "bạn có thể nói to lên được không ?", "category": "identical", "pred": "Bạn có thể nói to lên được không ?"}
+{"id": 2396, "vie": "Anh ấy đeo kính .", "vsl": "Anh đeo kính .", "category": "deletion_only", "pred": "Anh ấy kính đeo ."}
+{"id": 2414, "vie": "anh ấy đã ra khỏi nahf của chúng tôi sớm rồi .", "vsl": "anh ra khỏi nahf chúng tôi sớm rồi .", "category": "deletion_only", "pred": "Anh ấy đã nahf của chúng tôi sớm rồi ra khỏi ."}
+{"id": 2422, "vie": "bạn đi giày cỡ bao nhiêu ?", "vsl": "bạn đi giày cỡ bao nhiêu ?", "category": "identical", "pred": "Bạn giày cỡ đi bao nhiêu ?"}
+{"id": 2425, "vie": "món này vị ngon .", "vsl": "món vị ngon .", "category": "deletion_only", "pred": "Món này ngon vị ."}
+{"id": 2437, "vie": "tôi đã gọi cho bạn hôm qua .", "vsl": "tôi gọi cho bạn hôm qua .", "category": "deletion_only", "pred": "Tôi đã cho bạn hôm qua gọi ."}
+{"id": 2449, "vie": "tôi đã gỡ sắp ra với cái tăm bông .", "vsl": "tôi gỡ sắp ra với cái tăm bông .", "category": "deletion_only", "pred": "Tôi đã gỡ sắp với cái tăm bông ra ."}
+{"id": 2461, "vie": "chữ ký của bạn là gì ?", "vsl": "chữ ký bạn gì ?", "category": "deletion_only", "pred": "Chữ ký của bạn là gì ?"}
+{"id": 2469, "vie": "chảo thịt hầm ở đâu ?", "vsl": "chảo thịt hầm ở đâu ?", "category": "identical", "pred": "Chảo thịt hầm ở đâu ?"}
+{"id": 2480, "vie": "ở đây hay là đi ?", "vsl": "ở đây hay đi ?", "category": "deletion_only", "pred": "Ở đây hay là đi ?"}
+{"id": 2482, "vie": "bạn cần phải đổ mồ hôi nhiều hơn một chút .", "vsl": "bạn cần phải đổ mồ hôi nhiều hơn một chút .", "category": "identical", "pred": "Bạn cần phải mồ hôi nhiều hơn một chút đổ ."}
+{"id": 2497, "vie": "xin làm ơn , hãy làm tóc của tôi .", "vsl": "xin làm ơn làm tóc tôi .", "category": "deletion_only", "pred": "Xin làm ơn , hãy tóc của tôi làm ."}
+{"id": 2515, "vie": "tôi có cái phần gang tay bọc ngón tay cái màu xanh .", "vsl": "tôi có cái phần gang tay bọc ngón tay cái màu xanh .", "category": "identical", "pred": "Tôi cái phần gang tay ngón tay cái màu xanh bọc có ."}
+{"id": 2542, "vie": "nếu tôi trúng số , tôi sẽ không bao giờ phải làm việc nữa .", "vsl": "tôi trúng số tôi bao giờ phải làm việc nữa không", "category": "deletion_reorder", "pred": "Nếu tôi số trúng , tôi sẽ không bao giờ phải việc làm nữa ."}
+{"id": 2556, "vie": "bạn có túi xách tay của bạn không ?", "vsl": "bạn có túi xách tay bạn không ?", "category": "deletion_only", "pred": "Bạn túi xách tay của bạn có không ?"}
+{"id": 2598, "vie": "tàu này đến tokyo .", "vsl": "tàu đến tokyo .", "category": "deletion_only", "pred": "Tàu này tokyo đến ."}
+{"id": 2602, "vie": "bạn sẽ nhận được bao nhiêu tiền nếu bạn thắng ?", "vsl": "bạn nhận được tiền bao nhiêu bạn thắng ?", "category": "deletion_reorder", "pred": "Bạn sẽ bao nhiêu tiền nhận được nếu bạn thắng ?"}
+{"id": 2607, "vie": "Một vài nước châu Á sản xuất cao su thô .", "vsl": "Một vài nước châu Á sản xuất cao su thô .", "category": "identical", "pred": "Một vài nước châu Á cao su thô sản xuất ."}
+{"id": 2621, "vie": "tôi không thể nhai thịt này với răng giả của tôi .", "vsl": "tôi không thể nhai thịt với răng giả tôi .", "category": "deletion_only", "pred": "Tôi không thể thịt này với răng giả của tôi nhai ."}
+{"id": 2651, "vie": "tôi đang bị viêm a-mi-đam .", "vsl": "tôi viêm a-mi-đam .", "category": "deletion_only", "pred": "Tôi đang viêm a-mi-đam bị ."}
+{"id": 2673, "vie": "tôi đã làm sạch tay tôi .", "vsl": "tôi làm sạch tay tôi .", "category": "deletion_only", "pred": "Tôi đã tay tôi làm sạch ."}
+{"id": 2679, "vie": "nước sốt bánh mì ở đâu ?", "vsl": "nước sốt bánh mì ở đâu ?", "category": "identical", "pred": "Nước bánh mì ở đâu sốt ?"}
+{"id": 2684, "vie": "anh ấy nói tốt về tôi .", "vsl": "anh nói tốt về tôi .", "category": "deletion_only", "pred": "Anh ấy về tôi nói tốt ."}
+{"id": 2689, "vie": "anh ấy là thợ cắt tóc .", "vsl": "anh thợ cắt tóc .", "category": "deletion_only", "pred": "Anh ấy thợ tóc cắt là ."}
+{"id": 2693, "vie": "thực phẩm đông lạnh thường là bao gói chân không .", "vsl": "thực phẩm đông lạnh thường bao gói chân không", "category": "deletion_only", "pred": "Thực phẩm đông lạnh thường bao gói chân không là ."}
+{"id": 2703, "vie": "cô ấy đeo một cái nhẫn kim cương trên ngón tay .", "vsl": "cô đeo một cái nhẫn kim cương trên ngón tay .", "category": "deletion_only", "pred": "Cô ấy cái nhẫn trên ngón tay kim cương một đeo ."}
+{"id": 2706, "vie": "bạn muốn chúng hướng về phía nhá nắng mặt trời hay là vươn ra dễ dàng ?", "vsl": "bạn muốn chúng hướng về phía nhá nắng mặt trời hay vươn ra dễ dàng ?", "category": "deletion_only", "pred": "Bạn muốn chúng phía nhá mặt trời nắng hướng về hay là dễ dàng vươn ra ?"}
+{"id": 2708, "vie": "bạn đã cạn ly chúc mừng có phải không ?", "vsl": "bạn cạn ly chúc mừng có phải không ?", "category": "deletion_only", "pred": "Bạn đã ly chúc mừng cạn phải không có ?"}
+{"id": 2715, "vie": "mã số quần áo của bạn là gì ?", "vsl": "mã số quần áo bạn gì ?", "category": "deletion_only", "pred": "Mã số quần áo của bạn là gì ?"}
+{"id": 2723, "vie": "ai đã chuyển ga ?", "vsl": "chuyển ga ai ?", "category": "deletion_reorder", "pred": "Ai đã ga chuyển ?"}
+{"id": 2725, "vie": "tôi làm trống cái cốc của tôi .", "vsl": "tôi làm trống cái cốc tôi .", "category": "deletion_only", "pred": "Tôi trống cái cốc của tôi làm ."}
+{"id": 2728, "vie": "hãy lau chùi sàn nhà bằng cái bàn chải .", "vsl": "lau chùi sàn nhà bằng cái bàn chải .", "category": "deletion_only", "pred": "Hãy sàn nhà bằng cái bàn chải lau chùi ."}
+{"id": 2740, "vie": "tôi có một cái răng xấu .", "vsl": "tôi có một cái răng xấu .", "category": "identical", "pred": "Tôi cái răng xấu một có ."}
+{"id": 2741, "vie": "cô ấy có giọng cao .", "vsl": "cô có giọng cao .", "category": "deletion_only", "pred": "Cô ấy giọng cao có ."}
+{"id": 2754, "vie": "tôi sẽ làm việc .", "vsl": "tôi làm việc .", "category": "deletion_only", "pred": "Tôi sẽ làm việc ."}
+{"id": 2760, "vie": "năm đứng trước bảy .", "vsl": "năm đứng trước bảy .", "category": "identical", "pred": "Năm đứng trước bảy ."}
+{"id": 2763, "vie": "xin làm ơn , cho cỡ trung bình .", "vsl": "xin làm ơn cho cỡ trung bình .", "category": "deletion_only", "pred": "Xin làm ơn , cỡ trung bình cho ."}
+{"id": 2779, "vie": "tôi không thể đi qua anh ấy .", "vsl": "tôi không thể đi qua anh .", "category": "deletion_only", "pred": "Tôi không thể anh ấy đi qua ."}
+{"id": 2780, "vie": "xin làm ơn hãy tăng nhiệt độ lò sưởi lên .", "vsl": "xin làm ơn tăng nhiệt độ lò sưởi lên .", "category": "deletion_only", "pred": "Xin làm ơn hãy tăng nhiệt độ lò sưởi lên ."}
+{"id": 2787, "vie": "tôi có một cái mụn cóc .", "vsl": "tôi có một cái mụn cóc .", "category": "identical", "pred": "Tôi cái mụn cóc một có ."}
+{"id": 2805, "vie": "tôi đã bỏ thói quen đó .", "vsl": "tôi bỏ thói quen đó .", "category": "deletion_only", "pred": "Tôi đã thói quen đó bỏ ."}
+{"id": 2817, "vie": "tôi có một cái bụng to .", "vsl": "tôi có một cái bụng to .", "category": "identical", "pred": "Tôi cái bụng to một có ."}
+{"id": 2821, "vie": "bàn chân của tôi bị tê .", "vsl": "bàn chân tôi tê .", "category": "deletion_only", "pred": "Bàn chân của tôi tê bị ."}
+{"id": 2831, "vie": "đồng hồ báo thức đang kêu .", "vsl": "đồng hồ báo thức kêu .", "category": "deletion_only", "pred": "Đồng hồ báo thức đang kêu ."}
+{"id": 2832, "vie": "bạn cần phải chữa chỗ sưng lên ngay .", "vsl": "bạn cần phải chữa chỗ sưng lên .", "category": "deletion_only", "pred": "Bạn cần phải chỗ sưng chữa lên ngay ."}
+{"id": 2860, "vie": "tôi có một cái răng sâu .", "vsl": "tôi có một cái răng sâu .", "category": "identical", "pred": "Tôi cái răng sâu một có ."}
+{"id": 2881, "vie": "bạn không nên mặc quần len dài hôm nay .", "vsl": "bạn nên mặc quần len dài hôm nay không ?", "category": "lexical", "pred": "Bạn không nên quần mặc hôm nay len dài ."}
+{"id": 2889, "vie": "Bạn có ít xu mười yên không ?", "vsl": "Bạn có ít xu mười yên không ?", "category": "identical", "pred": "Bạn có ít yên mười xu không ?"}
+{"id": 2904, "vie": "tôi phải đến sân bay trước mười giờ .", "vsl": "tôi phải đến sân bay trước mười giờ .", "category": "identical", "pred": "Tôi phải sân bay trước giờ mười đến ."}
+{"id": 2913, "vie": "Xin lỗi đã để bạn chờ .", "vsl": "Xin lỗi bạn chờ .", "category": "deletion_only", "pred": "Xin lỗi đã bạn chờ để ."}
+{"id": 2919, "vie": "Cô ấy và tôi đi học cùng một trường đại học .", "vsl": "Cô tôi đi học cùng một trường đại học .", "category": "deletion_only", "pred": "Cô ấy tôi cùng trường đại học một đi học ."}
+{"id": 2920, "vie": "Hơn hai trăm yên một chút .", "vsl": "Hơn hai trăm yên một chút .", "category": "identical", "pred": "Hơn hai trăm yên một chút ."}
+{"id": 2926, "vie": "Tôi sẽ gọi lại sau năm giờ .", "vsl": "Tôi gọi sau năm giờ .", "category": "deletion_only", "pred": "Tôi sẽ sau giờ năm gọi lại ."}
+{"id": 2956, "vie": "May mắn của chúng ta dường như tốt hơn lên .", "vsl": "May mắn chúng ta dường như tốt hơn lên .", "category": "deletion_only", "pred": "May mắn của chúng ta dường như tốt hơn lên ."}
+{"id": 2967, "vie": "Đặt bàn nhé .", "vsl": "Đặt bàn .", "category": "deletion_only", "pred": "Bàn nhé Đặt ."}
+{"id": 2970, "vie": "Tất cả công việc và không vui chơi biến Jacks thành một cậu bé ngớ ngẩn .", "vsl": "Tất cả công việc vui chơi biến Jacks thành một cậu bé ngớ ngẩn không", "category": "deletion_reorder", "pred": "Tất cả công việc không vui chơi Jacks biến cậu bé ngớ ngẩn một thành ."}
+{"id": 2980, "vie": "Nó giống như giấc mơ thành sự thật .", "vsl": "Nó giống như giấc mơ thành sự thật .", "category": "identical", "pred": "Nó giống như giấc mơ sự thật thành ."}
+{"id": 2982, "vie": "Đó là lỡ lời thôi .", "vsl": "Đó lỡ lời thôi .", "category": "deletion_only", "pred": "Đó lỡ lời thôi là ."}
+{"id": 2983, "vie": "Điều đó không phải là cái mà chúng tôi đã đồng ý .", "vsl": "Điều đó phải cái mà chúng tôi đồng ý không", "category": "deletion_reorder", "pred": "Điều đó không phải là cái mà chúng tôi đã đồng ý ."}
+{"id": 2985, "vie": "Cố gắng theo cách của bạn .", "vsl": "Cố gắng theo cách bạn .", "category": "deletion_only", "pred": "Theo cách của bạn Cố gắng ."}
+{"id": 2992, "vie": "Sau tiếng bíp , vui lòng để tên , số điện thoại và lý do bạn gọi lại .", "vsl": "Sau tiếng bíp tên số điện thoại lý do bạn gọi .", "category": "deletion_only", "pred": "Sau tiếng bíp , để tên vui lòng , số điện thoại lý do bạn gọi lại ."}
+{"id": 2996, "vie": "Xem lại .", "vsl": "Xem lại .", "category": "identical", "pred": "Xem lại ."}
+{"id": 2998, "vie": "Chúc một ngày vui vẻ .", "vsl": "Chúc một ngày vui vẻ .", "category": "identical", "pred": "Chúc ngày vui vẻ một ."}
+{"id": 3008, "vie": "Đừng từ bỏ .", "vsl": "Đừng từ bỏ .", "category": "identical", "pred": "Đừng từ bỏ ."}
+{"id": 3013, "vie": "Tôi đã vượt qua lúc gay go .", "vsl": "Tôi vượt qua lúc gay go .", "category": "deletion_only", "pred": "Tôi đã lúc gay go vượt qua ."}
+{"id": 3019, "vie": "Đừng chen ngang .", "vsl": "Đừng chen ngang .", "category": "identical", "pred": "Đừng chen ngang ."}
+{"id": 3021, "vie": "Xin đừng .", "vsl": "Xin đừng .", "category": "identical", "pred": "Xin đừng ."}
+{"id": 3024, "vie": "bạn sẽ chỉ cho tôi một danh sách phí nhé ?", "vsl": "bạn cho tôi một danh sách phí ?", "category": "deletion_only", "pred": "Bạn sẽ cho tôi danh sách phí một chỉ nhé ?"}
+{"id": 3031, "vie": "Đây là mốt cũ nhất .", "vsl": "mốt cũ nhất .", "category": "deletion_only", "pred": "Đây là mốt cũ nhất ."}
+{"id": 3052, "vie": "Rất buồn khi phải nói lời tạm biệt .", "vsl": "buồn khi phải nói lời tạm biệt .", "category": "deletion_only", "pred": "Buồn khi phải lời tạm biệt nói ."}
+{"id": 3060, "vie": "Nó bị hủy về lý do gì ?", "vsl": "Nó hủy về lý do gì ?", "category": "deletion_only", "pred": "Nó bị về lý do gì hủy ?"}
+{"id": 3081, "vie": "tôi chắc chắn đã làm .", "vsl": "tôi chắc chắn làm .", "category": "deletion_only", "pred": "Tôi chắc chắn đã làm ."}
+{"id": 3085, "vie": "đây là chuyến bay không được hút thuốc .", "vsl": "chuyến bay được hút thuốc không", "category": "deletion_reorder", "pred": "Đây chuyến bay không được thuốc hút là ."}
+{"id": 3099, "vie": "mary bắt đầu tự kiếm sống vào tháng tư này .", "vsl": "mary bắt đầu tự kiếm sống vào tháng tư .", "category": "deletion_only", "pred": "Mary bắt đầu tự vào tháng tư này kiếm sống ."}
+{"id": 3104, "vie": "bạn không đồng ý sao ?", "vsl": "bạn đồng ý sao không ?", "category": "reorder_only", "pred": "Bạn không đồng ý sao ?"}
+{"id": 3108, "vie": "Chúng tôi đã hỏi ý kiến của nhiều thành viên cao cấp và có vài lời khuyên hữu ích .", "vsl": "Chúng tôi hỏi ý kiến nhiều thành viên cao cấp có vài lời khuyên hữu ích .", "category": "deletion_only", "pred": "Chúng tôi đã ý kiến của nhiều thành viên cao cấp hỏi vài lời khuyên hữu ích có ."}
+{"id": 3110, "vie": "trong khi đang xem ti vi , helen đột nhiên bị ngất .", "vsl": "trong khi xem ti vi helen đột nhiên ngất .", "category": "deletion_only", "pred": "Trong khi đang ti vi xem , helen đột nhiên bị ngất ."}
+{"id": 3134, "vie": "George dường như đóng góp bài viết cho một tạp chí ngôn ngữ học theo thời gian .", "vsl": "George dường như đóng góp bài viết cho một tạp chí ngôn ngữ học theo thời gian .", "category": "identical", "pred": "George dường như bài viết cho tạp chí ngôn ngữ học theo thời gian một đóng góp ."}
+{"id": 3140, "vie": "cảm ơn về sự giúp đỡ của bạn rất nhiều .", "vsl": "cảm ơn về sự giúp đỡ bạn nhiều .", "category": "deletion_only", "pred": "Về sự giúp đỡ của bạn cảm ơn nhiều ."}
+{"id": 3142, "vie": "vâng , bạn có bất cứ thứ gì để uống chưa ?", "vsl": "vâng bạn có bất cứ thứ uống chưa gì ?", "category": "deletion_reorder", "pred": "Vâng , bạn bất cứ thứ gì để uống chưa có ?"}
+{"id": 3151, "vie": "mariko , bạn vui lòng chỉ cho tôi biết cách ane sukiyaki được không ?", "vsl": "mariko bạn cho tôi biết cách ane sukiyaki được không ?", "category": "deletion_only", "pred": "Mariko , bạn vui lòng chỉ tôi cho biết ane sukiyaki cách được không ?"}
+{"id": 3157, "vie": "Tôi sẽ đi ra ngoài vận chuyển ở Macy , vì vậy nếu ông Brown gọi , bạn sẽ vui lòng ghi lại lời nhắn cho tôi được không ?", "vsl": "cái đĩa trong tủ bát .", "category": "lexical", "pred": "Tôi sẽ ngoài ở Macy vận chuyển đi ra , vì vậy nếu ông Brown gọi , bạn sẽ vui lòng lời nhắn ghi lại cho tôi được không ?"}
+{"id": 3160, "vie": "tôi đã làm khô đôi tay tôi bằng một chiếc khăn tay .", "vsl": "tôi làm khô đôi tay tôi bằng một chiếc khăn tay .", "category": "deletion_only", "pred": "Tôi đã tay tôi bằng chiếc khăn tay một đôi làm khô ."}
+{"id": 3163, "vie": "tôi muốn thực hiện một cuộc gọi ra ngoài thị trấn .", "vsl": "tôi muốn thực hiện một cuộc gọi ra ngoài thị trấn .", "category": "identical", "pred": "Tôi muốn cuộc ngoài thị trấn gọi ra một thực hiện ."}
+{"id": 3167, "vie": "hổ là loài ăn thịt .", "vsl": "hổ loài ăn thịt .", "category": "deletion_only", "pred": "Hổ loài thịt ăn là ."}
+{"id": 3178, "vie": "họ thu thập rác vào mọi ngày khác .", "vsl": "họ thu thập rác vào ngày khác .", "category": "deletion_only", "pred": "Họ rác vào mọi ngày khác thu thập ."}
+{"id": 3203, "vie": "đừng có ăn gì giữa các bữa ăn .", "vsl": "đừng có ăn giữa bữa ăn gì", "category": "deletion_reorder", "pred": "Đừng có giữa bữa ăn ăn gì ."}
+{"id": 3211, "vie": "bạn có vòng thâm dưới mắt .", "vsl": "bạn có vòng thâm dưới mắt .", "category": "identical", "pred": "Bạn vòng thâm dưới mắt có ."}
+{"id": 3228, "vie": "đây là bữa cơn nghèo nàn .", "vsl": "bữa cơn nghèo nàn .", "category": "deletion_only", "pred": "Đây bữa cơn nghèo nàn là ."}
+{"id": 3229, "vie": "tôi là người nhẹ dạ .", "vsl": "tôi người nhẹ dạ .", "category": "deletion_only", "pred": "Tôi người nhẹ dạ là ."}
+{"id": 3231, "vie": "anh ấy ngước lên nhìn .", "vsl": "anh ngước lên nhìn .", "category": "deletion_only", "pred": "Anh ấy ngước lên nhìn ."}
+{"id": 3245, "vie": "tôi đã nấc cục .", "vsl": "tôi nấc cục .", "category": "deletion_only", "pred": "Tôi đã cục nấc ."}
+{"id": 3287, "vie": "các nếp nhăn của tôi đã được phục hồi .", "vsl": "nếp nhăn tôi được phục hồi .", "category": "deletion_only", "pred": "Nếp nhăn của tôi đã được phục hồi ."}
+{"id": 3293, "vie": "hãy bình tĩnh .", "vsl": "bình tĩnh .", "category": "deletion_only", "pred": "Hãy bình tĩnh ."}
+{"id": 3294, "vie": "bệnh viễn thị của tôi là di truyền .", "vsl": "bệnh viễn thị tôi di truyền .", "category": "deletion_only", "pred": "Bệnh viễn thị của tôi di truyền là ."}
+{"id": 3308, "vie": "đừng có làm đổ sữa .", "vsl": "đừng có làm đổ sữa .", "category": "identical", "pred": "Đừng có làm sữa đổ ."}
+{"id": 3327, "vie": "bạn có thể đưa cho tôi một cái đèn được không ?", "vsl": "bạn có thể đưa cho tôi một cái đèn được không ?", "category": "identical", "pred": "Bạn có thể cho tôi cái đèn một đưa được không ?"}
+{"id": 3328, "vie": "chúng ta sẽ trả bằng các đồng bạc xanh .", "vsl": "chúng ta trả bằng đồng bạc xanh .", "category": "deletion_only", "pred": "Chúng ta sẽ bằng đồng bạc xanh trả ."}
+{"id": 3338, "vie": "anh ấy đã không mặc áo lót .", "vsl": "anh mặc áo lót không", "category": "deletion_reorder", "pred": "Anh ấy đã không áo lót mặc ."}
+{"id": 3341, "vie": "bạn đan bị khóa à ?", "vsl": "bạn đan khóa ?", "category": "deletion_only", "pred": "Bạn đan bị khóa à ?"}
+{"id": 3343, "vie": "bạn nên cẩn thận hơn .", "vsl": "bạn nên cẩn thận hơn .", "category": "identical", "pred": "Bạn nên cẩn thận hơn ."}
+{"id": 3366, "vie": "hãy mặc thêm nhiều quần áo vào hoặc là bạn sẽ bị cảm lạnh .", "vsl": "mặc thêm nhiều quần áo vào hoặc bạn cảm lạnh .", "category": "deletion_only", "pred": "Hãy nhiều quần áo vào mặc thêm hoặc là bạn sẽ bị cảm lạnh ."}
+{"id": 3376, "vie": "bánh ỳ cũ .", "vsl": "bánh ỳ cũ .", "category": "identical", "pred": "Bánh ỳ cũ ."}
+{"id": 3454, "vie": "tôi đã là các nếp nhăn trên cái váy của tôi .", "vsl": "tôi nếp nhăn trên cái váy tôi .", "category": "deletion_only", "pred": "Tôi đã nếp nhăn trên cái váy của tôi là ."}
+{"id": 3456, "vie": "thật là hôi thối .", "vsl": "thật hôi thối .", "category": "deletion_only", "pred": "Thật hôi thối là ."}
+{"id": 3468, "vie": "đi giải .", "vsl": "đi giải .", "category": "identical", "pred": "Đi giải ."}
+{"id": 3469, "vie": "tôi đã bị chảy mau mũi .", "vsl": "tôi chảy mau mũi .", "category": "deletion_only", "pred": "Tôi đã bị mau mũi chảy ."}
+{"id": 3498, "vie": "anh ấy đang giơ tay lên .", "vsl": "anh giơ tay lên .", "category": "deletion_only", "pred": "Anh ấy đang giơ tay lên ."}
+{"id": 3501, "vie": "tôi đã có trục trặc .", "vsl": "tôi có trục trặc .", "category": "deletion_only", "pred": "Tôi đã trục trặc có ."}
+{"id": 3515, "vie": "tôi đã đến khám nha sĩ .", "vsl": "tôi đến khám nha sĩ .", "category": "deletion_only", "pred": "Tôi đã đến khám nha sĩ ."}
+{"id": 3517, "vie": "cô ấy đã khóc nức nở .", "vsl": "cô khóc nức nở .", "category": "deletion_only", "pred": "Cô ấy đã khóc nức nở ."}
+{"id": 3521, "vie": "Dừng đánh đổ đậu .", "vsl": "Dừng đánh đổ đậu .", "category": "identical", "pred": "Dừng đánh đổ đậu ."}
+{"id": 3524, "vie": "bên phía của bạn .", "vsl": "bên phía bạn .", "category": "deletion_only", "pred": "Bên phía của bạn ."}
+{"id": 3538, "vie": "tôi cần phải chà kem lên khuôn mặt ôi .", "vsl": "tôi cần phải chà kem lên khuôn mặt .", "category": "deletion_only", "pred": "Tôi chà kem lên khuôn mặt cần phải ôi ."}
+{"id": 3550, "vie": "tôi đã nghe trộm cuộc nói chuyện .", "vsl": "tôi nghe trộm cuộc nói chuyện .", "category": "deletion_only", "pred": "Tôi đã nghe cuộc nói chuyện trộm ."}
+{"id": 3552, "vie": "tôi đã thế chấp nhà tôi để mượn tiền .", "vsl": "tôi thế chấp nhà tôi mượn tiền .", "category": "deletion_only", "pred": "Tôi đã nhà tôi để tiền mượn thế chấp ."}
+{"id": 3554, "vie": "anh ấy có giọng nói trầm .", "vsl": "anh có giọng nói trầm .", "category": "deletion_only", "pred": "Anh ấy giọng nói trầm có ."}
+{"id": 3556, "vie": "Tôi tán thuốc chống côn trùng .", "vsl": "Tôi tán thuốc chống côn trùng .", "category": "identical", "pred": "Tôi thuốc côn trùng chống tán ."}
+{"id": 3574, "vie": "vẫn còn ít cà phê ở trong cốc cà phê .", "vsl": "còn ít cà phê ở trong cốc cà phê .", "category": "deletion_only", "pred": "Vẫn còn ít cà phê ở trong cốc cà phê ."}
+{"id": 3581, "vie": "tôi đã nghe trộm cuộc nói chuyện điện thoại .", "vsl": "tôi nghe trộm cuộc nói chuyện điện thoại .", "category": "deletion_only", "pred": "Tôi đã nghe cuộc nói chuyện điện thoại trộm ."}
+{"id": 3597, "vie": "Có nhiều chỗ sẵn để ngồi không ?", "vsl": "Có nhiều chỗ sẵn ngồi không ?", "category": "deletion_only", "pred": "Nhiều chỗ sẵn để ngồi không Có ?"}
+{"id": 3616, "vie": "đăng ký của bạn hết hạn vào tháng tới .", "vsl": "đăng ký bạn hết hạn vào tháng tới .", "category": "deletion_only", "pred": "Của bạn đăng ký hạn vào tháng tới hết ."}
+{"id": 3625, "vie": "tôi sẽ để tóc của tôi mọc dài .", "vsl": "tôi tóc tôi mọc dài .", "category": "deletion_only", "pred": "Tôi sẽ tóc của tôi mọc dài để ."}
+{"id": 3627, "vie": "cô ấy có đôi mắt đẹp .", "vsl": "cô có đôi mắt đẹp .", "category": "deletion_only", "pred": "Cô ấy mắt đẹp đôi có ."}
+{"id": 3648, "vie": "Anh ấy có hơi thở hôi .", "vsl": "Anh có hơi thở hôi .", "category": "deletion_only", "pred": "Anh ấy hơi thở hôi có ."}
+{"id": 3651, "vie": "tôi không đưa ra lời chỉ trích .", "vsl": "tôi đưa ra lời chỉ trích không", "category": "deletion_reorder", "pred": "Tôi không lời chỉ trích đưa ra ."}
+{"id": 3654, "vie": "tôi bắt chuyến xe buýt thành phố .", "vsl": "tôi bắt chuyến xe buýt thành phố .", "category": "identical", "pred": "Tôi chuyến xe buýt thành phố bắt ."}
+{"id": 3666, "vie": "vui lòng ghi tên và số phòng ở đây và kí ở đây .", "vsl": "ghi tên số phòng ở đây kí ở đây .", "category": "deletion_only", "pred": "Vui lòng tên số phòng ở đây kí ở đây ghi ."}
+{"id": 3670, "vie": "bằng thẻ này , làm ơn .", "vsl": "bằng thẻ làm ơn .", "category": "deletion_only", "pred": "Bằng thẻ này , làm ơn ."}
+{"id": 3673, "vie": "chỉ cần đưa nó cho người phục vụ khi bạn sẵn sàng rời đi .", "vsl": "đưa nó cho người phục vụ khi bạn sẵn sàng rời đi .", "category": "deletion_only", "pred": "Chỉ cần nó đưa người khi bạn sẵn sàng rời đi phục vụ cho ."}
+{"id": 3679, "vie": "chào buổi sáng thưa ông bà .", "vsl": "chào buổi sáng ông bà .", "category": "deletion_only", "pred": "Buổi sáng chào ông bà thưa ."}
+{"id": 3683, "vie": "Chúng tôi mong được chào đón bạn trở lại khách sạn DHC trong tương lai .", "vsl": "Chúng tôi mong được chào đón bạn trở khách sạn DHC trong tương lai .", "category": "deletion_only", "pred": "Chúng tôi mong được chào đón bạn khách sạn DHC trong tương lai trở lại ."}
+{"id": 3697, "vie": "bạn có thể tính phí cái này vào tiền phòng cho tôi không ?", "vsl": "bạn có thể tính phí cái vào tiền phòng cho tôi không ?", "category": "deletion_only", "pred": "Bạn có thể cái này tính phí tiền phòng cho tôi vào không ?"}
+{"id": 3698, "vie": "Bạn có thể sử dụng phòng chờ này bất cứ lúc nào .", "vsl": "Bạn có thể sử dụng phòng chờ bất cứ lúc nào .", "category": "deletion_only", "pred": "Bạn có thể phòng chờ này bất cứ lúc nào sử dụng ."}
+{"id": 3704, "vie": "bạn thật tốt bụng .", "vsl": "bạn thật tốt bụng .", "category": "identical", "pred": "Bạn thật tốt bụng ."}
+{"id": 3711, "vie": "ngài muốn biết cái gì ?", "vsl": "ngài muốn biết cái gì ?", "category": "identical", "pred": "Ngài muốn cái gì biết ?"}
+{"id": 3724, "vie": "ông hãy vui lòng sử dụng thoải mái theo cách thuận tiện của riêng mình .", "vsl": "ông sử dụng thoải mái theo cách thuận tiện riêng mình .", "category": "deletion_only", "pred": "Ông hãy theo cách thuận tiện của riêng mình vui lòng sử dụng thoải mái ."}
+{"id": 3732, "vie": "Chúng tôi có đồ có sẵn để khách hàng sử dụng , bao gồm máy sấy tóc và bàn ủi .", "vsl": "Chúng tôi có đồ dùng khách hàng sử dụng , bao gồm máy sấy tóc bàn ủi .", "category": "lexical", "pred": "Chúng tôi đồ để khách hàng sử dụng có sẵn có , máy sấy tóc bao gồm bàn ủi ."}
+{"id": 3740, "vie": "có đó là ruột bánh mỳ , thịt bò chiên thưa bà .", "vsl": "có đó ruột bánh mỳ thịt bò chiên bà .", "category": "deletion_only", "pred": "Có đó ruột bánh mỳ là , thịt bò chiên bà thưa ."}
+{"id": 3758, "vie": "đây là một phòng đẹp .", "vsl": "một phòng đẹp .", "category": "deletion_only", "pred": "Đây phòng đẹp một là ."}
+{"id": 3767, "vie": "bạn vưi lòng nói lại được không ?", "vsl": "bạn vưi lòng nói được không ?", "category": "deletion_only", "pred": "Bạn vưi lòng nói lại được không ?"}
+{"id": 3771, "vie": "tôi hi vọng hành lí của bạn được tìm thấy .", "vsl": "tôi hi vọng hành lí bạn được tìm thấy .", "category": "deletion_only", "pred": "Tôi hành lí của bạn hi vọng được tìm thấy ."}
+{"id": 3780, "vie": "bạn sẽ được kết nối trực tiếp sau đó .", "vsl": "bạn được kết nối trực tiếp sau đó .", "category": "deletion_only", "pred": "Bạn sẽ được sau đó kết nối trực tiếp ."}
+{"id": 3802, "vie": "Đây là vé hành lý của ông , hãy giao cho quầy tiếp tân khi ông làm thủ tục vào khách sạn .", "vsl": "vé hành lý , giao cho quầy tiếp tân làm thủ tục vào khách sạn .", "category": "deletion_only", "pred": "Đây vé hành lý của ông là , hãy cho quầy khi ông thủ tục vào khách sạn làm tiếp tân giao ."}
+{"id": 3804, "vie": "quầy đón tiếp ở trên tầng hai , hãy đi thang cuốn ở phía trước .", "vsl": "quầy đón tiếp ở trên tầng hai đi thang cuốn ở phía trước .", "category": "deletion_only", "pred": "Quầy ở trên tầng hai đón tiếp , hãy ở phía trước đi thang cuốn ."}
+{"id": 3819, "vie": "tôi là Ishimoto ở phòng quan hệ khách hàng .", "vsl": "tôi Ishimoto ở phòng quan hệ khách hàng .", "category": "deletion_only", "pred": "Tôi Ishimoto ở phòng quan hệ khách hàng là ."}
+{"id": 3839, "vie": "điều đó thật chính xác .", "vsl": "điều đó thật chính xác .", "category": "identical", "pred": "Điều đó thật chính xác ."}
+{"id": 3841, "vie": "ngài muốn đặt phòng cho bao nhiêu người vậy ?", "vsl": "ngài muốn đặt phòng cho bao nhiêu người ?", "category": "deletion_only", "pred": "Ngài muốn phòng cho bao nhiêu người đặt vậy ?"}
+{"id": 3845, "vie": "tôi là brown ở phòng mười bẩy không chín .", "vsl": "tôi brown ở phòng mười bẩy chín không", "category": "deletion_reorder", "pred": "Tôi brown ở phòng mười bẩy không chín là ."}
+{"id": 3851, "vie": "chiều nay ông bà thế nào ?", "vsl": "chiều nay ông bà thế nào ?", "category": "identical", "pred": "Chiều nay ông bà thế nào ?"}
+{"id": 3852, "vie": "vâng , vui lòng .", "vsl": "vâng .", "category": "deletion_only", "pred": "Vâng , vui lòng ."}
+{"id": 3857, "vie": "chúc một ngày vui vẻ .", "vsl": "chúc một ngày vui vẻ .", "category": "identical", "pred": "Ngày vui vẻ một chúc ."}
+{"id": 3870, "vie": "hãy Tận hưởng kỳ nghỉ của bạn tại khách sạn .", "vsl": "Tận hưởng kỳ nghỉ bạn khách sạn .", "category": "deletion_only", "pred": "Hãy kỳ nghỉ của bạn tại khách sạn Tận hưởng ."}
+{"id": 3872, "vie": "vui lòng đi theo nhân viên trực tầng đến quầy đón tiếp .", "vsl": "đi theo nhân viên trực tầng đến quầy đón tiếp .", "category": "deletion_only", "pred": "Vui lòng nhân viên trực tầng đến quầy đón tiếp đi theo ."}
+{"id": 3873, "vie": "nhân viên trực tầng sẽ chỉ cho bạn quầy đón tiếp ở đâu .", "vsl": "nhân viên trực tầng cho bạn quầy đón tiếp ở đâu .", "category": "deletion_only", "pred": "Nhân viên trực tầng sẽ cho bạn quầy đón tiếp ở đâu chỉ ."}
+{"id": 3878, "vie": "một bàn cho hai người vào tối nay .", "vsl": "một bàn cho hai người vào tối nay .", "category": "identical", "pred": "Bàn cho người hai vào tối nay một ."}
+{"id": 3889, "vie": "chi phí theo giờ là một ngàn sáu trăm yên .", "vsl": "chi phí theo giờ một ngàn sáu trăm yên .", "category": "deletion_only", "pred": "Chi phí theo giờ một ngàn sáu trăm yên là ."}
+{"id": 3919, "vie": "Tôi bảo một người nào đó tìm chiếc áo của bạn và gửi lại cho bạn càng sớm càng tốt .", "vsl": "Tôi bảo một người đó tìm chiếc áo bạn gửi cho bạn càng sớm càng tốt .", "category": "deletion_only", "pred": "Tôi bảo người nào đó một chiếc áo của bạn tìm cho bạn càng sớm càng tốt gửi lại ."}
+{"id": 3938, "vie": "cảm ơn , tuy nhiên phí dich vụ mười phầnh trăm đã được bao gồm .", "vsl": "cảm ơn tuy nhiên phí dich vụ mười phầnh trăm được bao gồm .", "category": "deletion_only", "pred": "Cảm ơn , tuy nhiên phí dich vụ mười phầnh trăm đã được bao gồm ."}
+{"id": 3950, "vie": "ông brown nếu tôi chỉ có thể xác nhận lại các chi tiết sau đây .", "vsl": "ông brown tôi có thể xác nhận chi tiết sau đây .", "category": "deletion_only", "pred": "Ông brown nếu tôi chỉ có thể chi tiết sau đây xác nhận lại ."}
+{"id": 3951, "vie": "ông đang làm thủ tục trả phòng hai mươi ba -hai mươi bốn .", "vsl": "ông làm thủ tục trả phòng hai mươi ba -hai mươi bốn .", "category": "deletion_only", "pred": "Ông đang thủ tục phòng hai mươi ba -hai mươi bốn trả làm ."}
+{"id": 3965, "vie": "cảm ơn vì đã gọi điện .", "vsl": "cảm ơn gọi điện .", "category": "deletion_only", "pred": "Vì đã điện gọi cảm ơn ."}
+{"id": 3973, "vie": "tôi sẽ chỉ cần tháo chiếc va li ra và sau đó tôi sẽ đi ăn trưa .", "vsl": "tôi tháo chiếc va li ra sau đó tôi đi ăn trưa .", "category": "deletion_only", "pred": "Tôi sẽ chỉ cần chiếc va li tháo ra sau đó tôi sẽ đi trưa ăn ."}
+{"id": 3977, "vie": "chuyến bay của bạn khởi hành vào lúc nào ?", "vsl": "chuyến bay bạn khởi hành vào lúc ?", "category": "deletion_only", "pred": "Chuyến bay của bạn lúc nào khởi hành vào ?"}
+{"id": 3991, "vie": "nếu đèn xanh sáng , bạn có thể mở cửa .", "vsl": "đèn xanh sáng bạn có thể mở cửa .", "category": "deletion_only", "pred": "Nếu đèn xanh sáng , bạn có thể cửa mở ."}
+{"id": 3995, "vie": "vâng thưa ông Fuchs .", "vsl": "vâng ông Fuchs .", "category": "deletion_only", "pred": "Vâng thưa ông Fuchs ."}
+{"id": 4036, "vie": "bạn đặt trước cho ngay bao nhiêu ?", "vsl": "bạn đặt trước cho bao nhiêu ?", "category": "deletion_only", "pred": "Bạn cho ngay bao nhiêu đặt trước ?"}
+{"id": 4043, "vie": "tôi bị đau dạ dày .", "vsl": "tôi đau dạ dày .", "category": "deletion_only", "pred": "Tôi bị dạ dày đau ."}
+{"id": 4068, "vie": "tôi e là chúng tôi không có armagmac .", "vsl": "tôi chúng tôi có armagmac không", "category": "deletion_reorder", "pred": "Tôi e là chúng tôi không armagmac có ."}
+{"id": 4106, "vie": "tôi bị đau đầu .", "vsl": "tôi đau đầu .", "category": "deletion_only", "pred": "Tôi bị đau đầu ."}
+{"id": 4150, "vie": "vâng , tôi đã làm .", "vsl": "vâng tôi làm .", "category": "deletion_only", "pred": "Vâng , tôi đã làm ."}
+{"id": 4151, "vie": "món bít tết thật ngon .", "vsl": "món bít tết thật ngon .", "category": "identical", "pred": "Món tết bít thật ngon ."}
+{"id": 4167, "vie": "vui lòng theo tôi .", "vsl": "theo tôi .", "category": "deletion_only", "pred": "Theo tôi vui lòng ."}
+{"id": 4177, "vie": "phòng quan hệ khách hàng đây .", "vsl": "phòng quan hệ khách hàng đây .", "category": "identical", "pred": "Phòng quan hệ khách hàng đây ."}
+{"id": 4217, "vie": "tên tôi là Paul Justin và số phòng tôi là mười một- hai mươi mốt .", "vsl": "tên tôi Paul Justin số phòng tôi mười một- hai mươi mốt .", "category": "deletion_only", "pred": "Tên tôi Paul Justin là số phòng tôi một- hai mươi mốt mười là ."}
+{"id": 4218, "vie": "tiện thể cho hỏi cửa hàng cà phê ở sảnh mở cửa khi nào vậy ?", "vsl": "tiện thể cho hỏi cửa hàng cà phê ở sảnh mở cửa khi ?", "category": "deletion_only", "pred": "Tiện thể cho hỏi cửa hàng cà phê ở sảnh cửa khi nào mở vậy ?"}
+{"id": 4244, "vie": "ông sẽ được đặt hàng cho dịch vụ phòng sáng nay chứ , thưa ông ?", "vsl": "ông được đặt hàng cho dịch vụ phòng sáng nay ông ?", "category": "deletion_only", "pred": "Ông sẽ được cho dịch vụ phòng sáng nay đặt hàng chứ , ông thưa ?"}
+{"id": 4252, "vie": "một va li , một túi xách tay loại nhỏ và một túi quần áo phải không ?", "vsl": "một va li một túi xách tay loại nhỏ một túi quần áo phải không ?", "category": "deletion_only", "pred": "Va li một , túi xách tay một loại nhỏ túi quần áo một phải không ?"}
+{"id": 4263, "vie": "Nếu không , chỉ cần cho tôi bất cứ phòng nào có sẵn là được .", "vsl": "cho tôi bất cứ phòng có sẵn được không", "category": "deletion_reorder", "pred": "Nếu không , chỉ cho tôi bất cứ phòng nào cần có sẵn là được ."}
+{"id": 4268, "vie": "M-C-K-I-N-N-E-Y .", "vsl": "M-C-K-I-N-N-E-Y .", "category": "identical", "pred": "M-C-K-I-N-N-E-Y ."}
+{"id": 4272, "vie": "ngài muốn thứ gì với cái đó không , thưa ngài .", "vsl": "ngài muốn thứ với cái đó ngài không", "category": "deletion_reorder", "pred": "Ngài thứ gì với cái đó không , ngài thưa muốn ."}
+{"id": 4281, "vie": "ngài là khách của khách sạn đúng không , thưa ngài ?", "vsl": "ngài khách khách sạn đúng ngài không ?", "category": "deletion_reorder", "pred": "Ngài khách của khách sạn đúng không là , ngài thưa ?"}
+{"id": 4294, "vie": "nó sẽ được trả lại vào buổi chiều nay .", "vsl": "nó được trả vào buổi chiều nay .", "category": "deletion_only", "pred": "Nó sẽ được vào buổi chiều nay trả lại ."}
+{"id": 4305, "vie": "bạ có thể gọi món không ?", "vsl": "bạ có thể gọi món không ?", "category": "identical", "pred": "Bạ có thể món gọi không ?"}
+{"id": 4322, "vie": "vợ bạn khỏe không ?", "vsl": "vợ bạn khỏe không ?", "category": "identical", "pred": "Vợ bạn khỏe không ?"}
+{"id": 4332, "vie": "bà có hút thuốc không ?", "vsl": "bà có hút thuốc không ?", "category": "identical", "pred": "Bà có hút thuốc không ?"}
+{"id": 4343, "vie": "chào buổi sáng , bộ phận đặt phòng đây .", "vsl": "chào buổi sáng bộ phận đặt phòng đây .", "category": "deletion_only", "pred": "Buổi sáng chào , bộ phận phòng đặt đây ."}
+{"id": 4346, "vie": "có , tôi muốn đặt trước một phòng cho vợ tôi và tôi .", "vsl": "có tôi muốn đặt trước một phòng cho vợ tôi tôi .", "category": "deletion_only", "pred": "Có , tôi muốn trước phòng một cho vợ tôi tôi đặt ."}
+{"id": 4350, "vie": "có , chắc chắn .", "vsl": "có chắc chắn .", "category": "deletion_only", "pred": "Chắc chắn có , ."}
+{"id": 4351, "vie": "để tôi thiết lập cho bạn .", "vsl": "tôi thiết lập cho bạn .", "category": "deletion_only", "pred": "Để tôi cho bạn thiết lập ."}
+{"id": 4354, "vie": "ông brown , chúc ông một ngày vui vẻ .", "vsl": "ông brown chúc ông một ngày vui vẻ .", "category": "deletion_only", "pred": "Ông brown , ông ngày vui vẻ một chúc ."}
+{"id": 4370, "vie": "Xe buýt đi đến ga xe lửa và sân bay sử dụng đường lái xe ở phía trước lối vào phía trước .", "vsl": "Xe buýt đi đến ga xe lửa sân bay sử dụng đường lái xe ở phía trước lối vào phía trước .", "category": "deletion_only", "pred": "Xe buýt đến ga xe lửa sân bay đi đường xe ở phía trước lối vào phía trước lái sử dụng ."}
+{"id": 4374, "vie": "da tôi đau nhức .", "vsl": "da tôi đau nhức .", "category": "identical", "pred": "Da tôi đau nhức ."}
+{"id": 4380, "vie": "bây giờ Xe buýt của ông đã đến .", "vsl": "bây giờ Xe buýt ông đến .", "category": "deletion_only", "pred": "Bây giờ Xe buýt của ông đã đến ."}
+{"id": 4384, "vie": "chúc ông có một chuyến bay về nhà thật an toàn và thoải mái .", "vsl": "chúc ông có một chuyến bay về nhà thật an toàn thoải mái .", "category": "deletion_only", "pred": "Ông chúc chuyến bay về nhà thật an toàn thoải mái một có ."}
+{"id": 4395, "vie": "tôi sẽ đến đây để dọn đồ giặt là của bạn .", "vsl": "tôi đến đây dọn đồ giặt bạn .", "category": "deletion_only", "pred": "Tôi sẽ đây để đồ giặt là của bạn dọn đến ."}
+{"id": 4399, "vie": "ông tanaka đang nói phải không .", "vsl": "ông tanaka nói phải không", "category": "deletion_only", "pred": "Ông tanaka đang phải không nói ."}
+{"id": 4413, "vie": "Chúng tôi có sáu xe buýt đi lại trong ngày .", "vsl": "Chúng tôi có sáu xe buýt đi lại trong ngày .", "category": "identical", "pred": "Chúng tôi xe buýt trong ngày đi lại sáu có ."}
+{"id": 4429, "vie": "để tôi kiểm tra .", "vsl": "tôi kiểm tra .", "category": "deletion_only", "pred": "Để tôi kiểm tra ."}
+{"id": 4465, "vie": "cảm ơn bạn vì đã ở khách sạn DHC .", "vsl": "cảm ơn bạn ở khách sạn DHC .", "category": "deletion_only", "pred": "Bạn vì đã khách sạn DHC ở cảm ơn ."}
+{"id": 4479, "vie": "tôi xin lỗi tôi không thể giúp gì cho ngài , thưa ngài .", "vsl": "tôi xin lỗi tôi không thể giúp cho ngài ngài gì", "category": "deletion_reorder", "pred": "Tôi xin lỗi tôi không thể cho ngài giúp gì , ngài thưa ."}
+{"id": 4484, "vie": "tôi muốn một người giữ trẻ .", "vsl": "tôi muốn một người giữ trẻ .", "category": "identical", "pred": "Tôi người trẻ giữ một muốn ."}
+{"id": 4501, "vie": "bạn vui lòng đặt hàng cho bộ phận phòng tối nay được không ?", "vsl": "bạn đặt hàng cho bộ phận phòng tối nay được không ?", "category": "deletion_only", "pred": "Bạn vui lòng cho bộ phận phòng tối đặt hàng nay được không ?"}
+{"id": 4519, "vie": "Ở dưới cùng của cầu thang , rẽ phải .", "vsl": "Ở dưới cùng cầu thang rẽ phải .", "category": "deletion_only", "pred": "Ở dưới cùng của cầu thang , rẽ phải ."}
+{"id": 4525, "vie": "thế thì đi đến trạm .", "vsl": "đi đến trạm .", "category": "deletion_only", "pred": "Thế đến trạm đi ."}
+{"id": 4533, "vie": "Bảo tàng nằm trên tầng thứ bảy .", "vsl": "Bảo tàng nằm trên tầng thứ bảy .", "category": "identical", "pred": "Bảo tàng trên tầng thứ bảy nằm ."}
+{"id": 4539, "vie": "tôi hi vọng bạn thích ở khách sạn này .", "vsl": "tôi hi vọng bạn thích ở khách sạn .", "category": "deletion_only", "pred": "Tôi bạn ở khách sạn này thích hi vọng ."}
+{"id": 4546, "vie": "phiền ngài cho tôi biết tên và số phòng của ngài được không ?", "vsl": "phiền ngài cho tôi biết tên số phòng ngài được không ?", "category": "deletion_only", "pred": "Phiền ngài tôi cho tên số phòng của ngài biết được không ?"}
+{"id": 4585, "vie": "chúng tôi mong chào đón sự trở lại khách sạn của bạn .", "vsl": "chúng tôi mong chào đón sự trở khách sạn bạn .", "category": "deletion_only", "pred": "Chúng tôi mong sự khách sạn của bạn trở lại chào đón ."}
+{"id": 4590, "vie": "bạn thích loại bánh mỳ nào hơn ?", "vsl": "bạn thích loại bánh mỳ hơn ?", "category": "deletion_only", "pred": "Bạn loại bánh mỳ nào hơn thích ?"}
+{"id": 4592, "vie": "bạn có thể chỉ đường cho tôi đến tòa nhà Sun Tower không ?", "vsl": "bạn có thể đường cho tôi đến tòa nhà Sun Tower không ?", "category": "deletion_only", "pred": "Bạn có thể đường cho tôi đến tòa nhà Sun Tower chỉ không ?"}
+{"id": 4611, "vie": "thật là không may mắn , anh ấy đi công tác ngoài thị trấn .", "vsl": "thật may mắn anh đi công tác ngoài thị trấn không", "category": "deletion_reorder", "pred": "Thật là không may mắn , anh ấy ngoài thị trấn đi công tác ."}
+{"id": 4620, "vie": "Khi mở cửa xin vui lòng kéo khóa ra và đẩy cửa .", "vsl": "Khi mở cửa xin kéo khóa ra đẩy cửa .", "category": "deletion_only", "pred": "Khi cửa mở xin vui lòng khóa kéo ra cửa đẩy ."}
+{"id": 4654, "vie": "đây là tất cả hành lí của bạn phải không ?", "vsl": "tất cả hành lí bạn phải không ?", "category": "deletion_only", "pred": "Đây tất cả hành lí của bạn là phải không ?"}
+{"id": 4655, "vie": "giờ khởi hành của bạn là lúc nào ?", "vsl": "giờ khởi hành bạn lúc ?", "category": "deletion_only", "pred": "Giờ khởi hành của bạn lúc nào là ?"}
+{"id": 4674, "vie": "sẽ không tính phí cà phê của bạn .", "vsl": "tính phí cà phê bạn không", "category": "deletion_reorder", "pred": "Sẽ không phí cà phê của bạn tính ."}
+{"id": 4679, "vie": "tôi không quen với các phòng theo k = phong cách nhật của khách sạn .", "vsl": "tôi quen với phòng theo k = phong cách nhật khách sạn không", "category": "deletion_reorder", "pred": "Tôi không với phòng k = phong cách nhật theo của khách sạn quen ."}
+{"id": 4710, "vie": "Dịch vụ phòng sẽ mang nó lên trong vòng ba mươi phút .", "vsl": "Dịch vụ phòng mang nó lên trong vòng ba mươi phút .", "category": "deletion_only", "pred": "Dịch vụ phòng sẽ nó mang trong vòng ba mươi phút lên ."}
+{"id": 4730, "vie": "vui lòng cho tôi biết số phòng của ngài được không ?", "vsl": "cho tôi biết số phòng ngài được không ?", "category": "deletion_only", "pred": "Vui lòng tôi cho số phòng của ngài biết được không ?"}
+{"id": 4733, "vie": "Dép đi trong khách sạn được đặt bên trong tủ quần áo .", "vsl": "Dép đi trong khách sạn được đặt bên trong tủ quần áo .", "category": "identical", "pred": "Dép trong khách sạn đi được bên trong tủ quần áo đặt ."}
+{"id": 4734, "vie": "Xin vui lòng chỉ sử dụng dép và trang phục yukata trong phòng của bạn .", "vsl": "Xin sử dụng dép trang phục yukata trong phòng bạn .", "category": "deletion_only", "pred": "Vui lòng Xin chỉ dép trang phục trong phòng của bạn yukata sử dụng ."}
+{"id": 4763, "vie": "keiko , bạn vui lòng mang bia cho chúng tôi ngay được không ?", "vsl": "keiko bạn mang bia cho chúng tôi được không ?", "category": "deletion_only", "pred": "Keiko , bạn vui lòng bia cho chúng tôi mang ngay được không ?"}
+{"id": 4778, "vie": "thật không may mắn hôm nay là ngày nghỉ của anh ấy .", "vsl": "thật may mắn hôm nay ngày nghỉ anh không", "category": "deletion_reorder", "pred": "Thật không may mắn hôm nay ngày nghỉ của anh ấy là ."}
+{"id": 4792, "vie": "bạn đã ấn nút gọi cuộc gọi trên máy điện thoại chưa ?", "vsl": "bạn ấn nút gọi cuộc gọi trên máy điện thoại chưa ?", "category": "deletion_only", "pred": "Bạn đã nút cuộc gọi trên máy điện thoại gọi ấn chưa ?"}
+{"id": 4793, "vie": "Có , chắc chắn .", "vsl": "Có chắc chắn .", "category": "deletion_only", "pred": "Chắc chắn Có , ."}
+{"id": 4795, "vie": "Vì vậy , tổng cộng hết bẩy nghìn yên .", "vsl": "Vì vậy tổng cộng hết bẩy nghìn yên .", "category": "deletion_only", "pred": "Vì vậy , bẩy nghìn yên tổng cộng hết ."}
+{"id": 4835, "vie": "ba lá thư và một bưu kiện .", "vsl": "ba lá thư một bưu kiện .", "category": "deletion_only", "pred": "Lá thư ba bưu kiện một ."}
+{"id": 4840, "vie": "bạn đặt phòng cho bao nhiêu người ?", "vsl": "bạn đặt phòng cho bao nhiêu người ?", "category": "identical", "pred": "Bạn phòng cho bao nhiêu người đặt ?"}
+{"id": 4849, "vie": "Tôi sẽ gặp bạn ở sân bay .", "vsl": "Tôi gặp bạn ở sân bay .", "category": "deletion_only", "pred": "Tôi sẽ bạn ở sân bay gặp ."}
+{"id": 4856, "vie": "Ai đấy ?", "vsl": "đấy ai ?", "category": "reorder_only", "pred": "Ai đấy ?"}
+{"id": 4867, "vie": "Chỉ làm việc mà không chơi khiến Jack trở thành một cậu nhóc đần độn .", "vsl": "làm việc mà chơi khiến Jack trở thành một cậu nhóc đần độn không", "category": "deletion_reorder", "pred": "Chỉ việc làm mà không chơi Jack khiến cậu nhóc đần độn một trở thành ."}
+{"id": 4886, "vie": "Nó diễn biến khá tốt .", "vsl": "Nó diễn biến khá tốt .", "category": "identical", "pred": "Nó khá tốt diễn biến ."}
+{"id": 4898, "vie": "Bạn không nên .", "vsl": "Bạn nên không", "category": "deletion_reorder", "pred": "Bạn không nên ."}
+{"id": 4918, "vie": "Tôi không có lý do nào .", "vsl": "Tôi có lý do không", "category": "deletion_reorder", "pred": "Tôi không lý do nào có ."}
+{"id": 4927, "vie": "Ngượng , tất nhiên .", "vsl": "Ngượng tất nhiên .", "category": "deletion_only", "pred": "Ngượng , tất nhiên ."}
+{"id": 4966, "vie": "Quên chuyện đó đi .", "vsl": "Quên chuyện đó đi .", "category": "identical", "pred": "Quên chuyện đó đi ."}
+{"id": 4982, "vie": "Xin hãy chuyển lời nhắn của tôi đến anh ấy .", "vsl": "Xin chuyển lời nhắn tôi đến anh .", "category": "deletion_only", "pred": "Xin hãy lời nhắn của tôi đến anh ấy chuyển ."}
+{"id": 4998, "vie": "Hãy chơi vài trò chơi đi .", "vsl": "chơi vài trò chơi đi .", "category": "deletion_only", "pred": "Hãy vài trò chơi đi chơi ."}
+{"id": 5009, "vie": "Đây là da thật à ?", "vsl": "da thật ?", "category": "deletion_only", "pred": "Đây da thật à là ?"}
+{"id": 5013, "vie": "Tôi không thể chấp nhận một mệnh lệnh như thế .", "vsl": "Tôi không thể chấp nhận một mệnh lệnh như thế .", "category": "identical", "pred": "Tôi không thể mệnh lệnh như thế một chấp nhận ."}
+{"id": 5045, "vie": "Không thể tin được .", "vsl": "Không thể tin được .", "category": "identical", "pred": "Không thể tin được ."}
+{"id": 5052, "vie": "Hãy phục anh ta cẩn thận .", "vsl": "phục anh ta cẩn thận .", "category": "deletion_only", "pred": "Hãy phục anh ta cẩn thận ."}
+{"id": 5053, "vie": "Đó là nguyên nhân rắc rối .", "vsl": "Đó nguyên nhân rắc rối .", "category": "deletion_only", "pred": "Đó nguyên nhân rắc rối là ."}
+{"id": 5058, "vie": "Cái này để ăn ở đây , hay để mang đi ?", "vsl": "Cái ăn ở đây hay mang đi ?", "category": "deletion_only", "pred": "Cái này để ở đây ăn , hay để mang đi ?"}
+{"id": 5069, "vie": "Tôi sẽ để bạn lo phần còn lại .", "vsl": "Tôi bạn lo phần còn .", "category": "deletion_only", "pred": "Tôi sẽ phần còn lại để bạn lo ."}
+{"id": 5088, "vie": "Tôi vô cùng tiếc khi biết điều đó .", "vsl": "Tôi vô cùng tiếc khi biết điều đó .", "category": "identical", "pred": "Tôi vô cùng khi điều đó biết tiếc ."}
+{"id": 5090, "vie": "Chắc chắn rồi , thưa bà .", "vsl": "Chắc chắn rồi bà .", "category": "deletion_only", "pred": "Chắc chắn rồi , bà thưa ."}
+{"id": 5106, "vie": "Hẳn là bạn đang đùa .", "vsl": "Hẳn bạn đùa .", "category": "deletion_only", "pred": "Hẳn bạn đang đùa là ."}
+{"id": 5122, "vie": "Nghe này .", "vsl": "Nghe .", "category": "deletion_only", "pred": "Nghe này ."}
+{"id": 5156, "vie": "hôm nay tôi đang có tâm trạng không tốt .", "vsl": "hôm nay tôi có tâm trạng tốt không", "category": "deletion_reorder", "pred": "Hôm nay tôi đang tâm trạng không tốt có ."}
+{"id": 5201, "vie": "Bạn tôi hình như đã bị một cơn tai biến thế nào đó .", "vsl": "Bạn tôi hình như một cơn tai biến đó .", "category": "deletion_only", "pred": "Bạn tôi hình như đã cơn tai biến thế nào đó một bị ."}
+{"id": 5219, "vie": "Nó không hiếm .", "vsl": "Nó hiếm không", "category": "deletion_reorder", "pred": "Nó không hiếm ."}
+{"id": 5225, "vie": "Bạn có phiền đóng cửa sổ không ?", "vsl": "Bạn có phiền đóng cửa sổ không ?", "category": "identical", "pred": "Bạn có phiền cửa sổ đóng không ?"}
+{"id": 5251, "vie": "Hãy chờ và xem xem .", "vsl": "chờ xem xem .", "category": "deletion_only", "pred": "Hãy chờ xem xem ."}
+{"id": 5253, "vie": "Tôi mệt và chán ngấy nghe điều đó rồi .", "vsl": "Tôi mệt chán ngấy nghe điều đó rồi .", "category": "deletion_only", "pred": "Tôi mệt chán ngấy điều đó rồi nghe ."}
+{"id": 5262, "vie": "Đừng mơ mộng nữa .", "vsl": "Đừng mơ mộng nữa .", "category": "identical", "pred": "Đừng mơ mộng nữa ."}
+{"id": 5272, "vie": "Cửa hàng miễn thuế ở đâu ?", "vsl": "Cửa hàng miễn thuế ở đâu ?", "category": "identical", "pred": "Cửa hàng thuế ở đâu miễn ?"}
+{"id": 5274, "vie": "Anh ấy nói là cái đó chỉ để trưng bày thôi .", "vsl": "Anh nói cái đó trưng bày thôi .", "category": "deletion_only", "pred": "Anh ấy nói là cái đó chỉ để trưng bày thôi ."}
+{"id": 5293, "vie": "Thính giác của tôi tệ đi .", "vsl": "Thính giác tôi tệ đi .", "category": "deletion_only", "pred": "Thính giác của tôi tệ đi ."}
+{"id": 5356, "vie": "Tôi thích sự thích của bạn .", "vsl": "Tôi thích sự thích bạn .", "category": "deletion_only", "pred": "Tôi sự thích của bạn thích ."}
+{"id": 5366, "vie": "Đừng giả ngốc nữa .", "vsl": "Đừng giả ngốc nữa .", "category": "identical", "pred": "Đừng giả ngốc nữa ."}
+{"id": 5367, "vie": "Vâng , như thế sẽ được .", "vsl": "Vâng như được .", "category": "deletion_only", "pred": "Vâng , như thế sẽ được ."}
+{"id": 5376, "vie": "Xin lỗi , nhưng bạn có thể chỉ cho tôi đường đến bến xe buýt không ?", "vsl": "Xin lỗi nhưng bạn có thể cho tôi đường đến bến xe buýt không ?", "category": "deletion_only", "pred": "Xin lỗi , nhưng bạn có thể cho tôi đường đến bến xe buýt chỉ không ?"}
+{"id": 5388, "vie": "Tôi muốn ít sữa trong cà phê của tôi , xin vui lòng .", "vsl": "Tôi muốn ít sữa trong cà phê tôi xin .", "category": "deletion_only", "pred": "Tôi ít sữa trong cà phê của tôi muốn , xin vui lòng ."}
+{"id": 5396, "vie": "Như thế là được rồi .", "vsl": "Như thế được rồi .", "category": "deletion_only", "pred": "Như thế là được rồi ."}
+{"id": 5400, "vie": "Hay quay lại và gặp chúng tôi .", "vsl": "Hay quay gặp chúng tôi .", "category": "deletion_only", "pred": "Hay quay lại chúng tôi gặp ."}
+{"id": 5406, "vie": "Tàu đến Paris khởi hành từ đường ray nào ?", "vsl": "Tàu đến Paris khởi hành từ đường ray ?", "category": "deletion_only", "pred": "Tàu Paris đến từ đường ray nào khởi hành ?"}
+{"id": 5411, "vie": "Tôi không thể đổ lỗi cho bạn .", "vsl": "Tôi không thể đổ lỗi cho bạn .", "category": "identical", "pred": "Tôi không thể lỗi cho bạn đổ ."}
+{"id": 5421, "vie": "Tôi sẽ chưa chắc chắn về nó .", "vsl": "Tôi chưa chắc chắn về nó .", "category": "deletion_only", "pred": "Tôi sẽ chưa về nó chắc chắn ."}
+{"id": 5423, "vie": "Anh ấy hoàn toàn là người xa lạ .", "vsl": "Anh người xa lạ .", "category": "deletion_only", "pred": "Anh ấy hoàn toàn là người xa lạ ."}
+{"id": 5425, "vie": "Nghe giọng bạn như bản thu âm hỏng .", "vsl": "Nghe giọng bạn như bản thu âm hỏng .", "category": "identical", "pred": "Nghe giọng bạn như bản âm hỏng thu ."}
+{"id": 5436, "vie": "Ngu dốt là hạnh phúc .", "vsl": "Ngu dốt hạnh phúc .", "category": "deletion_only", "pred": "Ngu dốt hạnh phúc là ."}
+{"id": 5459, "vie": "Tôi không biết phải xin lỗi thế nào .", "vsl": "Tôi biết phải xin lỗi thế nào không", "category": "deletion_reorder", "pred": "Tôi không biết phải thế nào xin lỗi ."}
+{"id": 5473, "vie": "À , vâng .", "vsl": "vâng .", "category": "deletion_only", "pred": "À , vâng ."}
+{"id": 5477, "vie": "Làm tốt lắm .", "vsl": "Làm tốt .", "category": "deletion_only", "pred": "Tốt lắm Làm ."}
+{"id": 5478, "vie": "Nó tốt .", "vsl": "Nó tốt .", "category": "identical", "pred": "Nó tốt ."}
+{"id": 5483, "vie": "Tôi thực sự xin lỗi .", "vsl": "Tôi thực sự xin lỗi .", "category": "identical", "pred": "Tôi thực sự xin lỗi ."}
+{"id": 5488, "vie": "Tôi đoán là được .", "vsl": "Tôi đoán được .", "category": "deletion_only", "pred": "Tôi đoán là được ."}
+{"id": 5490, "vie": "Bạn làm tôi thất vọng .", "vsl": "Bạn làm tôi thất vọng .", "category": "identical", "pred": "Bạn làm tôi thất vọng ."}
+{"id": 5514, "vie": "Tôi không chịu được cảnh đó .", "vsl": "Tôi chịu được cảnh đó không", "category": "deletion_reorder", "pred": "Tôi không cảnh đó chịu được ."}
+{"id": 5532, "vie": "Tôi chỉ không thể thích anh ta .", "vsl": "Tôi không thể thích anh ta .", "category": "deletion_only", "pred": "Tôi chỉ không thể anh ta thích ."}
+{"id": 5537, "vie": "Tôi muốn cái to .", "vsl": "Tôi muốn cái to .", "category": "identical", "pred": "Tôi cái to muốn ."}
+{"id": 5543, "vie": "Vớ vẩn .", "vsl": "Vớ vẩn .", "category": "identical", "pred": "Vớ vẩn ."}
+{"id": 5545, "vie": "Nó không xảy ra như tôi mong đợi .", "vsl": "Nó xảy ra như tôi mong đợi không", "category": "deletion_reorder", "pred": "Nó không xảy ra như tôi mong đợi ."}
+{"id": 5551, "vie": "Đừng làm quá nó .", "vsl": "Đừng làm quá nó .", "category": "identical", "pred": "Đừng quá nó làm ."}
+{"id": 5567, "vie": "Ngày chưa được quyết định .", "vsl": "Ngày chưa được quyết định .", "category": "identical", "pred": "Ngày chưa được quyết định ."}
+{"id": 5591, "vie": "Điều đó thực sự đánh trúng đích .", "vsl": "Điều đó thực sự đánh trúng đích .", "category": "identical", "pred": "Điều đó thực sự đánh đích trúng ."}
+{"id": 5628, "vie": "Nó có vẻ thật .", "vsl": "Nó có vẻ thật .", "category": "identical", "pred": "Nó có vẻ thật ."}
+{"id": 5656, "vie": "không có cách nào khác ngoài làm việc đó .", "vsl": "có cách khác ngoài làm việc đó không", "category": "deletion_reorder", "pred": "Không cách nào khác ngoài việc đó làm có ."}
+{"id": 5666, "vie": "Bạn thật tốt khi nói thế .", "vsl": "Bạn thật tốt khi nói .", "category": "deletion_only", "pred": "Bạn thật tốt khi thế nói ."}
+{"id": 5668, "vie": "Tôi muốn một ghế cạnh cửa sổ , xin vui lòng .", "vsl": "Tôi muốn một ghế cạnh cửa sổ xin .", "category": "deletion_only", "pred": "Tôi ghế cạnh cửa sổ một muốn , xin vui lòng ."}
+{"id": 5681, "vie": "Không , cám ơn .", "vsl": "cám ơn không", "category": "deletion_reorder", "pred": "Không , cám ơn ."}
+{"id": 5704, "vie": "Tôi lại làm thế rồi .", "vsl": "Tôi làm rồi .", "category": "deletion_only", "pred": "Tôi lại thế rồi làm ."}
+{"id": 5725, "vie": "Tôi nghĩ bạn gọi nhầm số rồi .", "vsl": "Tôi nghĩ bạn gọi nhầm số rồi .", "category": "identical", "pred": "Tôi nghĩ bạn gọi số nhầm rồi ."}
+{"id": 5726, "vie": "Tôi không thể đòi hỏi gì hơn .", "vsl": "Tôi không thể đòi hỏi hơn gì", "category": "deletion_reorder", "pred": "Tôi không thể đòi hỏi gì hơn ."}
+{"id": 5737, "vie": "Tôi thực sự rất tiếc khi biết điều đó .", "vsl": "Tôi thực sự tiếc khi biết điều đó .", "category": "deletion_only", "pred": "Tôi thực sự khi điều đó biết tiếc ."}
+{"id": 5748, "vie": "Trông nó thật .", "vsl": "Trông nó thật .", "category": "identical", "pred": "Nó Trông thật ."}
+{"id": 5761, "vie": "Bạn thật đần độn .", "vsl": "Bạn thật đần độn .", "category": "identical", "pred": "Bạn thật đần độn ."}
+{"id": 5772, "vie": "Có đúng không ?", "vsl": "Có đúng không ?", "category": "identical", "pred": "Đúng không Có ?"}
+{"id": 5794, "vie": "Đừng nói với ai không ?", "vsl": "Đừng nói với không ?", "category": "deletion_only", "pred": "Đừng với ai nói không ?"}
+{"id": 5811, "vie": "Không phải lần nữa .", "vsl": "phải lần nữa không", "category": "deletion_reorder", "pred": "Không phải lần nữa ."}
+{"id": 5814, "vie": "Tôi hi vọng bạn thích nó .", "vsl": "Tôi hi vọng bạn thích nó .", "category": "identical", "pred": "Tôi hi vọng bạn nó thích ."}
+{"id": 5817, "vie": "Vâng , như thế sẽ rất tốt .", "vsl": "Vâng như tốt .", "category": "deletion_only", "pred": "Vâng , như thế sẽ tốt ."}
+{"id": 5821, "vie": "Bạn vừa kịp giờ .", "vsl": "Bạn vừa kịp giờ .", "category": "identical", "pred": "Bạn vừa kịp giờ ."}
+{"id": 5872, "vie": "Đừng quá tuyệt vọng .", "vsl": "Đừng quá tuyệt vọng .", "category": "identical", "pred": "Đừng quá tuyệt vọng ."}
+{"id": 5880, "vie": "Mọi thứ đều tồi tệ với tôi trong tuần này .", "vsl": "thứ đều tồi tệ với tôi trong tuần .", "category": "deletion_only", "pred": "Mọi thứ đều tồi tệ với tôi trong tuần này ."}
+{"id": 5889, "vie": "Kenta có ở đó không ?", "vsl": "Kenta có ở đó không ?", "category": "identical", "pred": "Kenta có đó ở không ?"}
+{"id": 5891, "vie": "Dự báo thời tiết nói rằng trời sẽ đẹp nhưng có chút mây sau ngày mai .", "vsl": "Dự báo thời tiết nói rằng trời đẹp nhưng có chút mây sau ngày mai .", "category": "deletion_only", "pred": "Thời tiết Dự báo nói rằng trời sẽ đẹp nhưng chút mây sau ngày mai có ."}
+{"id": 5919, "vie": "Kế hoạch hoạt động rất tốt .", "vsl": "Kế hoạch hoạt động tốt .", "category": "deletion_only", "pred": "Kế hoạch hoạt động tốt ."}
+{"id": 5922, "vie": "Tôi sẽ mua cả hai chúng .", "vsl": "Tôi mua hai chúng .", "category": "deletion_only", "pred": "Tôi sẽ cả hai chúng mua ."}
+{"id": 5925, "vie": "Đó chỉ là một giót nước trong đại dương .", "vsl": "Đó một giót nước trong đại dương .", "category": "deletion_only", "pred": "Đó chỉ giót nước trong đại dương một là ."}
+{"id": 5930, "vie": "Bạn nên từ bỏ việc hút thuốc .", "vsl": "Bạn nên từ bỏ việc hút thuốc .", "category": "identical", "pred": "Bạn nên việc thuốc hút từ bỏ ."}
+{"id": 5942, "vie": "Ăn tối với tôi nhé ?", "vsl": "Ăn tối với tôi ?", "category": "deletion_only", "pred": "Với tôi Ăn tối nhé ?"}
+{"id": 5979, "vie": "Tôi đang cô gắng giảm cân .", "vsl": "Tôi cô gắng giảm cân .", "category": "deletion_only", "pred": "Tôi đang cô gắng giảm cân ."}
+{"id": 5981, "vie": "Bạn dường như bị đánh bại .", "vsl": "Bạn dường như đánh bại .", "category": "deletion_only", "pred": "Bạn dường như bị đánh bại ."}
+{"id": 5986, "vie": "Đó là điều tất nhiên .", "vsl": "Đó điều tất nhiên .", "category": "deletion_only", "pred": "Đó điều tất nhiên là ."}
+{"id": 5990, "vie": "Vào vị trí của bạn , chuẩn bị , đi thôi .", "vsl": "Vào vị trí bạn chuẩn bị đi thôi .", "category": "deletion_only", "pred": "Vào vị trí của bạn , chuẩn bị , đi thôi ."}
+{"id": 6002, "vie": "Đó là một lời tuyên bố khá khó chịu .", "vsl": "Đó một lời tuyên bố khá khó chịu .", "category": "deletion_only", "pred": "Đó lời tuyên bố khá khó chịu một là ."}
+{"id": 6007, "vie": "Tôi sẽ tha thứ cho bạn chỉ lần này thôi .", "vsl": "Tôi tha thứ cho bạn lần thôi .", "category": "deletion_only", "pred": "Tôi sẽ cho bạn tha thứ lần này chỉ thôi ."}
+{"id": 6018, "vie": "Bạn đang cố gắng nói cái gì thế ?", "vsl": "Bạn cố gắng nói cái gì ?", "category": "deletion_only", "pred": "Bạn đang cái gì thế cố gắng nói ?"}
+{"id": 6024, "vie": "Phàn nàn không giúp được gì .", "vsl": "Phàn nàn giúp được gì", "category": "deletion_only", "pred": "Phàn nàn không gì giúp được ."}
+{"id": 6044, "vie": "Đó là một chuyến đi tệ .", "vsl": "Đó một chuyến đi tệ .", "category": "deletion_only", "pred": "Đó chuyến đi tệ một là ."}
+{"id": 6047, "vie": "Điều tồi tệ nhất cuối cùng đã qua .", "vsl": "Điều tồi tệ nhất cuối cùng qua .", "category": "deletion_only", "pred": "Điều tồi tệ nhất cuối cùng đã qua ."}
+{"id": 6048, "vie": "Có gì không ổn với con của tôi .", "vsl": "Có ổn với con tôi không", "category": "deletion_reorder", "pred": "Gì không Có ổn với con của tôi ."}
+{"id": 6064, "vie": "Không có câu trả lời .", "vsl": "có câu trả lời không", "category": "deletion_reorder", "pred": "Không câu trả lời có ."}
+{"id": 6077, "vie": "Bạn sẽ để mắt tới túi của tôi một lúc nhé ?", "vsl": "Bạn để mắt tới túi tôi một lúc ?", "category": "deletion_only", "pred": "Bạn sẽ tới túi của tôi lúc một để mắt nhé ?"}
+{"id": 6089, "vie": "Im lặng .", "vsl": "Im lặng .", "category": "identical", "pred": "Im lặng ."}
+{"id": 6093, "vie": "Bạn trơ tráo thật .", "vsl": "Bạn trơ tráo thật .", "category": "identical", "pred": "Bạn trơ tráo thật ."}
+{"id": 6094, "vie": "Anh ấy là một chàng trài đáng ghét .", "vsl": "Anh một chàng trài đáng ghét .", "category": "deletion_only", "pred": "Anh ấy chàng trài đáng ghét một là ."}
+{"id": 6097, "vie": "Bạn không biết bất cứ điều gì cả .", "vsl": "Bạn biết bất cứ điều gì", "category": "deletion_only", "pred": "Bạn không bất cứ điều gì cả biết ."}
+{"id": 6098, "vie": "Gọi xe cứu thương ngay .", "vsl": "Gọi xe cứu thương .", "category": "deletion_only", "pred": "Xe Gọi cứu thương ngay ."}
+{"id": 6135, "vie": "Ga tàu gần nhất ở đâu ?", "vsl": "Ga tàu gần nhất ở đâu ?", "category": "identical", "pred": "Ga tàu gần nhất ở đâu ?"}
+{"id": 6143, "vie": "Bạn có thể nói cái đó như thế nào ?", "vsl": "Bạn có thể nói cái đó như thế nào ?", "category": "identical", "pred": "Bạn có thể cái đó nói như thế nào ?"}
+{"id": 6163, "vie": "Chúng ta là cặp đôi hoàn hảo .", "vsl": "Chúng ta cặp đôi hoàn hảo .", "category": "deletion_only", "pred": "Chúng ta cặp đôi hoàn hảo là ."}
+{"id": 6169, "vie": "Coi chừng cho anh ta .", "vsl": "Coi chừng cho anh ta .", "category": "identical", "pred": "Cho anh ta Coi chừng ."}
+{"id": 6173, "vie": "Bạn có thể nói không ?", "vsl": "Bạn có thể nói không ?", "category": "identical", "pred": "Bạn có thể nói không ?"}
+{"id": 6214, "vie": "Cái đó chỉ là một giọt nước trong đại dương .", "vsl": "Cái đó một giọt nước trong đại dương .", "category": "deletion_only", "pred": "Cái đó chỉ giọt nước trong đại dương một là ."}
+{"id": 6218, "vie": "Bạn vẫn xanh xao lắm .", "vsl": "Bạn xanh xao .", "category": "deletion_only", "pred": "Bạn vẫn xanh xao lắm ."}
+{"id": 6220, "vie": "Hoan nghênh đến nhà chúng tôi .", "vsl": "Hoan nghênh đến nhà chúng tôi .", "category": "identical", "pred": "Đến nhà chúng tôi Hoan nghênh ."}
+{"id": 6235, "vie": "Cảnh giác .", "vsl": "Cảnh giác .", "category": "identical", "pred": "Cảnh giác ."}
+{"id": 6241, "vie": "Thử nó xem .", "vsl": "Thử nó xem .", "category": "identical", "pred": "Thử nó xem ."}
+{"id": 6246, "vie": "Tôi nên gọi bạn là gì ?", "vsl": "Tôi nên gọi bạn gì ?", "category": "deletion_only", "pred": "Tôi nên bạn gọi là gì ?"}
+{"id": 6255, "vie": "Tôi có thể xem những thứ rẻ không ?", "vsl": "Tôi có thể xem thứ rẻ không ?", "category": "deletion_only", "pred": "Tôi có thể thứ rẻ xem không ?"}
+{"id": 6270, "vie": "Tôi xin lỗi tôi không thể hiểu bạn nói cái gì .", "vsl": "Tôi xin lỗi tôi không thể hiểu bạn nói cái gì", "category": "deletion_only", "pred": "Tôi tôi xin lỗi không thể hiểu bạn cái gì nói ."}
+{"id": 6302, "vie": "Không , tôi không vậy .", "vsl": "tôi không", "category": "deletion_only", "pred": "Không , tôi không vậy ."}
+{"id": 6320, "vie": "Đừng dùng những từ khắc nghiệt như vậy .", "vsl": "Đừng dùng từ khắc nghiệt như .", "category": "deletion_only", "pred": "Đừng từ khắc nghiệt như vậy dùng ."}
+{"id": 6338, "vie": "Tôi không đi chơi cùng với mẹ .", "vsl": "Tôi đi chơi cùng với mẹ không .", "category": "reorder_only", "pred": "Tôi không đi cùng với mẹ chơi ."}
+{"id": 6358, "vie": "Tôi đã có được bạn .", "vsl": "Tôi có được bạn .", "category": "deletion_only", "pred": "Tôi đã bạn có được ."}
+{"id": 6370, "vie": "Cách đó không hoạt động .", "vsl": "Cách đó hoạt động không", "category": "deletion_reorder", "pred": "Cách đó không hoạt động ."}
+{"id": 6399, "vie": "Bạn muốn tôi làm gì ?", "vsl": "Bạn muốn tôi làm gì ?", "category": "identical", "pred": "Bạn muốn tôi làm gì ?"}
+{"id": 6422, "vie": "Đừng vội .", "vsl": "Đừng vội .", "category": "identical", "pred": "Đừng vội ."}
+{"id": 6424, "vie": "Tôi có cần đặt chỗ không ?", "vsl": "Tôi có đặt chỗ không ?", "category": "deletion_only", "pred": "Tôi có cần chỗ đặt không ?"}
+{"id": 6427, "vie": "Bạn biết điều đó .", "vsl": "Bạn biết điều đó .", "category": "identical", "pred": "Bạn điều đó biết ."}
+{"id": 6434, "vie": "Chúng ta sẽ hạ cánh tại sân bay quốc tế Narita trong năm phút nữa .", "vsl": "Chúng ta hạ cánh sân bay quốc tế Narita trong năm phút nữa .", "category": "deletion_only", "pred": "Chúng ta sẽ tại sân bay quốc tế Narita trong phút nữa năm hạ cánh ."}
+{"id": 6453, "vie": "Để xem kết quả thế nào trong một lúc đã .", "vsl": "xem kết quả trong một lúc .", "category": "deletion_only", "pred": "Để kết quả thế nào trong lúc một xem đã ."}
+{"id": 6474, "vie": "Bạn có hiểu không ?", "vsl": "Bạn có hiểu không ?", "category": "identical", "pred": "Bạn có hiểu không ?"}
+{"id": 6512, "vie": "Tôi biết ý bạn là gì .", "vsl": "Tôi biết ý bạn gì", "category": "deletion_only", "pred": "Tôi biết ý bạn là gì ."}
+{"id": 6537, "vie": "Nó đã xảy ra đúng như tôi nghĩ nó sẽ như vậy .", "vsl": "Nó xảy ra đúng như tôi nghĩ nó như vậy .", "category": "deletion_only", "pred": "Nó đã đúng như tôi nghĩ nó sẽ như vậy xảy ra ."}
+{"id": 6542, "vie": "Coi chừng .", "vsl": "Coi chừng .", "category": "identical", "pred": "Coi chừng ."}
+{"id": 6552, "vie": "Bạn đổi cái này ra đô la nhé ?", "vsl": "Bạn đổi cái ra đô la ?", "category": "deletion_only", "pred": "Bạn cái này đổi đô la ra nhé ?"}
+{"id": 6553, "vie": "Tôi có thể nhận biên lai không ?", "vsl": "Tôi có thể nhận biên lai không ?", "category": "identical", "pred": "Tôi có thể biên lai nhận không ?"}
+{"id": 6559, "vie": "Coi chừng ngã .", "vsl": "Coi chừng ngã .", "category": "identical", "pred": "Coi chừng ngã ."}
+{"id": 6569, "vie": "Tôi muốn trà chanh .", "vsl": "Tôi muốn trà chanh .", "category": "identical", "pred": "Tôi trà chanh muốn ."}
+{"id": 6588, "vie": "Hãy đợi và gặp nhau một lúc nhé .", "vsl": "đợi gặp nhau một lúc .", "category": "deletion_only", "pred": "Hãy đợi lúc một gặp nhau nhé ."}
+{"id": 6591, "vie": "Hãy chia nó năm mươi- năm mươi .", "vsl": "chia nó năm mươi- năm mươi .", "category": "deletion_only", "pred": "Hãy nó năm mươi- năm mươi chia ."}
+{"id": 6601, "vie": "Tôi không thể hiểu đầu đuôi ngoài những điều anh ấy nói .", "vsl": "Tôi không thể hiểu đầu đuôi ngoài điều anh nói .", "category": "deletion_only", "pred": "Tôi không thể hiểu ngoài điều anh ấy nói đầu đuôi ."}
+{"id": 6603, "vie": "Đó chỉ là vấn đề thời gian .", "vsl": "Đó vấn đề thời gian .", "category": "deletion_only", "pred": "Đó chỉ vấn đề thời gian là ."}
+{"id": 6612, "vie": "Bạn cho tôi ví dụ nhé ?", "vsl": "Bạn cho tôi ví dụ ?", "category": "deletion_only", "pred": "Bạn tôi ví dụ nhé cho ?"}
+{"id": 6614, "vie": "Tự tôi phải dọn à ?", "vsl": "Tự tôi phải dọn ?", "category": "deletion_only", "pred": "Tự tôi phải dọn à ?"}
+{"id": 6616, "vie": "Tôi rất vui khi tôi có thể giúp bạn .", "vsl": "Tôi vui khi tôi có thể giúp bạn .", "category": "deletion_only", "pred": "Tôi vui khi tôi có thể bạn giúp ."}
+{"id": 6619, "vie": "Tôi không có thời gian .", "vsl": "Tôi có thời gian không", "category": "deletion_reorder", "pred": "Tôi không thời gian có ."}
+{"id": 6667, "vie": "Tôi biết hơn rồi .", "vsl": "Tôi biết hơn rồi .", "category": "identical", "pred": "Tôi biết hơn rồi ."}
+{"id": 6675, "vie": "Tàu này dừng ở đâu ?", "vsl": "Tàu dừng ở đâu ?", "category": "deletion_only", "pred": "Tàu này ở đâu dừng ?"}
+{"id": 6688, "vie": "Cảm ơn rất nhiều về bữa tối tuyệt vời của bạn tối nay .", "vsl": "Cảm ơn nhiều về bữa tối tuyệt vời bạn tối nay .", "category": "deletion_only", "pred": "Cảm ơn nhiều về bữa tối tuyệt vời của bạn tối nay ."}
+{"id": 6700, "vie": "Đây là thảm họa .", "vsl": "thảm họa .", "category": "deletion_only", "pred": "Đây thảm họa là ."}
+{"id": 6705, "vie": "Mẹ của tôi muốn nói lời chào với bạn .", "vsl": "Mẹ tôi muốn nói lời chào với bạn .", "category": "deletion_only", "pred": "Mẹ của tôi muốn lời chào với bạn nói ."}
+{"id": 6723, "vie": "Khi nào tôi phải nộp báo cáo ?", "vsl": "Khi tôi phải nộp báo cáo ?", "category": "deletion_only", "pred": "Khi nào tôi phải nộp báo cáo ?"}
+{"id": 6725, "vie": "Có chuyện gì với thế giới này vậy .", "vsl": "Có chuyện với thế giới gì", "category": "deletion_reorder", "pred": "Chuyện gì với thế giới này vậy Có ."}
+{"id": 6732, "vie": "Tôi không thể hiểu được nó .", "vsl": "Tôi không thể hiểu được nó .", "category": "identical", "pred": "Tôi không thể nó hiểu được ."}
+{"id": 6750, "vie": "Tôi được giới thiệu với bạn mới một lúc sau bữa tiệc khác .", "vsl": "Tôi được giới thiệu với bạn một lúc sau bữa tiệc khác .", "category": "deletion_only", "pred": "Tôi được với bạn mới một lúc sau bữa tiệc khác giới thiệu ."}
+{"id": 6756, "vie": "Bạn nên giải quyết tất cả mọi thứ .", "vsl": "Bạn nên giải quyết tất cả thứ .", "category": "deletion_only", "pred": "Bạn nên tất cả mọi thứ giải quyết ."}
+{"id": 6763, "vie": "Ngân hàng Mỹ ở phố kế tiếp .", "vsl": "Ngân hàng Mỹ ở phố kế tiếp .", "category": "identical", "pred": "Ngân hàng Mỹ ở phố kế tiếp ."}
+{"id": 6773, "vie": "Nhà tôi nằm giữa New York và Boston .", "vsl": "Nhà tôi nằm giữa New York Boston .", "category": "deletion_only", "pred": "Nhà tôi giữa New York Boston nằm ."}
+{"id": 6774, "vie": "Vâng , tôi gửi hai mươi nghìn yên mỗi tháng để mua ô tô .", "vsl": "Vâng tôi gửi hai mươi nghìn yên tháng mua ô tô .", "category": "deletion_only", "pred": "Vâng , tôi gửi nghìn yên tháng mỗi để ô tô mua hai mươi ."}
+{"id": 6787, "vie": "Tôi có thể đỗ ở đây vài phút không ?", "vsl": "Tôi có thể đỗ ở đây vài phút không ?", "category": "identical", "pred": "Tôi có thể ở đây vài phút đỗ không ?"}
+{"id": 6792, "vie": "Chúng tôi nên làm gì ?", "vsl": "Chúng tôi nên làm gì ?", "category": "identical", "pred": "Chúng tôi nên làm gì ?"}
+{"id": 6794, "vie": "Nó không phải là chim nhỏ phải không ?", "vsl": "chim nhỏ phải không ?", "category": "deletion_only", "pred": "Nó không phải chim nhỏ phải không là ?"}
+{"id": 6809, "vie": "Anh ấy yêu cầu tôi làm việc quá giờ .", "vsl": "Anh yêu cầu tôi làm việc quá giờ .", "category": "deletion_only", "pred": "Anh ấy tôi yêu cầu việc quá giờ làm ."}
+{"id": 6813, "vie": "Và tin tốt là gì ?", "vsl": "Và tin tốt gì ?", "category": "deletion_only", "pred": "Tin tốt là gì ?"}
+{"id": 6854, "vie": "Bạn sẽ gói quà này nhé ?", "vsl": "Bạn gói quà ?", "category": "deletion_only", "pred": "Bạn sẽ quà này gói nhé ?"}
+{"id": 6886, "vie": "Một vấn đề phát sinh và tôi không thể đến và gặp bạn .", "vsl": "Một vấn đề phát sinh tôi không thể đến gặp bạn .", "category": "deletion_only", "pred": "Vấn đề Một phát sinh tôi không thể đến bạn gặp ."}
+{"id": 6888, "vie": "Bạn đã hoàn thành xong bài kiểm tra giữa kỳ chưa ?", "vsl": "Bạn hoàn thành xong bài kiểm tra giữa kỳ chưa ?", "category": "deletion_only", "pred": "Bạn đã bài kiểm tra giữa kỳ hoàn thành xong chưa ?"}
+{"id": 6905, "vie": "Đừng mất bình tĩnh .", "vsl": "Đừng mất bình tĩnh .", "category": "identical", "pred": "Đừng bình tĩnh mất ."}
+{"id": 6933, "vie": "Ô , chắc là tôi đã đến đây , tin bạn tôi đi .", "vsl": "Ô tôi đến đây tin bạn tôi đi .", "category": "deletion_only", "pred": "Ô , chắc là tôi đã đây đến , bạn tôi tin đi ."}
+{"id": 6945, "vie": "Nếu bạn để giá quá cao nó sẽ không bán được .", "vsl": "bạn giá quá cao nó bán được không", "category": "deletion_reorder", "pred": "Nếu bạn giá quá cao để nó sẽ không bán được ."}
+{"id": 6956, "vie": "Đó là vi chúng tôi có ít đất nhưng dân số lớn .", "vsl": "Đó vi chúng tôi có ít đất nhưng dân số lớn .", "category": "deletion_only", "pred": "Đó là vi chúng tôi ít đất có nhưng dân số lớn ."}
+{"id": 6960, "vie": "Đừng quên viết khi bạn có cơ hội nhé .", "vsl": "Đừng quên viết khi bạn có cơ hội .", "category": "deletion_only", "pred": "Đừng quên khi bạn cơ hội có nhé viết ."}
+{"id": 6965, "vie": "Tôi không có ý làm nó .", "vsl": "Tôi có ý làm nó không", "category": "deletion_reorder", "pred": "Tôi không ý nó làm có ."}
+{"id": 6974, "vie": "Đó là đô la .", "vsl": "đô la .", "category": "deletion_only", "pred": "Đó đô la là ."}
+{"id": 6977, "vie": "Không phải tôi .", "vsl": "phải tôi không", "category": "deletion_reorder", "pred": "Không phải tôi ."}
+{"id": 6982, "vie": "Không , tôi quên rồi .", "vsl": "tôi quên rồi không", "category": "deletion_reorder", "pred": "Không , tôi quên rồi ."}
+{"id": 6984, "vie": "Tôi sẽ gọi cho bạn trước khi tôi đến .", "vsl": "Tôi gọi cho bạn trước khi tôi đến .", "category": "deletion_only", "pred": "Tôi sẽ cho bạn trước khi tôi đến gọi ."}
+{"id": 6989, "vie": "Tôi đã đến đây , nhờ cậy bạn bè mình .", "vsl": "Tôi đến đây nhờ cậy bạn bè mình .", "category": "deletion_only", "pred": "Tôi đã đây đến , bạn bè mình nhờ cậy ."}
+{"id": 6994, "vie": "Chúng ta phải chuẩn bị thể lực tốt trước khi chúng ta tiếp tục chuyến đi .", "vsl": "Chúng ta phải chuẩn bị thể lực tốt trước khi chúng ta tiếp tục chuyến đi .", "category": "identical", "pred": "Chúng ta phải thể lực tốt trước khi chúng ta chuyến đi tiếp tục chuẩn bị ."}
+{"id": 7009, "vie": "Đó là lý do tại sao còi kêu .", "vsl": "Đó lý do tại sao còi kêu .", "category": "deletion_only", "pred": "Đó lý do tại sao còi kêu là ."}
+{"id": 7025, "vie": "Sau hai năm ở Mỹ , cuối cùng tôi đã trở nên quen với cuộc sống ở đất nước này .", "vsl": "Sau hai năm ở Mỹ cuối cùng tôi trở nên quen với cuộc sống ở đất nước .", "category": "deletion_only", "pred": "Sau năm ở Mỹ hai , cuối cùng tôi đã với cuộc sống ở đất nước này trở nên quen ."}
+{"id": 7026, "vie": "Tôi không thể viết một báo cáo tốt bởi vì tiếng ồn của đường phố là phiền tôi .", "vsl": "Tôi không thể viết một báo cáo tốt bởi vì tiếng ồn đường phố phiền tôi .", "category": "deletion_only", "pred": "Tôi không thể báo cáo tốt bởi vì tiếng ồn của đường phố phiền tôi là một viết ."}
+{"id": 7028, "vie": "Trà đạo bao gồm các quy định đặc biệt về uống trà .", "vsl": "Trà đạo bao gồm quy định đặc biệt về uống trà .", "category": "deletion_only", "pred": "Trà đạo quy định đặc biệt về trà uống bao gồm ."}
+{"id": 7042, "vie": "Bạn sẽ nhanh chóng cài đặt điện thoại ở nhà tôi nhé ?", "vsl": "Bạn nhanh chóng cài đặt điện thoại ở nhà tôi ?", "category": "deletion_only", "pred": "Bạn sẽ nhanh chóng điện thoại ở nhà tôi cài đặt nhé ?"}
+{"id": 7050, "vie": "Tôi e rằng tôi đã bị lừa .", "vsl": "Tôi e rằng tôi lừa .", "category": "deletion_only", "pred": "Tôi e rằng tôi đã bị lừa ."}
+{"id": 7062, "vie": "Tôi sẽ cố .", "vsl": "Tôi cố .", "category": "deletion_only", "pred": "Tôi sẽ cố ."}
+{"id": 7084, "vie": "Nó sẽ làm tổn hại không thể cứu được đến sự nghiệp chính trị của anh Yano .", "vsl": "tổn hại cứu đến sự nghiệp chính trị anh Yano không .", "category": "deletion_reorder", "pred": "Nó sẽ làm tổn hại không thể đến sự nghiệp chính trị của anh Yano cứu được ."}
+{"id": 7089, "vie": "Bạn gọi gì ạ ?", "vsl": "Bạn gọi gì ?", "category": "deletion_only", "pred": "Bạn gọi gì ạ ?"}
+{"id": 7107, "vie": "Tôi đã xong chúng ngày kìa rồi .", "vsl": "Tôi xong chúng ngày kìa rồi .", "category": "deletion_only", "pred": "Tôi đã xong chúng ngày kìa rồi ."}
+{"id": 7114, "vie": "Ấn tượng của bạn là gì đối với bản báo cáo tạm thời này ?", "vsl": "Ấn tượng bạn đối với bản báo cáo tạm thời gì ?", "category": "deletion_reorder", "pred": "Ấn tượng của bạn gì đối với bản báo cáo tạm thời này là ?"}
+{"id": 7121, "vie": "Đừng nói chuyện vô nghĩa nữa .", "vsl": "Đừng nói chuyện vô nghĩa nữa .", "category": "identical", "pred": "Đừng chuyện vô nghĩa nói nữa ."}
+{"id": 7140, "vie": "Bạn không học đủ chăm khi bạn là sinh viên .", "vsl": "Bạn học đủ chăm khi bạn sinh viên không", "category": "deletion_reorder", "pred": "Bạn không đủ chăm khi bạn sinh viên là học ."}
+{"id": 7142, "vie": "Áo kẻ sóc hợp với bạn .", "vsl": "Áo kẻ sóc hợp với bạn .", "category": "identical", "pred": "Áo kẻ sóc với bạn hợp ."}
+{"id": 7143, "vie": "Anh ấy là một người nói chuyện lém lỉnh nhưng anh ấy không làm việc cẩu thả .", "vsl": "Anh một người nói chuyện lém lỉnh nhưng anh làm việc cẩu thả không", "category": "deletion_reorder", "pred": "Anh ấy người chuyện lém lỉnh nói một là nhưng anh ấy không việc cẩu thả làm ."}
+{"id": 7168, "vie": "Đề xuất của Tom bị bác bỏ .", "vsl": "Đề xuất Tom bác bỏ .", "category": "deletion_only", "pred": "Đề xuất của Tom bị bác bỏ ."}
+{"id": 7172, "vie": "Bởi vì cân nặng nên hộp các tông bị nghiền nát .", "vsl": "Bởi vì cân nặng nên hộp các tông nghiền nát .", "category": "deletion_only", "pred": "Bởi vì cân nặng nên hộp các tông bị nghiền nát ."}
+{"id": 7179, "vie": "Đây là phòng ba lẻ ba .", "vsl": "phòng ba lẻ ba .", "category": "deletion_only", "pred": "Đây phòng lẻ ba ba là ."}
+{"id": 7182, "vie": "Tôi đã làm vỡ cửa sổ .", "vsl": "Tôi làm vỡ cửa sổ .", "category": "deletion_only", "pred": "Tôi đã làm cửa sổ vỡ ."}
+{"id": 7183, "vie": "Hôm qua tôi đã gặp Loretta .", "vsl": "Hôm qua tôi gặp Loretta .", "category": "deletion_only", "pred": "Hôm qua tôi đã Loretta gặp ."}
+{"id": 7185, "vie": "Xin lỗi , tất cả là lỗi của tôi .", "vsl": "Xin lỗi tất cả lỗi tôi .", "category": "deletion_only", "pred": "Xin lỗi , tất cả lỗi của tôi là ."}
+{"id": 7189, "vie": "Nếu bạn bơ anh ta , anh ta sẽ sớm đi .", "vsl": "bạn bơ anh ta anh ta sớm đi .", "category": "deletion_only", "pred": "Nếu bạn anh ta bơ , anh ta sẽ sớm đi ."}
+{"id": 7208, "vie": "Gặp bạn sau nhé .", "vsl": "Gặp bạn sau .", "category": "deletion_only", "pred": "Bạn Gặp sau nhé ."}
+{"id": 7212, "vie": "Trước hết là , cô ấy tùy tiện về việc đúng giờ .", "vsl": "Trước hết cô tùy tiện về việc đúng giờ .", "category": "deletion_only", "pred": "Trước hết là , cô ấy về việc đúng giờ tùy tiện ."}
+{"id": 7213, "vie": "Hãy quên đi những thứ đã xảy ra .", "vsl": "quên đi thứ xảy ra .", "category": "deletion_only", "pred": "Hãy thứ đã xảy ra quên đi ."}
+{"id": 7225, "vie": "Ồ , vâng .", "vsl": "vâng .", "category": "deletion_only", "pred": "Ồ , vâng ."}
+{"id": 7227, "vie": "Bạn sẽ cắm dây vào ổ cắm này nhé ?", "vsl": "Bạn cắm dây vào ổ cắm ?", "category": "deletion_only", "pred": "Bạn sẽ dây vào ổ cắm này cắm nhé ?"}
+{"id": 7253, "vie": "Có gì xảy ra với bạn à ?", "vsl": "Có xảy ra với bạn gì ?", "category": "deletion_reorder", "pred": "Có gì với bạn xảy ra à ?"}
+{"id": 7271, "vie": "Bạn đã ăn trưa chưa ?", "vsl": "Bạn ăn trưa chưa ?", "category": "deletion_only", "pred": "Bạn đã trưa ăn chưa ?"}
+{"id": 7279, "vie": "Họ sản xuất cái gì trong khu vực này của đất nước ?", "vsl": "Họ sản xuất cái trong khu vực đất nước gì ?", "category": "deletion_reorder", "pred": "Họ cái gì trong khu vực này của đất nước sản xuất ?"}
+{"id": 7287, "vie": "Anh ấy chưa bao giờ gặp nguy hiểm .", "vsl": "Anh chưa bao giờ gặp nguy hiểm .", "category": "deletion_only", "pred": "Anh ấy chưa bao giờ nguy hiểm gặp ."}
+{"id": 7318, "vie": "Bạn không sao chứ ?", "vsl": "Bạn sao không ?", "category": "deletion_reorder", "pred": "Bạn không sao chứ ?"}
+{"id": 7321, "vie": "Chúc mừng sinh nhật .", "vsl": "Chúc mừng sinh nhật .", "category": "identical", "pred": "Chúc mừng sinh nhật ."}
+{"id": 7328, "vie": "Chiếc ô màu đỏ đó rất là xấu .", "vsl": "Chiếc ô màu đỏ xấu .", "category": "deletion_only", "pred": "Chiếc ô màu đỏ đó xấu là ."}
+{"id": 7340, "vie": "Tôi hết tiền .", "vsl": "Tôi hết tiền .", "category": "identical", "pred": "Tôi tiền hết ."}
+{"id": 7360, "vie": "Tôi đang cố .", "vsl": "Tôi cố .", "category": "deletion_only", "pred": "Tôi đang cố ."}
+{"id": 7367, "vie": "Tối nay tôi sẽ nấu món ăn Nhật .", "vsl": "Tối nay tôi nấu món ăn Nhật .", "category": "deletion_only", "pred": "Tối nay tôi sẽ món ăn Nhật nấu ."}
+{"id": 7369, "vie": "Đừng hỏi tôi tại sao .", "vsl": "Đừng hỏi tôi tại sao .", "category": "identical", "pred": "Đừng tôi hỏi tại sao ."}
+{"id": 7395, "vie": "Mọi thứ dường như khá đơn giản .", "vsl": "thứ dường như khá đơn giản .", "category": "deletion_only", "pred": "Mọi thứ dường như khá đơn giản ."}
+{"id": 7403, "vie": "Bạn có thể giúp tôi một tay di chuyển đàn piano này không ?", "vsl": "Bạn có thể giúp tôi một tay di chuyển đàn piano không ?", "category": "deletion_only", "pred": "Bạn có thể tôi tay đàn piano này di chuyển một giúp không ?"}
+{"id": 7404, "vie": "Nó không có nhiều sự khác biệt nào mà bạn chọn .", "vsl": "Nó có nhiều sự khác biệt mà bạn chọn không", "category": "deletion_reorder", "pred": "Nó không nhiều sự khác biệt nào mà bạn chọn có ."}
+{"id": 7412, "vie": "Hôm nay hoa quả nào rẻ nhất ?", "vsl": "Hôm nay hoa quả rẻ nhất ?", "category": "deletion_only", "pred": "Hôm nay hoa quả nào rẻ nhất ?"}
+{"id": 7430, "vie": "Anh ấy lại đến muộn à ?", "vsl": "Anh đến muộn ?", "category": "deletion_only", "pred": "Anh ấy lại muộn à đến ?"}
+{"id": 7456, "vie": "Tôi sẽ trả lời nó .", "vsl": "Tôi trả lời nó .", "category": "deletion_only", "pred": "Tôi sẽ nó trả lời ."}
+{"id": 7458, "vie": "Bạn có tất cả của cải của bạn à ?", "vsl": "Bạn có tất cả của cải bạn ?", "category": "deletion_only", "pred": "Bạn tất cả của cải của bạn có à ?"}
+{"id": 7459, "vie": "Anh ấy biết cô ấy không ?", "vsl": "Anh biết cô không ?", "category": "deletion_only", "pred": "Anh ấy cô ấy biết không ?"}
+{"id": 7470, "vie": "Bạn không thể nhún vai coi khinh như thế .", "vsl": "Bạn không thể nhún vai coi khinh như thế .", "category": "identical", "pred": "Bạn không thể coi khinh nhún vai như thế ."}
+{"id": 7480, "vie": "Luôn phải nghe cùng một kiểu trả lời khiến tôi nhàm chán .", "vsl": "Luôn phải nghe cùng một kiểu trả lời khiến tôi nhàm chán .", "category": "identical", "pred": "Luôn phải cùng kiểu trả lời tôi khiến nhàm chán một nghe ."}
+{"id": 7502, "vie": "Tôi có công việc bán thời gian ở thư viện thành phố .", "vsl": "Tôi có công việc bán thời gian ở thư viện thành phố .", "category": "identical", "pred": "Tôi công việc thời gian ở thư viện thành phố bán có ."}
+{"id": 7509, "vie": "Nơi gửi tiếp theo của chúng tôi là Atlanta , Georgia .", "vsl": "Nơi gửi tiếp theo chúng tôi Atlanta Georgia .", "category": "deletion_only", "pred": "Nơi gửi tiếp theo của chúng tôi Atlanta , Georgia là ."}
+{"id": 7511, "vie": "Thật đơn giản .", "vsl": "Thật đơn giản .", "category": "identical", "pred": "Thật đơn giản ."}
+{"id": 7530, "vie": "Tôi xin lỗi đã chơi thua .", "vsl": "Tôi xin lỗi chơi thua .", "category": "deletion_only", "pred": "Tôi xin lỗi đã chơi thua ."}
+{"id": 7531, "vie": "Hãy trung thành với bản gốc trong bản dịch của bạn .", "vsl": "trung thành với bản gốc trong bản dịch bạn .", "category": "deletion_only", "pred": "Hãy với bản gốc trong bản dịch của bạn trung thành ."}
+{"id": 7532, "vie": "Trong khi tôi ra nước ngoài , tôi đã sửa nhà mình .", "vsl": "Trong khi tôi ra nước ngoài tôi sửa nhà mình .", "category": "deletion_only", "pred": "Trong khi tôi nước ngoài ra , tôi đã nhà mình sửa ."}
+{"id": 7534, "vie": "Vâng , để hoàn thành khóa học , anh ấy đã được yêu cầu phải lấy thẻ tín dụng một trăm .", "vsl": "Vâng hoàn thành khóa học anh được yêu cầu phải lấy thẻ tín dụng một trăm .", "category": "deletion_only", "pred": "Vâng , để khóa học hoàn thành , anh ấy đã được yêu cầu phải lấy thẻ tín dụng một trăm ."}
+{"id": 7549, "vie": "Tôi sợ hãi khi tôi nhìn thấy tai nạn giao thông .", "vsl": "Tôi sợ hãi khi tôi nhìn thấy tai nạn giao thông .", "category": "identical", "pred": "Tôi khi tôi tai nạn giao thông nhìn thấy sợ hãi ."}
+{"id": 7557, "vie": "Thật kỳ diệu khi bạn dùng đũa như thế .", "vsl": "Thật kỳ diệu khi bạn dùng đũa như thế .", "category": "identical", "pred": "Thật kỳ diệu khi bạn đũa như thế dùng ."}
+{"id": 7559, "vie": "Nó không thể .", "vsl": "Nó không thể .", "category": "identical", "pred": "Nó không thể ."}
+{"id": 7571, "vie": "Tôi giờ đang ốm và mệt mỏi vì anh ta .", "vsl": "Tôi giờ ốm mệt mỏi anh ta .", "category": "deletion_only", "pred": "Tôi giờ đang ốm mệt mỏi vì anh ta ."}
+{"id": 7592, "vie": "Giờ bạn ở đây được một tháng rồi .", "vsl": "Giờ bạn ở đây được một tháng rồi .", "category": "identical", "pred": "Giờ bạn đây ở tháng rồi một được ."}
+{"id": 7597, "vie": "Đó là anh Smith đã chuyển đến đây .", "vsl": "Đó anh Smith chuyển đến đây .", "category": "deletion_only", "pred": "Đó anh Smith đã đến đây chuyển là ."}
+{"id": 7607, "vie": "Tôi nghe nói rằng anh Okubo đã nhập viện vì ngộ độc thực phẩm .", "vsl": "Tôi nghe nói rằng anh Okubo nhập viện ngộ độc thực phẩm .", "category": "deletion_only", "pred": "Tôi nghe nói rằng anh Okubo đã vì thực phẩm ngộ độc nhập viện ."}
+{"id": 7610, "vie": "Vâng , bạn đã trở thành một người nói tiếng Anh rất tốt .", "vsl": "Vâng bạn trở thành một người nói tiếng Anh tốt .", "category": "deletion_only", "pred": "Vâng , bạn đã người tiếng Anh tốt nói một trở thành ."}
+{"id": 7613, "vie": "Cho cô ấy thời gian , sau đó cô ấy sẽ quản lý được nó .", "vsl": "Cho cô thời gian sau đó cô quản lý được nó .", "category": "deletion_only", "pred": "Cô ấy thời gian Cho , sau đó cô ấy sẽ nó quản lý được ."}
+{"id": 7616, "vie": "Tôi có thể gọi thêm món không ?", "vsl": "Tôi có thể gọi thêm món không ?", "category": "identical", "pred": "Tôi có thể món gọi thêm không ?"}
+{"id": 7629, "vie": "Đó là tại sao bạn do dự đề nghị anh ta à ?", "vsl": "Đó tại sao bạn do dự đề nghị anh ta ?", "category": "deletion_only", "pred": "Đó là tại sao bạn do dự anh ta đề nghị à ?"}
+{"id": 7630, "vie": "Chúng tôi đến sai chỗ .", "vsl": "Chúng tôi đến sai chỗ .", "category": "identical", "pred": "Chúng tôi đến chỗ sai ."}
+{"id": 7639, "vie": "Bạn đi với ai ?", "vsl": "Bạn đi với ai ?", "category": "identical", "pred": "Bạn với ai đi ?"}
+{"id": 7641, "vie": "Gửi lời chào tới mọi người .", "vsl": "Gửi lời chào tới người .", "category": "deletion_only", "pred": "Lời chào tới mọi người Gửi ."}
+{"id": 7664, "vie": "Bạn sẽ lấy cái nào ?", "vsl": "Bạn lấy cái ?", "category": "deletion_only", "pred": "Bạn sẽ cái nào lấy ?"}
+{"id": 7667, "vie": "Không nên đi , tôi cho là thế .", "vsl": "nên đi tôi cho không", "category": "deletion_reorder", "pred": "Không nên đi , tôi thế cho là ."}
+{"id": 7675, "vie": "Tôi muốn xem một số trâm cài .", "vsl": "Tôi muốn xem một số trâm cài .", "category": "identical", "pred": "Tôi muốn số trâm cài một xem ."}
+{"id": 7713, "vie": "Không có tiền bo nào được chấp nhận trong nhà hàng này .", "vsl": "có tiền bo được chấp nhận trong nhà hàng không", "category": "deletion_reorder", "pred": "Không tiền bo nào được trong nhà hàng này chấp nhận có ."}
+{"id": 7722, "vie": "Hãy kiểm tra hành lý của chúng ta lần nữa .", "vsl": "kiểm tra hành lý chúng ta lần nữa .", "category": "deletion_only", "pred": "Hãy kiểm tra hành lý của chúng ta lần nữa ."}
+{"id": 7724, "vie": "Một giọt nước cốt chanh sẽ làm nó ngon hơn .", "vsl": "Một giọt nước cốt chanh làm nó ngon hơn .", "category": "deletion_only", "pred": "Giọt nước cốt chanh Một sẽ nó ngon hơn làm ."}
+{"id": 7733, "vie": "Bạn muốn tôi giúp không ?", "vsl": "Bạn muốn tôi giúp không ?", "category": "identical", "pred": "Bạn muốn tôi giúp không ?"}
+{"id": 7745, "vie": "Hệ thống đường ở nơi này cải thiện dần .", "vsl": "Hệ thống đường ở nơi cải thiện dần .", "category": "deletion_only", "pred": "Hệ thống đường ở nơi này cải thiện dần ."}
+{"id": 7753, "vie": "Tôi muốn tóc dài và xuôi xuống vai .", "vsl": "Tôi muốn tóc dài xuôi xuống vai .", "category": "deletion_only", "pred": "Tôi tóc dài muốn xuống vai xuôi ."}
+{"id": 7760, "vie": "Bạn đúng .", "vsl": "Bạn đúng .", "category": "identical", "pred": "Bạn đúng ."}
+{"id": 7767, "vie": "Thang máy này quá tải .", "vsl": "Thang máy quá tải .", "category": "deletion_only", "pred": "Thang máy này quá tải ."}
+{"id": 7769, "vie": "Đừng quên tôi .", "vsl": "Đừng quên tôi .", "category": "identical", "pred": "Đừng tôi quên ."}
+{"id": 7784, "vie": "Thật buồn cười .", "vsl": "Thật buồn cười .", "category": "identical", "pred": "Thật buồn cười ."}
+{"id": 7804, "vie": "Anh ấy cực kỳ thận trọng .", "vsl": "Anh cực kỳ thận trọng .", "category": "deletion_only", "pred": "Anh ấy cực kỳ thận trọng ."}
+{"id": 7805, "vie": "Thôi nào , bạn đã cố hết sức rồi .", "vsl": "Thôi bạn cố hết sức rồi .", "category": "deletion_only", "pred": "Thôi nào , bạn đã hết sức rồi cố ."}
+{"id": 7806, "vie": "Tôi đã đề nghị chúng ta gặp lại nhau như thế này vào tuần tới .", "vsl": "Tôi đề nghị chúng ta gặp nhau như thế vào tuần tới .", "category": "deletion_only", "pred": "Tôi đã đề chúng ta nghị nhau như thế này vào tuần tới gặp lại ."}
+{"id": 7808, "vie": "Giữ lấy tiền lẻ .", "vsl": "Giữ lấy tiền lẻ .", "category": "identical", "pred": "Giữ tiền lẻ lấy ."}
+{"id": 7813, "vie": "Chồng tôi thường để lại món ăn ở đó .", "vsl": "Chồng tôi thường món ăn ở đó .", "category": "deletion_only", "pred": "Chồng tôi thường món ăn ở đó để lại ."}
+{"id": 7823, "vie": "được rồi , tôi sẽ làm .", "vsl": "được rồi tôi làm .", "category": "deletion_only", "pred": "Được rồi , tôi sẽ làm ."}
+{"id": 7826, "vie": "có hơn một tuần nghỉ trong kì nghỉ hè .", "vsl": "có hơn một tuần nghỉ trong kì nghỉ hè .", "category": "identical", "pred": "Hơn một tuần có trong kì nghỉ hè nghỉ ."}
+{"id": 7853, "vie": "nó có bồn tắm không ?", "vsl": "nó có bồn tắm không ?", "category": "identical", "pred": "Nó bồn tắm có không ?"}
+{"id": 7863, "vie": "tôi thực sự nghĩ tôi phải đi .", "vsl": "tôi thực sự nghĩ tôi phải đi .", "category": "identical", "pred": "Tôi thực sự nghĩ tôi phải đi ."}
+{"id": 7865, "vie": "thường thì bạn đi mua sắm ở đâu ?", "vsl": "thường bạn đi mua sắm ở đâu ?", "category": "deletion_only", "pred": "Thường bạn đi ở đâu mua sắm ?"}
+{"id": 7883, "vie": "căn phòng của anh ấy không có chiếc bàn hay ghế nào .", "vsl": "căn phòng anh có chiếc bàn hay ghế không", "category": "deletion_reorder", "pred": "Căn phòng của anh ấy không chiếc bàn hay ghế nào có ."}
+{"id": 7890, "vie": "bạn cảm thấy người đàn ông đó thế nào ?", "vsl": "bạn cảm thấy người đàn ông đó thế nào ?", "category": "identical", "pred": "Bạn cảm thấy người đàn ông đó thế nào ?"}
+{"id": 7916, "vie": "nhà điều hành , đường truyền này không rõ lắm .", "vsl": "nhà điều hành đường truyền rõ không", "category": "deletion_reorder", "pred": "Nhà điều hành , đường truyền này không rõ lắm ."}
+{"id": 7961, "vie": "David đã từng là một học sinh chuyển trường ở nhật bản .", "vsl": "David một học sinh chuyển trường ở nhật bản .", "category": "deletion_only", "pred": "David đã từng học sinh trường ở nhật bản chuyển một là ."}
+{"id": 7968, "vie": "bạn ăn loại món tráng miệng nào ?", "vsl": "bạn ăn loại món tráng miệng ?", "category": "deletion_only", "pred": "Bạn loại món tráng miệng nào ăn ?"}
+{"id": 7970, "vie": "được rồi , không vấn đề gì .", "vsl": "được rồi vấn đề gì", "category": "deletion_only", "pred": "Được rồi , không vấn đề gì ."}
+{"id": 7977, "vie": "Xin lỗi đã gây ra cho bạn nhiều rắc rối , nhưng bạn vui lòng fax cho tôi một danh sách các khách sạn hợp lý ở Los Angeles được không ?", "vsl": "Xin lỗi gây ra cho bạn nhiều rắc rối , bạn fax cho tôi một danh sách các khách sạn hợp lý ở Los Angeles không ?", "category": "deletion_only", "pred": "Xin lỗi đã cho bạn nhiều rắc rối gây ra , nhưng bạn vui lòng fax tôi danh sách khách sạn hợp lý ở Los Angeles một cho được không ?"}
+{"id": 7979, "vie": "sở thích của bạn là gì ?", "vsl": "sở thích bạn gì ?", "category": "deletion_only", "pred": "Sở thích của bạn là gì ?"}
+{"id": 7995, "vie": "chúng tôi muốn bữa ăn sáng đoợc phục vụo tại phòng tôi sáng mai .", "vsl": "chúng tôi muốn bữa ăn sáng đoợc phục vụo phòng tôi sáng mai .", "category": "deletion_only", "pred": "Chúng tôi muốn bữa ăn sáng đoợc phục tại phòng tôi sáng mai vụo ."}
+{"id": 8006, "vie": "tôi đã không rõ ra lý do tại sao thư ký trả lời tôi một cách khó chịu như vậy .", "vsl": "tôi rõ ra lý do tại sao thư ký trả lời tôi một cách khó chịu như không", "category": "deletion_reorder", "pred": "Tôi đã không lý do tại sao thư ký tôi cách khó chịu như vậy một trả lời rõ ra ."}
+{"id": 8035, "vie": "hãy chắc chắn giữ cái này trong đâu khi bạn gặp chủ tịch lần tiếp theo .", "vsl": "chắc chắn giữ cái trong đâu khi bạn gặp chủ tịch lần tiếp theo .", "category": "deletion_only", "pred": "Hãy chắc chắn cái này giữ trong đâu khi bạn chủ tịch lần tiếp theo gặp ."}
+{"id": 8036, "vie": "tôi thường chơi quần vợt ở sân quần vợt công viên thành phố vào mỗi chiều thứ bẩy .", "vsl": "tôi thường chơi quần vợt ở sân quần vợt công viên thành phố vào chiều thứ bẩy .", "category": "deletion_only", "pred": "Tôi thường ở sân chơi quần vợt công viên phố thành vào chiều thứ bẩy mỗi quần vợt ."}
+{"id": 8037, "vie": "Cơ chế ra quyết định tối cao của nội các được gọi là một cuộc họp nội các .", "vsl": "Cơ chế ra quyết định tối cao nội các được gọi một cuộc họp nội các .", "category": "deletion_only", "pred": "Cơ chế quyết định tối cao của nội các ra được cuộc họp nội các một gọi là ."}
+{"id": 8048, "vie": "bạn hoàn toàn chắc chắn chứ ?", "vsl": "bạn chắc chắn ?", "category": "deletion_only", "pred": "Bạn hoàn toàn chắc chắn chứ ?"}
+{"id": 8050, "vie": "tôi không nghĩ có ai đó ở đó .", "vsl": "tôi nghĩ có đó ở đó ai", "category": "deletion_reorder", "pred": "Tôi không nghĩ ai đó có ở đó ."}
+{"id": 8058, "vie": "vâng , cho tôi một tuần .", "vsl": "vâng cho tôi một tuần .", "category": "deletion_only", "pred": "Vâng , tôi tuần một cho ."}
+{"id": 8062, "vie": "đó là niềm vinh hạnh của chúng tôi .", "vsl": "đó niềm vinh hạnh chúng tôi .", "category": "deletion_only", "pred": "Đó niềm vinh hạnh của chúng tôi là ."}
+{"id": 8075, "vie": "chuyến xe buýt từ metropolitan dừng ở đây phải không ?", "vsl": "chuyến xe buýt từ metropolitan dừng ở đây phải không ?", "category": "identical", "pred": "Chuyến xe buýt từ metropolitan ở đây phải không dừng ?"}
+{"id": 8090, "vie": "vui lòng không nói với ai là tôi sẽ trở lại nhật bản .", "vsl": "nói với tôi trở lại nhật bản ai", "category": "deletion_reorder", "pred": "Vui lòng không với ai nói là tôi sẽ nhật bản trở lại ."}
+{"id": 8092, "vie": "helen là chủ thư viện và là một người đánh đàn tài năng .", "vsl": "helen chủ thư viện một người đánh đàn tài năng .", "category": "deletion_only", "pred": "Helen chủ thư viện là người đàn tài năng đánh một là ."}
+{"id": 8111, "vie": "tôi xem những gì bạn nói chỉ là trò đùa thôi .", "vsl": "tôi xem bạn nói trò đùa thôi gì", "category": "deletion_reorder", "pred": "Tôi gì bạn nói xem chỉ trò đùa thôi là ."}
+{"id": 8118, "vie": "thế còn bạn thì sao ?", "vsl": "còn bạn sao ?", "category": "deletion_only", "pred": "Thế còn bạn thì sao ?"}
+{"id": 8124, "vie": "Đây là nơi chúng tôi muốn đi cắm trại mùa hè này .", "vsl": "nơi chúng tôi muốn đi cắm trại mùa hè .", "category": "deletion_only", "pred": "Đây nơi chúng tôi muốn đi trại mùa hè này cắm là ."}
+{"id": 8181, "vie": "Đó là American Express .", "vsl": "Đó American Express .", "category": "deletion_only", "pred": "Đó American Express là ."}
+{"id": 8200, "vie": "Bạn có thấy vết đen này ở đây không ?", "vsl": "Bạn có thấy vết đen ở đây không ?", "category": "deletion_only", "pred": "Bạn có vết đen này ở đây thấy không ?"}
+{"id": 8218, "vie": "tôi không thích câu trả lời mơ hồ như vậy .", "vsl": "tôi thích câu trả lời mơ hồ như vậy không", "category": "deletion_reorder", "pred": "Tôi không câu trả lời mơ hồ như vậy thích ."}
+{"id": 8220, "vie": "tôi đã sẵn sàng , vậy nên tôi có thể rời khỏi mỹ bất cứ lúc nào bây giờ .", "vsl": "tôi sẵn sàng nên tôi có thể rời khỏi mỹ bất cứ lúc nào bây giờ .", "category": "deletion_only", "pred": "Tôi đã sẵn sàng , vậy nên tôi có thể mỹ bất cứ lúc nào bây giờ rời khỏi ."}
+{"id": 8221, "vie": "Bạn vui lòng đặt chuyến xe buýt tham quan thành phố thứ ba tới được không ?", "vsl": "Bạn đặt chuyến xe buýt tham quan thành phố thứ ba tới được không ?", "category": "deletion_only", "pred": "Bạn vui lòng chuyến xe buýt phố thứ ba tham quan thành đặt tới được không ?"}
+{"id": 8234, "vie": "nó có giòn không ?", "vsl": "nó có giòn không ?", "category": "identical", "pred": "Nó giòn có không ?"}
+{"id": 8235, "vie": "tôi sẽ thăm nhà bạn vào ngày mai .", "vsl": "tôi sẽ thăm nhà bạn vào ngày mai .", "category": "identical", "pred": "Tôi sẽ nhà bạn vào ngày mai thăm ."}
+{"id": 8249, "vie": "nó sẽ mất vài tiếng nữa để ở đó .", "vsl": "nó mất vài tiếng nữa ở đó .", "category": "deletion_only", "pred": "Nó sẽ vài tiếng nữa để đó ở mất ."}
+{"id": 8266, "vie": "Đừng quá quan trọng hóa điều đó như vậy .", "vsl": "Đừng quá quan trọng hóa điều đó như .", "category": "deletion_only", "pred": "Quá quan trọng Đừng điều đó hóa như vậy ."}
+{"id": 8268, "vie": "thật tồi tệ , tôi đã thi trượt rồi .", "vsl": "thật tồi tệ tôi thi trượt rồi .", "category": "deletion_only", "pred": "Thật tồi tệ , tôi đã thi trượt rồi ."}
+{"id": 8278, "vie": "bạn đã làm gì với chiếc máy nghe nhạc MD mà bạn đã lấy tuần trước ?", "vsl": "bạn làm với chiếc máy nghe nhạc MD mà bạn lấy tuần trước gì ?", "category": "deletion_reorder", "pred": "Bạn đã với chiếc máy nhạc MD nghe mà bạn đã tuần trước lấy làm gì ?"}
+{"id": 8289, "vie": "chuyến tàu này đi được bao xa rồi ?", "vsl": "chuyến tàu đi được bao xa rồi ?", "category": "deletion_only", "pred": "Chuyến tàu này bao xa rồi đi được ?"}
+{"id": 8294, "vie": "sự bất cẩn của bạn gây ra vấn đề này .", "vsl": "sự bất cẩn bạn gây ra vấn đề .", "category": "deletion_only", "pred": "Sự bất cẩn của bạn vấn đề này gây ra ."}
+{"id": 8297, "vie": "bạn vui lòng cởi nút này chứ ?", "vsl": "bạn cởi nút ?", "category": "deletion_only", "pred": "Bạn nút này vui lòng cởi chứ ?"}
+{"id": 8306, "vie": "không ở đây nhưng ở bên kia đường .", "vsl": "ở đây nhưng ở bên kia đường không", "category": "deletion_reorder", "pred": "Không ở đây nhưng bên kia đường ở ."}
+{"id": 8315, "vie": "tôi biết điều đó nhưng nó hơi khó khăn .", "vsl": "tôi biết điều đó nhưng nó hơi khó khăn .", "category": "identical", "pred": "Tôi đó biết điều nhưng nó hơi khó khăn ."}
+{"id": 8319, "vie": "chúng ta hãy bắt đầu ngay vào việc sơn tường đi .", "vsl": "chúng ta bắt đầu vào việc sơn tường đi .", "category": "deletion_only", "pred": "Chúng ta hãy ngay vào việc tường sơn đi bắt đầu ."}
+{"id": 8325, "vie": "tôi đã là một vận động viên softball khi tôi còn là một học sinh trung học .", "vsl": "tôi một vận động viên softball khi tôi còn một học sinh trung học .", "category": "deletion_only", "pred": "Tôi đã vận động viên softball khi tôi còn học sinh trung học một là một là ."}
+{"id": 8349, "vie": "tôi phải trả bao nhiêu khi tôi hủy bỏ việc đặt trước ở khách sạn ?", "vsl": "tôi phải trả bao nhiêu khi tôi hủy bỏ việc đặt trước ở khách sạn ?", "category": "identical", "pred": "Tôi phải bao nhiêu khi tôi hủy việc trước ở khách sạn đặt bỏ trả ?"}
+{"id": 8352, "vie": "thế thì chúng ta sẽ giết thời gian bằng một tách cà phê nhé ?", "vsl": "chúng ta giết thời gian bằng một tách cà phê ?", "category": "deletion_only", "pred": "Thế chúng ta sẽ bằng tách cà phê một giết thời gian nhé ?"}
+{"id": 8362, "vie": "tôi có thể liên lạc được không ?", "vsl": "tôi có thể liên lạc được không ?", "category": "identical", "pred": "Tôi có thể liên lạc được không ?"}
+{"id": 8395, "vie": "tôi không thể nói công việc nào của anh ấy là tốt nhất .", "vsl": "tôi không thể nói công việc anh tốt nhất .", "category": "deletion_only", "pred": "Tôi không thể công việc nào của anh ấy tốt nhất là nói ."}
+{"id": 8407, "vie": "Bạn nên học về lịch sử .", "vsl": "Bạn nên lịch sử học .", "category": "deletion_reorder", "pred": "Bạn nên về lịch sử học ."}
+{"id": 8408, "vie": "bạn sẽ đi học chứ ?", "vsl": "bạn đi học ?", "category": "deletion_only", "pred": "Bạn sẽ đi học chứ ?"}
+{"id": 8413, "vie": "nghe thật tuyệt .", "vsl": "nghe thật tuyệt .", "category": "identical", "pred": "Thật tuyệt nghe ."}
+{"id": 8418, "vie": "điều đó đúng chứ ?", "vsl": "điều đó đúng ?", "category": "deletion_only", "pred": "Điều đó đúng chứ ?"}
+{"id": 8420, "vie": "chắc chắn , không vấn đề .", "vsl": "chắc chắn vấn đề không", "category": "deletion_reorder", "pred": "Chắc chắn , không vấn đề ."}
+{"id": 8427, "vie": "Tôi bị đau đầu .", "vsl": "Tôi bị đau đầu .", "category": "identical", "pred": "Tôi bị đau đầu ."}
+{"id": 8439, "vie": "bạn vui lòng làm theo mẫu này và kí chữ kí cho phù hợp .", "vsl": "bạn làm theo mẫu kí chữ kí cho phù hợp .", "category": "deletion_only", "pred": "Bạn vui lòng theo mẫu này làm cho phù hợp kí chữ kí ."}
+{"id": 8442, "vie": "bạn nên cẩn thận khi bạn nói chuyện với ông ấy .", "vsl": "bạn nên cẩn thận khi bạn nói chuyện với ông ấy .", "category": "identical", "pred": "Bạn nên cẩn thận khi bạn với ông ấy nói chuyện ."}
+{"id": 8448, "vie": "ồ , thật tuyệt .", "vsl": "thật tuyệt .", "category": "deletion_only", "pred": "Ồ , thật tuyệt ."}
+{"id": 8454, "vie": "Phong cảnh ở miền quê dường như mê hoặc Jane .", "vsl": "Phong cảnh ở miền quê dường như mê hoặc Jane .", "category": "identical", "pred": "Phong cảnh ở miền quê dường như Jane mê hoặc ."}
+{"id": 8458, "vie": "nó mất khoảng bốn mươi phút đi taxi .", "vsl": "nó mất khoảng bốn mươi phút đi taxi .", "category": "identical", "pred": "Nó khoảng bốn mươi phút taxi đi mất ."}
+{"id": 8474, "vie": "bạn có dùng tiền yên nhật không ?", "vsl": "bạn có dùng tiền yên nhật không ?", "category": "identical", "pred": "Bạn có tiền yên nhật dùng không ?"}
+{"id": 8483, "vie": "vâng , bằng cách nào tôi sẽ sống sót .", "vsl": "vâng bằng cách tôi sống sót .", "category": "deletion_only", "pred": "Vâng , bằng cách nào tôi sẽ sống sót ."}
+{"id": 8490, "vie": "tôi cảm thấy tiếc cho ông yokokawa .", "vsl": "tôi cảm thấy tiếc cho ông yokokawa .", "category": "identical", "pred": "Tôi cảm thấy tiếc cho ông yokokawa ."}
+{"id": 8504, "vie": "tôi không có thời gian .", "vsl": "tôi có thời gian không", "category": "deletion_reorder", "pred": "Tôi không thời gian có ."}
+{"id": 8508, "vie": "tôi thực sự rất biết ơn lời khuyên hữu ích của bạn đã cho tôi hôm đó .", "vsl": "tôi thực sự biết ơn lời khuyên hữu ích bạn cho tôi hôm đó .", "category": "deletion_only", "pred": "Tôi thực sự biết ơn lời khuyên hữu ích của bạn đã tôi hôm đó cho ."}
+{"id": 8511, "vie": "tài xế , đây là hai mươi đô la .", "vsl": "tài xế hai mươi đô la .", "category": "deletion_only", "pred": "Tài xế , đây hai mươi đô la là ."}
+{"id": 8519, "vie": "là nó sao ?", "vsl": "là nó sao ?", "category": "identical", "pred": "Là nó sao ?"}
+{"id": 8520, "vie": "rất vui được nghe điều đó .", "vsl": "vui được nghe điều đó .", "category": "deletion_only", "pred": "Vui điều đó được nghe ."}
+{"id": 8523, "vie": "Cathy rất giỏi khắc gỗ .", "vsl": "Cathy giỏi khắc gỗ .", "category": "deletion_only", "pred": "Cathy giỏi gỗ khắc ."}
+{"id": 8544, "vie": "Tôi nhận được thư cảm thông từ Jim .", "vsl": "Tôi nhận được thư cảm thông từ Jim .", "category": "identical", "pred": "Tôi thư cảm thông từ Jim nhận được ."}
+{"id": 8548, "vie": "Đó là để ngăn chặn vụ cướp và trộm cắp .", "vsl": "Đó ngăn chặn vụ cướp trộm cắp .", "category": "deletion_only", "pred": "Đó để vụ cướp ngăn chặn trộm cắp là ."}
+{"id": 8549, "vie": "chúng tôi có thể chụp ảnh bạn và thu giọng vào băng không ?", "vsl": "chúng tôi có thể chụp ảnh bạn thu giọng vào băng không ?", "category": "deletion_only", "pred": "Chúng tôi có thể ảnh bạn chụp vào băng thu giọng không ?"}
+{"id": 8556, "vie": "thế còn người giữ tiền xu thì sao ?", "vsl": "còn người giữ tiền xu thì sao ?", "category": "deletion_only", "pred": "Thế còn người tiền giữ xu thì sao ?"}
+{"id": 8559, "vie": "Tôi hiểu đó là vì lý do sức khỏe .", "vsl": "Tôi hiểu đó lý do sức khỏe .", "category": "deletion_only", "pred": "Tôi hiểu đó vì lý do sức khỏe là ."}
+{"id": 8561, "vie": "có một hiệu sách lớn gần văn phòng anh ấy .", "vsl": "có một hiệu sách lớn gần văn phòng anh .", "category": "deletion_only", "pred": "Hiệu sách lớn gần văn phòng anh ấy một có ."}
+{"id": 8606, "vie": "tôi không giỏi tính toán bằng các con số .", "vsl": "tôi giỏi tính toán bằng con số không", "category": "deletion_reorder", "pred": "Tôi không giỏi bằng con số tính toán ."}
+{"id": 8608, "vie": "tom thường tự hào về sự vô lý đáng kinh ngạc .", "vsl": "tom thường tự hào về sự vô lý đáng kinh ngạc .", "category": "identical", "pred": "Tom thường về sự vô lý đáng kinh ngạc tự hào ."}
+{"id": 8611, "vie": "bạn có chấp nhận yên nhật không ?", "vsl": "bạn có chấp nhận yên nhật không ?", "category": "identical", "pred": "Bạn có yên nhật chấp nhận không ?"}
+{"id": 8614, "vie": "thời gian gần đây chúng tôi đã mở một tài khoản của Citibank .", "vsl": "thời gian gần đây chúng tôi mở một tài khoản Citibank .", "category": "deletion_only", "pred": "Thời gian gần đây chúng tôi đã tài khoản của Citibank một mở ."}
+{"id": 8618, "vie": "vâng , nó trông giống như chúng tôi đã dồn vào làm công việc này vào phút cuối .", "vsl": "vâng nó trông giống như chúng tôi dồn vào làm công việc vào phút cuối .", "category": "deletion_only", "pred": "Vâng , nó giống như chúng tôi đã dồn vào công việc này vào phút cuối làm trông ."}
+{"id": 8622, "vie": "bạn đã chuẩn bị đến thăm mỹ chưa ?", "vsl": "bạn chuẩn bị đến thăm mỹ chưa ?", "category": "deletion_only", "pred": "Bạn đã đến mỹ thăm chuẩn bị chưa ?"}
+{"id": 8653, "vie": "tôi không thể nói gì .", "vsl": "tôi không thể nói gì .", "category": "identical", "pred": "Tôi không thể gì nói ."}
+{"id": 8657, "vie": "Theo bản tin báo chí , một nội các mới sẽ được thành lập vào cuối tuần này .", "vsl": "Theo bản tin báo chí một nội các được thành lập vào cuối tuần .", "category": "deletion_only", "pred": "Theo bản tin báo chí , nội các mới một sẽ được vào cuối tuần này thành lập ."}
+{"id": 8675, "vie": "người nhật dường như không thích những thảo luận hẳng thắn .", "vsl": "người nhật dường như thích thảo luận hẳng thắn không", "category": "deletion_reorder", "pred": "Người nhật dường như không thảo luận hẳng thắn thích ."}
+{"id": 8687, "vie": "đây là johnny Henderson .", "vsl": "johnny Henderson .", "category": "deletion_only", "pred": "Đây johnny Henderson là ."}
+{"id": 8697, "vie": "tất cả đó là thực phẩm đóng gói .", "vsl": "tất cả đó thực phẩm đóng gói .", "category": "deletion_only", "pred": "Tất cả đó thực phẩm đóng gói là ."}
+{"id": 8714, "vie": "tôi chỉ phải đi mua chiếc máy ảnh thôi .", "vsl": "tôi phải đi mua chiếc máy ảnh thôi .", "category": "deletion_only", "pred": "Tôi chỉ phải đi chiếc máy ảnh mua thôi ."}
+{"id": 8726, "vie": "vui lòng nói với vợ tôi nếu tôi ra ngoài .", "vsl": "nói với vợ tôi tôi ra ngoài .", "category": "deletion_only", "pred": "Vui lòng với vợ tôi nói nếu tôi ngoài ra ."}
+{"id": 8737, "vie": "bữa ăn nhẹ được phục vụ hai tư giờ trong ngày .", "vsl": "bữa ăn nhẹ được phục vụ hai tư giờ trong ngày .", "category": "identical", "pred": "Bữa ăn nhẹ được hai tư giờ trong ngày phục vụ ."}
+{"id": 8738, "vie": "tôi có thể cược vé cho buổi hòa nhạc tối nay không ?", "vsl": "tôi có thể cược vé cho buổi hòa nhạc tối nay không ?", "category": "identical", "pred": "Tôi có thể vé cho buổi hòa nhạc tối nay cược không ?"}
+{"id": 8755, "vie": "bạn có biết tôi có thể sửa chiếc túi sách của tôi ở đâu không ?", "vsl": "bạn có biết tôi có thể sửa chiếc túi sách tôi ở đâu không ?", "category": "deletion_only", "pred": "Bạn có biết tôi có thể chiếc túi sách của tôi ở đâu sửa không ?"}
+{"id": 8765, "vie": "nó quá thuận tiện cho anh ấy để sống gần nhà ga .", "vsl": "nó quá thuận tiện cho anh sống gần nhà ga .", "category": "deletion_only", "pred": "Nó quá cho anh ấy để gần nhà ga sống thuận tiện ."}
+{"id": 8771, "vie": "Một người họ hàng xa của tôi ở Mỹ sẽ đến gặp tôi vào tuần tới .", "vsl": "Một người họ hàng xa tôi ở Mỹ đến gặp tôi vào tuần tới .", "category": "deletion_only", "pred": "Người họ hàng xa của tôi ở Mỹ Một sẽ đến tôi vào tuần tới gặp ."}
+{"id": 8772, "vie": "bản sao cứng sẽ tiếp tục được sử dụng .", "vsl": "bản sao cứng tiếp tục được sử dụng .", "category": "deletion_only", "pred": "Bản sao cứng sẽ tiếp tục được sử dụng ."}
+{"id": 8778, "vie": "đừng vội .", "vsl": "đừng vội .", "category": "identical", "pred": "Đừng vội ."}
+{"id": 8790, "vie": "chỉ tự nhiên mà anh được nghe một câu chuyện điên giả tạo như vậy .", "vsl": "tự nhiên mà anh được nghe một câu chuyện điên giả tạo như vậy .", "category": "deletion_only", "pred": "Chỉ tự nhiên mà anh được câu chuyện điên giả tạo như vậy một nghe ."}
+{"id": 8806, "vie": "tôi nghe nói ông smith là khách hàng số một ở tiệm đồ cổ đó .", "vsl": "tôi nghe nói ông smith khách hàng số một ở tiệm đồ cổ đó .", "category": "deletion_only", "pred": "Tôi nghe nói ông smith khách hàng số một ở tiệm đồ cổ đó là ."}
+{"id": 8815, "vie": "bạn sẽ gặp tôi ngày mai chứ ?", "vsl": "bạn gặp tôi ngày mai ?", "category": "deletion_only", "pred": "Bạn sẽ tôi ngày mai gặp chứ ?"}
+{"id": 8817, "vie": "bạn đã bình chọn chưa ?", "vsl": "bạn bình chọn chưa ?", "category": "deletion_only", "pred": "Bạn đã bình chọn chưa ?"}
+{"id": 8833, "vie": "đó chỉ là cái bạn mong đợi ở một sinh viên MIT .", "vsl": "đó cái bạn mong đợi ở một sinh viên MIT .", "category": "deletion_only", "pred": "Đó chỉ cái bạn ở sinh viên MIT một mong đợi là ."}
+{"id": 8837, "vie": "họ sẽ không làm bất cứ điều gì nữa .", "vsl": "họ làm bất cứ điều nữa gì", "category": "deletion_reorder", "pred": "Họ sẽ không điều gì nữa làm bất cứ ."}
+{"id": 8838, "vie": "tôi sẽ rất vui nếu bạn có thể sửa chiếc xe hơi .", "vsl": "tôi vui bạn có thể sửa chiếc xe hơi .", "category": "deletion_only", "pred": "Tôi sẽ vui nếu bạn có thể chiếc xe hơi sửa ."}
+{"id": 8841, "vie": "cổng lên máy bay là số mấy ?", "vsl": "cổng lên máy bay số mấy ?", "category": "deletion_only", "pred": "Cổng máy bay lên số mấy là ?"}
+{"id": 8853, "vie": "julia rất chăm chỉ phải không ?", "vsl": "julia chăm chỉ phải không ?", "category": "deletion_only", "pred": "Julia chăm chỉ phải không ?"}
+{"id": 8867, "vie": "bạn đã nói gì ?", "vsl": "bạn nói gì ?", "category": "deletion_only", "pred": "Bạn đã nói gì ?"}
+{"id": 8878, "vie": "nói lại lần nữa .", "vsl": "nói lần nữa .", "category": "deletion_only", "pred": "Lần nữa nói lại ."}
+{"id": 8882, "vie": "tôi tự hỏi cô ấy là ai ?", "vsl": "tôi tự hỏi cô ai ?", "category": "deletion_only", "pred": "Tôi tự hỏi cô ấy ai là ?"}
+{"id": 8890, "vie": "thế bây giờ thì sao ?", "vsl": "bây giờ sao ?", "category": "deletion_only", "pred": "Thế bây giờ thì sao ?"}
+{"id": 8897, "vie": "chúng ta hãy đi xem cá hồi bơi ngược dòng .", "vsl": "chúng ta đi xem cá hồi bơi ngược dòng .", "category": "deletion_only", "pred": "Chúng ta hãy đi cá hồi bơi ngược dòng xem ."}
+{"id": 8898, "vie": "tôi nghe nói một con khỉ đã trốn khỏi lồng .", "vsl": "tôi nghe nói một con khỉ trốn khỏi lồng .", "category": "deletion_only", "pred": "Tôi nghe nói con khỉ một đã lồng trốn khỏi ."}
+{"id": 8907, "vie": "tôi sẽ cố gắng tỉnh táo .", "vsl": "tôi cố gắng tỉnh táo .", "category": "deletion_only", "pred": "Tôi sẽ tỉnh táo cố gắng ."}
+{"id": 8922, "vie": "tôi có thể thăm cô ấy .", "vsl": "tôi có thể thăm cô .", "category": "deletion_only", "pred": "Tôi có thể cô ấy thăm ."}
+{"id": 8924, "vie": "hãy nhìn nó kìa .", "vsl": "nhìn nó .", "category": "deletion_only", "pred": "Hãy nó nhìn kìa ."}
+{"id": 8930, "vie": "máy ảnh trong va li của tôi đã mất .", "vsl": "máy ảnh trong va li tôi mất .", "category": "deletion_only", "pred": "Máy ảnh trong va li của tôi đã mất ."}
+{"id": 8936, "vie": "tôi có thể chở nhiều hơn hai người trên chiếc xe này .", "vsl": "tôi có thể chở nhiều hơn hai người trên chiếc xe .", "category": "deletion_only", "pred": "Tôi có thể nhiều hơn người trên chiếc xe này hai chở ."}
+{"id": 8950, "vie": "bạn có biết chiếc bát được sơn bóng nhoáng này đáng giá bao nhiêu không ?", "vsl": "bạn có biết chiếc bát được sơn bóng nhoáng đáng giá bao nhiêu không ?", "category": "deletion_only", "pred": "Bạn có biết chiếc bát được bóng nhoáng này sơn đáng giá bao nhiêu không ?"}
+{"id": 8977, "vie": "nó trên cầu thang .", "vsl": "nó trên cầu thang .", "category": "identical", "pred": "Nó trên cầu thang ."}
+{"id": 8993, "vie": "cố gắng nựng mũi con chó đi .", "vsl": "cố gắng nựng mũi con chó đi .", "category": "identical", "pred": "Cố gắng mũi con chó đi nựng ."}
+{"id": 9011, "vie": "nhóm bạn bao gồm bao nhiêu thành viên ?", "vsl": "nhóm bạn bao gồm bao nhiêu thành viên ?", "category": "identical", "pred": "Nhóm bạn bao nhiêu viên thành bao gồm ?"}
+{"id": 9021, "vie": "tôi thích sự yên tĩnh .", "vsl": "tôi thích sự yên tĩnh .", "category": "identical", "pred": "Tôi sự yên tĩnh thích ."}
+{"id": 9025, "vie": "bạn có một giọng nói hay .", "vsl": "bạn có một giọng nói hay .", "category": "identical", "pred": "Bạn giọng nói hay một có ."}
+{"id": 9027, "vie": "có lẽ bạn sẽ nghĩ nó chẳng là gì cả .", "vsl": "có lẽ bạn nghĩ nó chẳng gì", "category": "deletion_only", "pred": "Có lẽ bạn sẽ nghĩ nó gì cả chẳng là ."}
+{"id": 9031, "vie": "tôi xin lỗi , tôi sẽ bận rộn với chuyện này hay chuyện khác vào tuần tới .", "vsl": "tôi xin lỗi tôi bận rộn với chuyện hay chuyện khác vào tuần tới .", "category": "deletion_only", "pred": "Tôi xin lỗi , tôi sẽ với chuyện này hay chuyện khác vào tuần tới bận rộn ."}
+{"id": 9041, "vie": "tôi chỉ nhớ những ngày xa xưa đó khi mà tôi nhìn thấy những tòa nhà và cây cối quanh đây .", "vsl": "tôi nhớ ngày xa xưa đó khi mà tôi nhìn thấy tòa nhà cây cối quanh đây .", "category": "deletion_only", "pred": "Tôi chỉ ngày xa xưa đó khi nhớ mà tôi tòa nhà cây cối quanh đây nhìn thấy ."}
+{"id": 9055, "vie": "chỉ dùng vị cái này .", "vsl": "dùng vị cái .", "category": "deletion_only", "pred": "Chỉ vị cái này dùng ."}
+{"id": 9068, "vie": "bạn đã đo nhiệt độ chưa ?", "vsl": "bạn đo nhiệt độ chưa ?", "category": "deletion_only", "pred": "Bạn đã nhiệt độ đo chưa ?"}
+{"id": 9071, "vie": "bang nào lớn nhất ở mỹ ?", "vsl": "bang lớn nhất ở mỹ ?", "category": "deletion_only", "pred": "Bang nào lớn nhất ở mỹ ?"}
+{"id": 9078, "vie": "bằng cách nào đó tôi phải loại bỏ vết nhăn .", "vsl": "bằng cách đó tôi phải loại bỏ vết nhăn .", "category": "deletion_only", "pred": "Bằng cách nào đó tôi phải vết nhăn loại bỏ ."}
+{"id": 9089, "vie": "nếu có thể tôi muốn bắt chuyến bay lúc năm giờ ?", "vsl": "có thể tôi muốn bắt chuyến bay lúc năm giờ ?", "category": "deletion_only", "pred": "Nếu có thể tôi muốn chuyến bay lúc giờ năm bắt ?"}
+{"id": 9115, "vie": "henry là quá nhiều với tôi .", "vsl": "henry quá nhiều với tôi .", "category": "deletion_only", "pred": "Henry là quá nhiều với tôi ."}
+{"id": 9137, "vie": "Tôi nghĩ bạn nên đi đến cửa hàng tạp hóa .", "vsl": "Tôi nghĩ bạn nên đi đến cửa hàng tạp hóa .", "category": "identical", "pred": "Tôi nghĩ bạn nên đến cửa hàng đi tạp hóa ."}
+{"id": 9178, "vie": "chúng ta hãy đi bộ lên cầu thang .", "vsl": "chúng ta đi bộ lên cầu thang .", "category": "deletion_only", "pred": "Chúng ta hãy lên cầu thang đi bộ ."}
+{"id": 9188, "vie": "thế còn lịch trình cho tuần này thì sao ?", "vsl": "còn lịch trình cho tuần sao ?", "category": "deletion_only", "pred": "Thế lịch trình cho tuần này còn sao ?"}
+{"id": 9191, "vie": "tôi sẽ ngủ trên đó .", "vsl": "tôi ngủ trên đó .", "category": "deletion_only", "pred": "Tôi sẽ trên đó ngủ ."}
+{"id": 9196, "vie": "tôi chưa bao giờ thấy anh ấy giận dữ .", "vsl": "tôi chưa bao giờ thấy anh giận dữ .", "category": "deletion_only", "pred": "Tôi chưa bao giờ thấy anh ấy giận dữ ."}
+{"id": 9198, "vie": "hãy đợi cho đến khi giảm giá .", "vsl": "đợi cho đến khi giảm giá .", "category": "deletion_only", "pred": "Hãy cho đến khi giảm giá đợi ."}
+{"id": 9214, "vie": "bạn có chắc bạn không lo lắng không thế ?", "vsl": "bạn có bạn lo lắng không ?", "category": "deletion_only", "pred": "Bạn chắc bạn không không thế lo lắng có ?"}
+{"id": 9221, "vie": "tôi thích thịt của tôi tái thôi .", "vsl": "tôi thích thịt tôi tái thôi .", "category": "deletion_only", "pred": "Tôi thịt của tôi thích tái thôi ."}
+{"id": 9225, "vie": "cảm ơn , vui lòng tắt đi .", "vsl": "cảm ơn tắt đi .", "category": "deletion_only", "pred": "Cảm ơn , vui lòng tắt đi ."}
+{"id": 9233, "vie": "có thể cho tôi thứ gì nóng để uống không ?", "vsl": "có thể cho tôi thứ nóng uống không ?", "category": "deletion_only", "pred": "Có thể tôi thứ gì nóng để uống cho không ?"}
+{"id": 9240, "vie": "Trang phục của bạn mang một mùi thơm dễ chịu .", "vsl": "Trang phục bạn mang một mùi thơm dễ chịu .", "category": "deletion_only", "pred": "Trang phục của bạn mùi thơm dễ chịu một mang ."}
+{"id": 9252, "vie": "tôi hi vọng bọn trẻ sẽ đưa cho tôi .", "vsl": "tôi hi vọng bọn trẻ đưa cho tôi .", "category": "deletion_only", "pred": "Tôi bọn trẻ sẽ cho tôi đưa hi vọng ."}
+{"id": 9263, "vie": "Nếu bạn ăn cắp lý thuyết của người khác , đó là đạo văn .", "vsl": "bạn ăn cắp lý thuyết người khác đó đạo văn .", "category": "deletion_only", "pred": "Nếu bạn lý thuyết của người khác ăn cắp , đó đạo văn là ."}
+{"id": 9265, "vie": "có còn chút rượu whiskey nào trong chai không ?", "vsl": "có còn chút rượu whiskey trong chai không ?", "category": "deletion_only", "pred": "Có chút rượu whiskey nào trong chai còn không ?"}
+{"id": 9266, "vie": "bạn chơi môn thể thao nào thế ?", "vsl": "bạn chơi môn thể thao ?", "category": "deletion_only", "pred": "Bạn môn thể thao chơi nào thế ?"}
+{"id": 9275, "vie": "bạn vui lòng quăng cho tôi chiêc bút bi được không ?", "vsl": "bạn quăng cho tôi chiêc bút bi được không ?", "category": "deletion_only", "pred": "Bạn cho tôi vui lòng quăng bút bi chiêc được không ?"}
+{"id": 9293, "vie": "bạn nói thật vô lý .", "vsl": "bạn nói thật vô lý .", "category": "identical", "pred": "Bạn thật vô lý nói ."}
+{"id": 9301, "vie": "thế thì tôi sẽ đeo đôi giầy khác .", "vsl": "tôi đeo đôi giầy khác .", "category": "deletion_only", "pred": "Thế tôi sẽ giầy khác đôi đeo ."}
+{"id": 9306, "vie": "Tôi muốn thử các loại món ăn từ các quốc gia khác mà chúng tôi không thể nếm ở Nhật Bản .", "vsl": "Tôi muốn thử loại món ăn từ quốc gia khác mà chúng tôi không thể nếm ở Nhật Bản .", "category": "deletion_only", "pred": "Tôi muốn loại món ăn từ quốc gia khác mà chúng tôi không thể ở Nhật Bản nếm thử ."}
+{"id": 9310, "vie": "bạn trông có vẻ chán nản hom nay nhỉ .", "vsl": "bạn trông có vẻ chán nản hom nay .", "category": "deletion_only", "pred": "Bạn trông có vẻ chán nản hom nay nhỉ ."}
+{"id": 9318, "vie": "bạn không nghĩ anh ấy nhận ra tầm quan trọng vai trò của anh ấy như một trưởng nhóm sao ?", "vsl": "bạn nghĩ anh nhận ra tầm quan trọng vai trò anh như một trưởng nhóm sao không ?", "category": "deletion_reorder", "pred": "Bạn không nghĩ anh ấy tầm quan trọng vai trò của anh ấy như trưởng nhóm sao một nhận ra ?"}
+{"id": 9326, "vie": "sau khi cô ấy rời khỏi tôi , tôi đã hiểu cô ấy ngọt ngào thế nào ?", "vsl": "sau khi cô rời khỏi tôi tôi hiểu cô ngọt ngào thế nào ?", "category": "deletion_only", "pred": "Sau khi cô ấy tôi rời khỏi , tôi đã hiểu cô ấy thế nào ngọt ngào ?"}
+{"id": 9327, "vie": "Bạn thực sự biết làm thế nào để làm một công việc hiệu quả .", "vsl": "Bạn thực sự biết làm thế nào làm một công việc hiệu quả .", "category": "deletion_only", "pred": "Bạn thực sự biết để công việc hiệu quả một làm làm thế nào ."}
+{"id": 9331, "vie": "tôi chưa bao giờ nghĩ chúng ta nhận được sự chào đón nồng nhiệt như vậy .", "vsl": "tôi chưa bao giờ nghĩ chúng ta nhận được sự chào đón nồng nhiệt như vậy .", "category": "identical", "pred": "Tôi chưa bao giờ nghĩ chúng ta sự chào đón nồng nhiệt như vậy nhận được ."}
+{"id": 9373, "vie": "ồ , vâng .", "vsl": "vâng .", "category": "deletion_only", "pred": "Ồ , vâng ."}
+{"id": 9397, "vie": "chúng tôi mới được một nửa chuyến du lịch của chúng tôi .", "vsl": "chúng tôi được một nửa chuyến du lịch chúng tôi .", "category": "deletion_only", "pred": "Chúng tôi mới một nửa chuyến du lịch của chúng tôi được ."}
+{"id": 9407, "vie": "Manhattan có vẻ nhỏ , nhưng trong thực tế , có rất nhiều cái để xem .", "vsl": "Manhattan có vẻ nhỏ nhưng trong thực tế có nhiều cái xem .", "category": "deletion_only", "pred": "Manhattan có vẻ nhỏ , nhưng trong thực tế , nhiều cái để xem có ."}
+{"id": 9412, "vie": "hãy kiên trì bám giữ lấy nó cho đến khi bạn dành được chiến thắng .", "vsl": "kiên trì bám giữ lấy nó cho đến khi bạn dành được chiến thắng .", "category": "deletion_only", "pred": "Hãy kiên trì bám nó cho đến khi bạn chiến thắng dành được giữ lấy ."}
+{"id": 9422, "vie": "tôi bị cảm lạnh .", "vsl": "tôi cảm lạnh .", "category": "deletion_only", "pred": "Tôi bị cảm lạnh ."}
+{"id": 9426, "vie": "tôi rất vui vì chúng ta không khó chịu về cuộc sống .", "vsl": "tôi vui chúng ta khó chịu về cuộc sống không", "category": "deletion_reorder", "pred": "Tôi vui vì chúng ta không về cuộc sống khó chịu ."}
+{"id": 9455, "vie": "bạn có thể sửng sốt sao ?", "vsl": "bạn có thể sửng sốt sao ?", "category": "identical", "pred": "Bạn có thể sửng sốt sao ?"}
+{"id": 9457, "vie": "tôi không có đủ khả năng .", "vsl": "tôi có đủ khả năng không", "category": "deletion_reorder", "pred": "Tôi không đủ khả năng có ."}
+{"id": 9466, "vie": "điều đó không quá sớm chứ ?", "vsl": "điều đó quá sớm không ?", "category": "deletion_reorder", "pred": "Điều đó không sớm chứ quá ?"}
+{"id": 9468, "vie": "tôi sẽ gọi con trai bạn thế nào nhỉ ?", "vsl": "tôi gọi con trai bạn thế nào ?", "category": "deletion_only", "pred": "Tôi sẽ con trai bạn thế nào gọi nhỉ ?"}
+{"id": 9492, "vie": "tôi muốn phóng to bức ảnh này .", "vsl": "tôi muốn phóng to bức ảnh .", "category": "deletion_only", "pred": "Tôi muốn bức ảnh này phóng to ."}
+{"id": 9493, "vie": "Nhà ga Trung tâm cũng nổi tiếng .", "vsl": "Nhà ga Trung tâm cũng nổi tiếng .", "category": "identical", "pred": "Nhà ga Trung tâm cũng nổi tiếng ."}
+{"id": 9499, "vie": "vâng , đó chỉ là điều tôi muốn làm .", "vsl": "vâng đó điều tôi muốn làm .", "category": "deletion_only", "pred": "Vâng , đó chỉ điều tôi muốn làm là ."}
+{"id": 9502, "vie": "cơm này dính và đầy .", "vsl": "cơm dính đầy .", "category": "deletion_only", "pred": "Cơm này đầy dính ."}
+{"id": 9507, "vie": "vâng , thực sự .", "vsl": "vâng thực sự .", "category": "deletion_only", "pred": "Vâng , thực sự ."}
+{"id": 9514, "vie": "anh ấy nhẹ nhàng và thân thiện phải không ?", "vsl": "anh nhẹ nhàng thân thiện phải không ?", "category": "deletion_only", "pred": "Anh ấy nhẹ nhàng thân thiện phải không ?"}
+{"id": 9532, "vie": "vâng , tôi ổn .", "vsl": "vâng tôi ổn .", "category": "deletion_only", "pred": "Vâng , tôi ổn ."}
+{"id": 9551, "vie": "Không phải là nó khá khó khăn để học một ngoại ngữ sau khi bạn đã trưởng thành chứ ?", "vsl": "phải nó khá khó khăn học một ngoại ngữ sau khi bạn trưởng thành không ?", "category": "deletion_reorder", "pred": "Không phải là nó khá khó khăn để ngoại ngữ sau khi bạn đã trưởng thành chứ một học ?"}
+{"id": 9566, "vie": "bạn đã có kinh nghiệm khó khăn trước đó rồi phải không ?", "vsl": "bạn có kinh nghiệm khó khăn trước đó rồi phải không ?", "category": "deletion_only", "pred": "Bạn đã kinh nghiệm khó khăn trước đó phải không có rồi ?"}
+{"id": 9601, "vie": "bạn nên vui mừng vì bạn đã không làm nó .", "vsl": "bạn nên vui mừng bạn làm nó không", "category": "deletion_reorder", "pred": "Bạn nên vui mừng vì bạn đã không nó làm ."}
+{"id": 9607, "vie": "vợ của bạn đã thích nghi với môi trường mới xung quanh chưa ?", "vsl": "vợ bạn thích nghi với môi trường xung quanh chưa ?", "category": "deletion_only", "pred": "Vợ của bạn đã với môi trường mới xung quanh thích nghi chưa ?"}
+{"id": 9618, "vie": "tôi nghĩ bóng đá , bóng rổ , khúc quân cầu và bóng chày .", "vsl": "tôi nghĩ bóng đá bóng rổ khúc quân cầu bóng chày .", "category": "deletion_only", "pred": "Tôi bóng đá , bóng rổ , khúc quân cầu bóng chày nghĩ ."}
+{"id": 9630, "vie": "tôi đã không còn quan tâm đến việc làm cái đó .", "vsl": "tôi còn quan tâm đến việc làm cái đó không", "category": "deletion_reorder", "pred": "Tôi đã không còn đến việc cái đó làm quan tâm ."}
+{"id": 9632, "vie": "tôi biết rất rõ đó là một nửa may mắn .", "vsl": "tôi biết rõ đó một nửa may mắn .", "category": "deletion_only", "pred": "Tôi rõ biết đó một nửa may mắn là ."}
+{"id": 9633, "vie": "cái gì đã trở thành jane kể từ khi cô ấy đến texas ?", "vsl": "cái trở thành jane kể từ khi cô đến texas gì ?", "category": "deletion_reorder", "pred": "Cái gì đã jane từ khi cô ấy texas đến kể trở thành ?"}
+{"id": 9635, "vie": "hai người trong các bạn vào nhanh chóng .", "vsl": "hai người trong bạn vào nhanh chóng .", "category": "deletion_only", "pred": "Người trong bạn hai nhanh chóng vào ."}
+{"id": 9639, "vie": "có bất cứ quy định nào về việc hành lý xách tay không ?", "vsl": "có bất cứ quy định về việc hành lý xách tay không ?", "category": "deletion_only", "pred": "Có bất cứ quy định nào về việc hành lý xách tay không ?"}
+{"id": 9648, "vie": "bạn đã nói rằng caroline bị ốm nằm liệt giường sao ?", "vsl": "bạn nói rằng caroline ốm nằm liệt giường sao ?", "category": "deletion_only", "pred": "Bạn đã nói rằng caroline bị ốm sao nằm liệt giường ?"}
+{"id": 9661, "vie": "cuộc đua xe đạp đang trở thành mốt .", "vsl": "cuộc đua xe đạp trở thành mốt .", "category": "deletion_only", "pred": "Cuộc đua xe đạp đang trở thành mốt ."}
+{"id": 9664, "vie": "tôi sợ tiếng sấm .", "vsl": "tôi sợ tiếng sấm .", "category": "identical", "pred": "Tôi tiếng sấm sợ ."}
+{"id": 9667, "vie": "và bạn không nên bỏ lõ tòa nhà liên hợp quốc .", "vsl": "và bạn nên bỏ lõ tòa nhà liên hợp quốc không", "category": "deletion_reorder", "pred": "Bạn không nên bỏ tòa nhà liên hợp quốc lõ ."}
+{"id": 9668, "vie": "chúng tôi phải xếp hàng ở đây để mua vé không ?", "vsl": "chúng tôi phải xếp hàng ở đây mua vé không ?", "category": "deletion_only", "pred": "Chúng tôi phải ở đây để vé mua xếp hàng không ?"}
+{"id": 9670, "vie": "bạn đang điên tiết về Jodie Foster sao .", "vsl": "bạn điên tiết về Jodie Foster sao .", "category": "deletion_only", "pred": "Bạn đang về Jodie Foster sao điên tiết ."}
+{"id": 9696, "vie": "thuốc này có vị hơi đắng .", "vsl": "thuốc có vị hơi đắng .", "category": "deletion_only", "pred": "Thuốc này vị hơi đắng có ."}
+{"id": 9697, "vie": "xe buýt sẽ đến sớm chứ ?", "vsl": "xe buýt đến sớm ?", "category": "deletion_only", "pred": "Xe buýt sẽ sớm đến chứ ?"}
+{"id": 9709, "vie": "hãy cẩn thận trong đám đông để không bị mất ví của bạn .", "vsl": "cẩn thận trong đám đông mất ví bạn không", "category": "deletion_reorder", "pred": "Hãy cẩn thận trong đám đông để không bị ví của bạn mất ."}
+{"id": 9717, "vie": "tôi đã có .", "vsl": "tôi có .", "category": "deletion_only", "pred": "Tôi đã có ."}
+{"id": 9725, "vie": "thịt bò hầm nay được nấu chín kỹ và nó rất ngon .", "vsl": "thịt bò hầm nay được nấu chín kỹ nó ngon .", "category": "deletion_only", "pred": "Thịt bò hầm nay được kỹ nấu chín nó ngon ."}
+{"id": 9729, "vie": "bạn không nên bỏ lỡ cơ hội vàng này .", "vsl": "bạn nên bỏ lỡ cơ hội vàng không", "category": "deletion_reorder", "pred": "Bạn không nên cơ hội vàng này bỏ lỡ ."}
+{"id": 9747, "vie": "bạn sẽ sắp xếp khoảng ba mươi người trên chuyến du lịch chứ ?", "vsl": "bạn sắp xếp khoảng ba mươi người trên chuyến du lịch ?", "category": "deletion_only", "pred": "Bạn sẽ khoảng ba mươi người trên chuyến du lịch sắp xếp chứ ?"}
+{"id": 9760, "vie": "thật khuyến khích tất cả mọi người tham gia vào bữa tiệc .", "vsl": "thật khuyến khích tất cả người tham gia vào bữa tiệc .", "category": "deletion_only", "pred": "Thật tất cả mọi người vào bữa tiệc tham gia khuyến khích ."}
+{"id": 9776, "vie": "tôi sẽ mở chai bia này nhé ?", "vsl": "tôi mở chai bia ?", "category": "deletion_only", "pred": "Tôi sẽ chai bia này mở nhé ?"}
+{"id": 9782, "vie": "bạn không thể trì hoãn việc khởi hành của bạn cho đến tháng tới sao ?", "vsl": "bạn không thể trì hoãn việc khởi hành bạn cho đến tháng tới sao ?", "category": "deletion_only", "pred": "Bạn không thể việc khởi hành của bạn cho đến tháng sao tới trì hoãn ?"}
+{"id": 9792, "vie": "Ở Nhật Bản , chúng tôi có thói quen cởi giày của chúng tôi trước khi đi vào nhà .", "vsl": "Ở Nhật Bản chúng tôi có thói quen cởi giày chúng tôi trước khi đi vào nhà .", "category": "deletion_only", "pred": "Ở Nhật Bản , chúng tôi thói quen giày cởi của chúng tôi trước khi vào nhà đi có ."}
+{"id": 9795, "vie": "bạn nấu quả bí ngô này thế nào ?", "vsl": "bạn nấu quả bí ngô thế nào ?", "category": "deletion_only", "pred": "Bạn quả bí ngô này nấu thế nào ?"}
+{"id": 9800, "vie": "làm thế nào tôi có thể loại bỏ vết bẩn này ?", "vsl": "làm thế nào tôi có thể loại bỏ vết bẩn ?", "category": "deletion_only", "pred": "Thế nào làm tôi có thể vết bẩn này loại bỏ ?"}
+{"id": 9805, "vie": "miếng thịt này không được nấu đủ chín .", "vsl": "miếng thịt được nấu đủ chín không", "category": "deletion_reorder", "pred": "Miếng thịt này không được chín nấu đủ ."}
+{"id": 9813, "vie": "tôi thực sự xin lỗi .", "vsl": "tôi thực sự xin lỗi .", "category": "identical", "pred": "Tôi thực sự xin lỗi ."}
+{"id": 9824, "vie": "Bạn đã có một vết bầm tím trên khuôn mặt của bạn .", "vsl": "Bạn có một vết bầm tím trên khuôn mặt bạn .", "category": "deletion_only", "pred": "Bạn đã vết bầm tím trên khuôn mặt của bạn một có ."}
+{"id": 9832, "vie": "trời khá lạnh trong phòng này .", "vsl": "trời khá lạnh trong phòng .", "category": "deletion_only", "pred": "Trời khá lạnh trong phòng này ."}
+{"id": 9843, "vie": "bạn Có hiểu không ?", "vsl": "bạn Có hiểu không ?", "category": "identical", "pred": "Bạn Có hiểu không ?"}
+{"id": 9857, "vie": "nó ba tám phẩy hai độ .", "vsl": "nó ba tám phẩy hai độ .", "category": "identical", "pred": "Nó tám phẩy hai độ ba ."}
+{"id": 9860, "vie": "anh ấy cao mười xen ti mét năm nay .", "vsl": "anh cao mười xen ti mét năm nay .", "category": "deletion_only", "pred": "Anh ấy cao xen ti mét năm nay mười ."}
+{"id": 9870, "vie": "anh ấy dậy toán .", "vsl": "anh dậy toán .", "category": "deletion_only", "pred": "Anh ấy toán dậy ."}
+{"id": 9881, "vie": "bạn có thể để va li này trong ngăn để hành lí không ?", "vsl": "bạn có thể va li trong ngăn hành lí không ?", "category": "deletion_only", "pred": "Bạn có thể va li này trong ngăn để hành lí để không ?"}
+{"id": 9883, "vie": "tôi cảm thấy muốn nghỉ ngơi sau công việc .", "vsl": "tôi cảm thấy muốn nghỉ ngơi sau công việc .", "category": "identical", "pred": "Tôi cảm thấy muốn sau công việc nghỉ ngơi ."}
+{"id": 9891, "vie": "con vẹt đuôi dài này rõ ràng là thích bạn phải không ?", "vsl": "con vẹt đuôi dài rõ ràng thích bạn phải không ?", "category": "deletion_only", "pred": "Con vẹt đuôi dài này rõ ràng là thích bạn phải không ?"}
+{"id": 9894, "vie": "chồng tôi cho thấy mối quan tâm tới tất cả mọi thứ .", "vsl": "chồng tôi cho thấy mối quan tâm tới tất cả thứ .", "category": "deletion_only", "pred": "Chồng tôi cho thấy mối quan tâm tất cả mọi thứ tới ."}
+{"id": 9895, "vie": "Vải này nên được giặt sạch bằng nước ấm .", "vsl": "Vải nên được giặt sạch bằng nước ấm .", "category": "deletion_only", "pred": "Vải này nên được sạch bằng nước ấm giặt ."}
+{"id": 9903, "vie": "tại sao bạn không để cô ấy đi ngủ ?", "vsl": "tại sao bạn cô đi ngủ không ?", "category": "deletion_reorder", "pred": "Tại sao bạn không để cô ấy đi ngủ ?"}
+{"id": 9915, "vie": "để tôi tìm vaiof lí do để rời khỏi bữa tiệc .", "vsl": "tôi tìm vài lí do rời khỏi bữa tiệc .", "category": "lexical", "pred": "Để tôi vaiof lí do để bữa tiệc rời khỏi tìm ."}
+{"id": 9921, "vie": "tôi muốn một phòng có quang cảnh đẹp .", "vsl": "tôi muốn một phòng có quang cảnh đẹp .", "category": "identical", "pred": "Tôi phòng quang cảnh đẹp có một muốn ."}
+{"id": 9932, "vie": "nó ở trên tầng hai .", "vsl": "nó ở trên tầng hai .", "category": "identical", "pred": "Nó trên tầng hai ở ."}
+{"id": 9949, "vie": "bạn sẽ bàn bạc lại chuyện đó chứ ?", "vsl": "bạn bàn bạc chuyện đó ?", "category": "deletion_only", "pred": "Bạn sẽ chuyện đó bàn bạc lại chứ ?"}
+{"id": 9961, "vie": "tôi muốn hạn chế các chi phí của bữa tiệc , vậy nên nó sẽ có giá hai mươi đô la cho mỗi người .", "vsl": "tôi muốn hạn chế chi phí bữa tiệc nên giá hai mươi đô la một người .", "category": "lexical", "pred": "Tôi muốn chi phí của bữa tiệc hạn chế , vậy nên nó sẽ giá hai mươi cho mỗi người đô la có ."}
+{"id": 9964, "vie": "vâng , lên xe đi .", "vsl": "vâng lên xe đi .", "category": "deletion_only", "pred": "Vâng , xe lên đi ."}
+{"id": 9966, "vie": "rất nhiều nước đang phát triển gặp rắc rối với sự sưy giảm của sản lượng nông nghiệp .", "vsl": "nhiều nước đang phát triển gặp rắc rối với sự sưy giảm sản lượng nông nghiệp .", "category": "deletion_only", "pred": "Nhiều nước đang phát triển với sự sưy của sản lượng nông nghiệp giảm gặp rắc rối ."}
