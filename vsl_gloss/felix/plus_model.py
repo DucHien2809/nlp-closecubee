@@ -85,7 +85,7 @@ class FelixPlusModel(nn.Module):
         return (word_reps * mask).sum(dim=1) / denom
 
     def _slot_reps(self, word_reps, word_mask, order_target=None, insertion_mask=None):
-        """Build insertion-slot reps from gold target order, using pooled reps for gaps."""
+        """Build insertion-slot reps: BOS before the first kept token, then previous kept token."""
         b, w, h = word_reps.shape
         if insertion_mask is not None:
             n_slots = insertion_mask.size(1)
@@ -94,15 +94,18 @@ class FelixPlusModel(nn.Module):
         else:
             n_slots = w + 1
 
-        pooled = self._mean_pool(word_reps, word_mask)
-        slots = pooled.unsqueeze(1).expand(b, n_slots, h).clone()
-        if order_target is not None and n_slots:
-            n_order = min(order_target.size(1), n_slots)
+        slots = self.bos.view(1, 1, h).expand(b, n_slots, h).clone()
+        if order_target is not None and n_slots > 1 and w > 0:
+            n_order = min(order_target.size(1), n_slots - 1)
             order = order_target[:, :n_order]
             valid = (order != IGNORE) & (order >= 0) & (order < w)
             gather_idx = order.clamp(min=0, max=max(w - 1, 0)).unsqueeze(-1).expand(-1, -1, h)
             gathered = torch.gather(word_reps, 1, gather_idx)
-            slots[:, :n_order] = torch.where(valid.unsqueeze(-1), gathered, slots[:, :n_order])
+            slots[:, 1 : n_order + 1] = torch.where(
+                valid.unsqueeze(-1),
+                gathered,
+                slots[:, 1 : n_order + 1],
+            )
 
         if insertion_mask is not None:
             slots = slots * insertion_mask.unsqueeze(-1).to(dtype=slots.dtype)
@@ -161,11 +164,14 @@ class FelixPlusModel(nn.Module):
                 insertion_targets = insertion_targets.masked_fill(
                     insertion_mask.to(dtype=torch.bool).logical_not(), IGNORE
                 )
-            insertion_loss = F.cross_entropy(
-                insertion_logits.reshape(-1, self.insertion_vocab_size),
-                insertion_targets.reshape(-1),
-                ignore_index=IGNORE,
-            )
+            if (insertion_targets != IGNORE).any():
+                insertion_loss = F.cross_entropy(
+                    insertion_logits.reshape(-1, self.insertion_vocab_size),
+                    insertion_targets.reshape(-1),
+                    ignore_index=IGNORE,
+                )
+            else:
+                insertion_loss = insertion_logits.sum() * 0.0
             losses.append(self.insertion_loss_weight * insertion_loss)
 
         if format_labels is not None:
