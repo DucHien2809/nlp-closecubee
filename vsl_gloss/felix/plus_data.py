@@ -75,6 +75,13 @@ def build_plus_example(
     format_vocab: Dict[str, int],
     max_length: int,
 ) -> Optional[FelixPlusExample]:
+    if NONE_PHRASE not in insertion_vocab:
+        raise ValueError(f"insertion_vocab must contain {NONE_PHRASE!r}")
+    if DEFAULT_FORMAT_KEY not in format_vocab:
+        raise ValueError(
+            f"format_vocab must contain DEFAULT_FORMAT_KEY ({DEFAULT_FORMAT_KEY!r})"
+        )
+
     src = tokenize(rec["vie"])
     if not src:
         return None
@@ -84,15 +91,18 @@ def build_plus_example(
         return None
 
     tags = [KEEP_ID if tag == KEEP else DELETE_ID for tag in labels.tags]
-    none_id = insertion_vocab.get(NONE_PHRASE, 0)
+    none_id = insertion_vocab[NONE_PHRASE]
     insertion_labels = [none_id] * (len(labels.order) + 1)
+    unknown_insertions = 0
     for slot, phrase in labels.insertions:
         phrase_id = insertion_vocab.get(_phrase_key(phrase))
-        if phrase_id is not None and 0 <= slot < len(insertion_labels):
+        if phrase_id is None:
+            unknown_insertions += 1
+        elif 0 <= slot < len(insertion_labels):
             insertion_labels[slot] = phrase_id
 
     fmt_key = format_key(labels.format)
-    format_label = format_vocab.get(fmt_key, format_vocab.get(DEFAULT_FORMAT_KEY, 0))
+    format_label = format_vocab.get(fmt_key, format_vocab[DEFAULT_FORMAT_KEY])
 
     return FelixPlusExample(
         id=rec.get("id"),
@@ -104,6 +114,7 @@ def build_plus_example(
         tags=tags,
         order=labels.order,
         insertion_labels=insertion_labels,
+        unknown_insertions=unknown_insertions,
         format_label=format_label,
         src_tokens=src,
     )
@@ -156,7 +167,7 @@ class FelixPlusCollator:
         key_keep = torch.zeros((b, w_max), dtype=torch.long)
         succ = torch.full((b, w_max + 1), IGNORE, dtype=torch.long)
         order_target = torch.full((b, order_max), IGNORE, dtype=torch.long)
-        insertion_labels = torch.zeros((b, ins_max), dtype=torch.long)
+        insertion_labels = torch.full((b, ins_max), IGNORE, dtype=torch.long)
         insertion_mask = torch.zeros((b, ins_max), dtype=torch.long)
         format_labels = torch.zeros((b,), dtype=torch.long)
 
