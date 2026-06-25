@@ -217,6 +217,32 @@ def train_felix(config: str = "configs/felix.yaml", extra_overrides=None):
     print("Done. FELIX trained; leaderboard refreshed in volume 'vsl-artifacts'.")
 
 
+@app.function(gpu="A10G", timeout=60 * 60 * 6, volumes={REMOTE_ARTIFACTS: artifacts})
+def train_felix_plus(config: str = "configs/felix_plus.yaml", extra_overrides=None):
+    """Train FELIX++ and refresh the leaderboard using the existing split."""
+    import os
+    import sys
+
+    os.chdir(REMOTE_APP)
+    sys.path.insert(0, REMOTE_APP)
+
+    from vsl_gloss.data import prepare, split
+    from vsl_gloss.evaluate import build_leaderboard
+    from vsl_gloss.felix import labels as felix_labels
+    from vsl_gloss.felix import plus_train
+
+    cfg = _load_cfg(config, extra_overrides)
+    if not (cfg.paths.resolved("splits_dir") / "test.jsonl").exists():
+        prepare.run(cfg)
+        split.run(cfg)
+    felix_labels.run(cfg, split="test")
+    plus_train.run(cfg)
+    artifacts.reload()
+    build_leaderboard(cfg, split="test")
+    artifacts.commit()
+    print("Done. FELIX++ trained; leaderboard refreshed in volume 'vsl-artifacts'.")
+
+
 @app.local_entrypoint()
 def main(config: str = "configs/vit5_large.yaml", gpu: str = "A100", set: str = ""):
     """Kick off the full pipeline.
@@ -262,4 +288,16 @@ def felix(config: str = "configs/felix.yaml", gpu: str = "A10G", set: str = ""):
     """
     extra = set.split() if set else []
     fn = train_felix.with_options(gpu=gpu) if gpu else train_felix
+    fn.remote(config=config, extra_overrides=extra)
+
+
+@app.local_entrypoint()
+def felix_plus(config: str = "configs/felix_plus.yaml", gpu: str = "A10G", set: str = ""):
+    """Train FELIX++ + refresh the leaderboard.
+
+        modal run modal_app.py::felix_plus
+        modal run modal_app.py::felix_plus --gpu A100 --set "felix_plus.encoder_name=xlm-roberta-large"
+    """
+    extra = set.split() if set else []
+    fn = train_felix_plus.with_options(gpu=gpu) if gpu else train_felix_plus
     fn.remote(config=config, extra_overrides=extra)
