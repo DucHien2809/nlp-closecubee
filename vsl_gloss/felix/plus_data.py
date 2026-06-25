@@ -16,6 +16,7 @@ from .plus_labels import (
     KEEP,
     NONE_PHRASE,
     FormatLabels,
+    build_insertion_vocab,
     extract_plus_labels,
 )
 

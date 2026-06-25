@@ -133,3 +133,13 @@ def test_build_plus_example_tracks_unknown_insertions_as_none():
 
     assert ex["insertion_labels"][0] == 0
     assert ex["unknown_insertions"] == 1
+
+
+def test_plus_data_reexports_build_insertion_vocab():
+    from vsl_gloss.felix.plus_data import build_insertion_vocab
+
+    records = [{"vie": "Tôi đi", "vsl": "Tôi đi ."}]
+
+    vocab = build_insertion_vocab(records)
+
+    assert vocab["NONE"] == 0
