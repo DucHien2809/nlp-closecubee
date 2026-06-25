@@ -98,11 +98,12 @@ def pointer_orders_from_scores(
     width = len(pointer_scores[0]) - 1
     eos = width
     keep = set(keep_indices)
-    heap = [(0.0, 0, [], frozenset())]
+    counter = 0
+    heap = [(0.0, 0, 0, [], frozenset())]
     finished: List[Tuple[float, List[int]]] = []
 
     while heap and len(finished) < top_k:
-        neg_score, query_row, path, used = heapq.heappop(heap)
+        neg_score, _, query_row, path, used = heapq.heappop(heap)
         row = pointer_scores[query_row]
         ranked = sorted(range(len(row)), key=lambda j: row[j], reverse=True)
         for nxt in ranked[: max(2, top_k)]:
@@ -111,10 +112,12 @@ def pointer_orders_from_scores(
                 continue
             if nxt not in keep or nxt in used:
                 continue
+            counter += 1
             heapq.heappush(
                 heap,
                 (
                     neg_score - float(row[nxt]),
+                    counter,
                     nxt + 1,
                     path + [nxt],
                     frozenset(set(used) | {nxt}),
@@ -139,7 +142,7 @@ def _candidate_features(text: str, src_tokens: Sequence[str], order: Sequence[in
     toks = text.split()
     src_set = set(tok.lower() for tok in src_tokens)
     inserted = sum(len(v) for v in insertions.values())
-    repeats = max(0, len(toks) - len(set((i, tok) for i, tok in enumerate(toks))))
+    repeats = max(0, len(toks) - len(set(toks)))
     outside = sum(1 for tok in toks if tok.lower() not in src_set and tok not in {".", "?", "!", ",", ";", ":"})
     return {
         "len_ratio": len(toks) / max(1, len(src_tokens)),
