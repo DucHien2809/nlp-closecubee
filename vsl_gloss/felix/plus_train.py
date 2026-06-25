@@ -19,6 +19,29 @@ from .rerank import RerankWeights, choose_candidate, select_predictions, tune_we
 LOG = get_logger("felix.plus_train")
 
 
+def _order_tensors(order, device):
+    """Build (order_target, insertion_mask) tensors from a list of kept-token indices.
+
+    Args:
+        order: list of int indices of kept tokens (may be empty).
+        device: torch device for the output tensors.
+
+    Returns:
+        order_target: LongTensor of shape [1, len(order)]
+        insertion_mask: LongTensor of shape [1, len(order)+1] filled with ones.
+            If order is empty, insertion_mask has shape [1, 1] so slot 0 (BOS) still works.
+    """
+    import torch
+
+    if order:
+        order_target = torch.tensor([order], dtype=torch.long, device=device)
+        insertion_mask = torch.ones(1, len(order) + 1, dtype=torch.long, device=device)
+    else:
+        order_target = torch.zeros(1, 0, dtype=torch.long, device=device)
+        insertion_mask = torch.ones(1, 1, dtype=torch.long, device=device)
+    return order_target, insertion_mask
+
+
 def read_json(path: str | Path) -> Dict:
     with open(path, "r", encoding="utf-8") as fh:
         return json.load(fh)
@@ -107,6 +130,16 @@ def run(cfg: Config) -> Dict:
     format_vocab = default_format_vocab()
 
     train_ds = FelixPlusDataset(train_records, tokenizer, insertion_vocab, format_vocab, fcfg.max_source_length)
+    val_ds = FelixPlusDataset(val_records, tokenizer, insertion_vocab, format_vocab, fcfg.max_source_length)
+    LOG.info(
+        "Dataset coverage: train=%d kept / %d total (skipped=%d) | val=%d kept / %d total (skipped=%d)",
+        len(train_ds),
+        len(train_records),
+        train_ds.skipped,
+        len(val_ds),
+        len(val_records),
+        val_ds.skipped,
+    )
     collator = FelixPlusCollator(tokenizer.pad_token_id)
     sampler = None
     shuffle = True
@@ -253,7 +286,10 @@ def decode_records(records: List[Dict], tokenizer, model, device, cfg: Config, i
             out = model(**feats)
             keep = (out.tag_logits.argmax(-1)[0].cpu().tolist())
             order = [i for i, tag in enumerate(keep[: len(ex["src_tokens"])]) if tag == 0]
-            insert_logits = out.insertion_logits.argmax(-1)[0].cpu().tolist()
+            # Condition insertion logits on the predicted order (train/inference parity).
+            order_target, insertion_mask = _order_tensors(order, device)
+            out2 = model(**feats, order_target=order_target, insertion_mask=insertion_mask)
+            insert_logits = out2.insertion_logits.argmax(-1)[0].cpu().tolist()
             insertions = {}
             for slot, label_id in enumerate(insert_logits[: len(order) + 1]):
                 phrase = inv_insert.get(int(label_id), "NONE")
@@ -312,9 +348,14 @@ def candidate_groups_for_records(records, tokenizer, model, device, cfg, inserti
                 top_k=fcfg.pointer_top_k,
             )
 
+            # Condition insertion logits on the top predicted order (train/inference parity).
+            chosen = orders[0]
+            order_target, insertion_mask = _order_tensors(list(chosen), device)
+            pred2 = model(**feats, order_target=order_target, insertion_mask=insertion_mask)
+
             insertion_options = [{}]
-            top_insert = pred.insertion_logits.softmax(-1)[0]
-            for slot in range(min(top_insert.size(0), len(orders[0]) + 1)):
+            top_insert = pred2.insertion_logits.softmax(-1)[0]
+            for slot in range(min(top_insert.size(0), len(chosen) + 1)):
                 vals, ids = torch.topk(top_insert[slot], k=min(fcfg.insertion_top_k, top_insert.size(-1)))
                 for prob, label_id in zip(vals.tolist(), ids.tolist()):
                     phrase = inv_insert.get(int(label_id), "NONE")
