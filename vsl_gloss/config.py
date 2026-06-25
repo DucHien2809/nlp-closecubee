@@ -140,6 +140,51 @@ class FelixConfig:
 
 
 @dataclass
+class FelixPlusConfig:
+    """FELIX++ edit model with insertion, format repair, and reranking."""
+    encoder_name: str = "xlm-roberta-base"
+    max_source_length: int = 128
+    pointer_dim: int = 256
+    dropout: float = 0.1
+
+    tag_loss_weight: float = 1.0
+    pointer_loss_weight: float = 1.0
+    insertion_loss_weight: float = 0.35
+    format_loss_weight: float = 0.05
+
+    num_train_epochs: float = 20.0
+    tag_warmup_epochs: int = 2
+    pointer_warmup_epochs: int = 2
+    learning_rate: float = 2.0e-5
+    head_learning_rate_multiplier: float = 20.0
+    batch_size: int = 16
+    eval_batch_size: int = 64
+    weight_decay: float = 0.01
+    warmup_ratio: float = 0.06
+    max_grad_norm: float = 1.0
+    seed: int = 42
+
+    insertion_min_count: int = 1
+    max_insertion_phrase_len: int = 4
+    max_candidates: int = 32
+    tag_top_k: int = 2
+    pointer_top_k: int = 4
+    insertion_top_k: int = 3
+    rerank_grid: List[float] = field(default_factory=lambda: [-1.0, -0.5, 0.0, 0.5, 1.0])
+    selection_metric: str = "wer"
+    category_weighting: bool = True
+    category_weights: Dict[str, float] = field(
+        default_factory=lambda: {
+            "identical": 1.0,
+            "deletion_only": 1.2,
+            "reorder_only": 3.0,
+            "deletion_reorder": 3.0,
+            "lexical": 5.0,
+        }
+    )
+
+
+@dataclass
 class EnsembleConfig:
     """Candidate-pool MBR ensemble of already-trained seq2seq members.
 
@@ -180,6 +225,7 @@ class Config:
     decode: DecodeConfig = field(default_factory=DecodeConfig)
     eval: EvalConfig = field(default_factory=EvalConfig)
     felix: FelixConfig = field(default_factory=FelixConfig)
+    felix_plus: FelixPlusConfig = field(default_factory=FelixPlusConfig)
     ensemble: EnsembleConfig = field(default_factory=EnsembleConfig)
 
     # ---- (de)serialisation helpers ------------------------------------------------
@@ -205,6 +251,7 @@ class Config:
             decode=cls._build(DecodeConfig, d.get("decode")),
             eval=cls._build(EvalConfig, d.get("eval")),
             felix=cls._build(FelixConfig, d.get("felix")),
+            felix_plus=cls._build(FelixPlusConfig, d.get("felix_plus")),
             ensemble=cls._build(EnsembleConfig, d.get("ensemble")),
         )
 

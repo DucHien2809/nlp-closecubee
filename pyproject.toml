@@ -11,7 +11,16 @@ requires-python = ">=3.9"
 authors = [{ name = "CloseCubee" }]
 
 [tool.setuptools]
-packages = ["vsl_gloss", "vsl_gloss.data", "vsl_gloss.baselines", "vsl_gloss.models"]
+packages = [
+    "vsl_gloss",
+    "vsl_gloss.data",
+    "vsl_gloss.baselines",
+    "vsl_gloss.models",
+    "vsl_gloss.felix",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
 [tool.black]
 line-length = 100

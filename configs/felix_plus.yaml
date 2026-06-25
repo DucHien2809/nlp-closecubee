@@ -1,0 +1,52 @@
+# =====================================================================
+# FELIX++ edit model: tag + pointer + insertion + format + reranking.
+# Uses the existing leakage-free train/val/test split. Do not resplit.
+# =====================================================================
+experiment_name: felix_plus_rerank
+
+paths:
+  raw_dir: ../Parallel-Corpus-Vie-VSL-main
+  processed_dir: data/processed
+  splits_dir: data/splits
+  output_dir: outputs
+  reports_dir: reports
+
+felix_plus:
+  encoder_name: xlm-roberta-base
+  max_source_length: 128
+  pointer_dim: 256
+  dropout: 0.1
+  tag_loss_weight: 1.0
+  pointer_loss_weight: 1.0
+  insertion_loss_weight: 0.35
+  format_loss_weight: 0.05
+  num_train_epochs: 20
+  tag_warmup_epochs: 2
+  pointer_warmup_epochs: 2
+  learning_rate: 2.0e-5
+  head_learning_rate_multiplier: 20.0
+  batch_size: 16
+  eval_batch_size: 64
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  max_grad_norm: 1.0
+  seed: 42
+  insertion_min_count: 1
+  max_insertion_phrase_len: 4
+  max_candidates: 32
+  tag_top_k: 2
+  pointer_top_k: 4
+  insertion_top_k: 3
+  selection_metric: wer
+  category_weighting: true
+  category_weights:
+    identical: 1.0
+    deletion_only: 1.2
+    reorder_only: 3.0
+    deletion_reorder: 3.0
+    lexical: 5.0
+
+eval:
+  report_categories: true
+  report_normalized: true
+  error_examples_per_category: 15
