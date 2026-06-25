@@ -133,12 +133,12 @@ def test_order_tensors_helper_produces_correct_shapes():
     assert im_empty.tolist() == [[1]]
 
 
-def test_decode_records_conditions_on_predicted_order():
-    """Integration smoke-test: decode_records produces output with the fixed path.
+def test_model_insertion_logits_differ_conditioned_vs_unconditioned():
+    """Model-level check: insertion logits differ when order_target is supplied vs not.
 
-    We mock the model so we can verify that the second model call (with order_target)
-    is made when the fix is applied. This is a structural test — we check that
-    insertion logits actually change when a different order is supplied.
+    This test operates directly on the model (not decode_records). It proves that
+    conditioning on a predicted order actually changes the insertion logits, i.e., the
+    conditioned path is meaningfully distinct from the all-BOS fallback.
     """
     model = _make_model()
 
@@ -157,3 +157,160 @@ def test_decode_records_conditions_on_predicted_order():
         out_base.insertion_logits[:, : len(order) + 1],
         out_ordered.insertion_logits[:, : len(order) + 1],
     ), "Fixed path must produce different insertion logits than all-BOS fallback."
+
+
+# ---------------------------------------------------------------------------
+# Integration test: decode_records uses the CONDITIONED (second) model call
+# for insertion logits.
+# ---------------------------------------------------------------------------
+
+class _FakeOutput:
+    """Stand-in for FelixPlusModel output namedtuple."""
+
+    def __init__(self, tag_logits, pointer_logits, insertion_logits, format_logits):
+        self.tag_logits = tag_logits
+        self.pointer_logits = pointer_logits
+        self.insertion_logits = insertion_logits
+        self.format_logits = format_logits
+
+
+class _CallRecordingModel:
+    """Lightweight stand-in for FelixPlusModel that records every forward call.
+
+    Call 1 (unconditioned, order_target=None):
+      - tag_logits:       keep all tokens (tag==0 for every word position)
+      - insertion_logits: all-NONE (label index 0), the "wrong" result
+      - pointer_logits:   identity order [0, 1, 2, ...]
+      - format_logits:    label 0
+
+    Call 2 (conditioned, order_target is not None):
+      - insertion_logits: label 1 ("HELLO") for slot 0, NONE elsewhere
+
+    This means: if decode_records reads insertion_logits from the FIRST call it
+    produces no insertion; if it reads from the SECOND call it inserts "HELLO".
+    The test then asserts "HELLO" appears in the output, which can only happen
+    when the conditioned (second) call is used.
+    """
+
+    def __init__(self, n_words: int, insertion_vocab_size: int, format_vocab_size: int):
+        self.n_words = n_words
+        self.insertion_vocab_size = insertion_vocab_size
+        self.format_vocab_size = format_vocab_size
+        self.calls: list = []  # each entry: dict of kwargs received
+
+    def eval(self):
+        return self
+
+    def __call__(self, input_ids, attention_mask, first_subword_idx, word_mask,
+                 order_target=None, insertion_mask=None, **kwargs):
+        n = self.n_words
+        call_kwargs = {
+            "order_target": order_target,
+            "insertion_mask": insertion_mask,
+        }
+        self.calls.append(call_kwargs)
+
+        # tag_logits: shape [1, n, 2] — argmax==0 means KEEP for all tokens
+        tag_logits = torch.zeros(1, n, 2)
+        tag_logits[:, :, 0] = 10.0  # strongly predict KEEP (tag 0)
+
+        # pointer_logits: identity order — token i points to itself
+        pointer_logits = torch.eye(n).unsqueeze(0)  # [1, n, n]
+
+        # format_logits: shape [1, 2], predict label 0
+        format_logits = torch.zeros(1, self.format_vocab_size)
+        format_logits[:, 0] = 10.0
+
+        # insertion_logits: shape [1, n+1, vocab_size]
+        insertion_logits = torch.zeros(1, n + 1, self.insertion_vocab_size)
+
+        if order_target is None:
+            # Unconditioned call: predict NONE (index 0) for all slots
+            insertion_logits[:, :, 0] = 10.0
+        else:
+            # Conditioned call: predict "HELLO" (index 1) for slot 0
+            insertion_logits[:, 0, 1] = 10.0   # slot 0 → label 1 ("HELLO")
+            insertion_logits[:, 1:, 0] = 10.0  # other slots → NONE
+
+        return _FakeOutput(tag_logits, pointer_logits, insertion_logits, format_logits)
+
+
+def _make_fake_tokenizer_and_cfg():
+    """Return (tokenizer, cfg) suitable for decode_records."""
+
+    class FakeEncoding(dict):
+        def __init__(self, tokens):
+            super().__init__({"input_ids": list(range(10, 10 + len(tokens)))})
+            self._word_ids = list(range(len(tokens)))
+
+        def word_ids(self):
+            return self._word_ids
+
+    class FakeTokenizer:
+        pad_token_id = 0
+
+        def __call__(self, src_tokens, is_split_into_words=True, truncation=True, max_length=128):
+            return FakeEncoding(src_tokens[:max_length])
+
+    from vsl_gloss.config import Config
+
+    cfg = Config.from_dict({"felix_plus": {"max_source_length": 128}})
+    return FakeTokenizer(), cfg
+
+
+def test_decode_records_uses_conditioned_second_call():
+    """Integration test: decode_records must call the model TWICE and use the
+    SECOND (conditioned) call's insertion_logits.
+
+    The stand-in model returns:
+      - call 1 (order_target=None)  → insertion label 0 ("NONE") for all slots
+      - call 2 (order_target!=None) → insertion label 1 ("HELLO") for slot 0
+
+    Correct decode_records reads slot 0 from call 2 → output contains "HELLO".
+    A buggy decode_records that reads from call 1 → output does NOT contain "HELLO".
+
+    The test also asserts:
+      (a) exactly 2 model calls were made,
+      (b) call 2 received a non-None order_target.
+    """
+    from vsl_gloss.felix.plus_train import decode_records
+
+    # Vocab: index 0 = NONE, index 1 = "HELLO"
+    insertion_vocab = {"NONE": 0, "HELLO": 1}
+    format_vocab = {"final=NONE|case=preserve|spacing=1": 0, "final=?|case=preserve|spacing=1": 1}
+
+    # A simple 3-word source sentence; all tokens kept → order = [0, 1, 2]
+    records = [{"id": "t1", "vie": "A B C", "vsl": "A B C", "category": "identical"}]
+
+    tokenizer, cfg = _make_fake_tokenizer_and_cfg()
+    model = _CallRecordingModel(
+        n_words=3,
+        insertion_vocab_size=len(insertion_vocab),
+        format_vocab_size=len(format_vocab),
+    )
+
+    torch.manual_seed(0)
+    preds = decode_records(records, tokenizer, model, device=torch.device("cpu"),
+                           cfg=cfg, insertion_vocab=insertion_vocab, format_vocab=format_vocab)
+
+    # (a) Model must have been called exactly twice for the one record.
+    assert len(model.calls) == 2, (
+        f"Expected 2 model calls (unconditioned + conditioned), got {len(model.calls)}. "
+        "If only 1 call, decode_records is not making the conditioned second call. "
+        "If 0 calls, build_plus_example returned None."
+    )
+
+    # (b) Second call must have received a non-None order_target.
+    assert model.calls[1]["order_target"] is not None, (
+        "Second model call did not receive order_target. "
+        "decode_records must pass order_target to the conditioned (second) call."
+    )
+
+    # (c) Output must contain "HELLO" — only possible if insertion_logits from call 2
+    #     were used (call 1 always returns NONE for all slots).
+    assert len(preds) == 1
+    assert "HELLO" in preds[0], (
+        f"Expected 'HELLO' in prediction (from conditioned logits), got: {preds[0]!r}. "
+        "If 'HELLO' is absent, decode_records is reading insertion_logits from the "
+        "unconditioned first call instead of the conditioned second call."
+    )
