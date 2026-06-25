@@ -1,4 +1,10 @@
-"""FELIX++ label extraction: tag, pointer, insertion, and format labels."""
+"""FELIX++ label extraction: tag, pointer, insertion, and format labels.
+
+Insertion labels capture unmatched lexical and punctuation tokens needed for
+edit reconstruction. Format labels describe deterministic post-edit repair:
+terminal punctuation is a normalization target that should replace/normalize
+the final punctuation later, not append a second mark blindly.
+"""
 from __future__ import annotations
 
 from collections import Counter, defaultdict, deque
@@ -24,6 +30,13 @@ PUNCT = {".", "?", "!", ",", ";", ":"}
 
 @dataclass(frozen=True)
 class FormatLabels:
+    """Post-edit normalization labels.
+
+    ``punct_spacing=True`` means the decoder should apply deterministic
+    punctuation spacing normalization after edit reconstruction. It is not a
+    learned label for raw whitespace in the tokenized input.
+    """
+
     final_punct: str = FINAL_PUNCT_NONE
     first_case: str = FIRST_CASE_PRESERVE
     punct_spacing: bool = True
@@ -46,16 +59,22 @@ def _first_alpha_token(tokens: Sequence[str]) -> str:
     return ""
 
 
-def _first_case(src_tokens: Sequence[str], tgt_tokens: Sequence[str]) -> str:
-    src = _first_alpha_token(src_tokens)
+def _align_key(token: str) -> str:
+    return token.casefold()
+
+
+def _first_case(rendered_tokens: Sequence[str], tgt_tokens: Sequence[str]) -> str:
+    src = _first_alpha_token(rendered_tokens)
     tgt = _first_alpha_token(tgt_tokens)
     if not src or not tgt:
         return FIRST_CASE_PRESERVE
     if tgt == src:
         return FIRST_CASE_PRESERVE
-    if tgt == src.lower():
+    if _align_key(tgt) != _align_key(src):
+        return FIRST_CASE_PRESERVE
+    if src[:1] != src[:1].lower() and tgt[:1] == tgt[:1].lower():
         return FIRST_CASE_LOWER
-    if src[:1] == src[:1].lower() and tgt[:1] == tgt[:1].upper() and src[:1] != tgt[:1]:
+    if src[:1] == src[:1].lower() and tgt[:1] == tgt[:1].upper():
         return FIRST_CASE_UPPER
     return FIRST_CASE_PRESERVE
 
@@ -69,17 +88,36 @@ def _final_punct(tokens: Sequence[str]) -> str:
     return FINAL_PUNCT_NONE
 
 
+def _oracle_reconstruct(
+    src_tokens: Sequence[str],
+    order: Sequence[int],
+    insertions: Sequence[Tuple[int, Tuple[str, ...]]],
+) -> List[str]:
+    insertions_by_slot: Dict[int, List[Tuple[str, ...]]] = defaultdict(list)
+    for slot, phrase in insertions:
+        insertions_by_slot[slot].append(phrase)
+
+    rendered: List[str] = []
+    for slot, src_i in enumerate(order):
+        for phrase in insertions_by_slot.get(slot, []):
+            rendered.extend(phrase)
+        rendered.append(src_tokens[src_i])
+    for phrase in insertions_by_slot.get(len(order), []):
+        rendered.extend(phrase)
+    return rendered
+
+
 def extract_plus_labels(src_tokens: List[str], tgt_tokens: List[str]) -> PlusLabels:
     buckets: Dict[str, deque[int]] = defaultdict(deque)
     for i, tok in enumerate(src_tokens):
-        buckets[tok.lower()].append(i)
+        buckets[_align_key(tok)].append(i)
 
     tags = [DELETE] * len(src_tokens)
     order: List[int] = []
     raw_insertions: List[Tuple[int, str]] = []
 
     for tok in tgt_tokens:
-        q = buckets.get(tok.lower())
+        q = buckets.get(_align_key(tok))
         if q:
             src_i = q.popleft()
             tags[src_i] = KEEP
@@ -101,9 +139,13 @@ def extract_plus_labels(src_tokens: List[str], tgt_tokens: List[str]) -> PlusLab
     if current_slot is not None:
         grouped.append((current_slot, tuple(current_tokens)))
 
+    rendered_tokens = _oracle_reconstruct(src_tokens, order, grouped)
+    # Insertions can include final punctuation for oracle edit reconstruction;
+    # final_punct separately teaches later format repair to replace/normalize
+    # the terminal punctuation instead of appending another mark.
     fmt = FormatLabels(
         final_punct=_final_punct(tgt_tokens),
-        first_case=_first_case(src_tokens, tgt_tokens),
+        first_case=_first_case(rendered_tokens, tgt_tokens),
         punct_spacing=True,
     )
     return PlusLabels(src_tokens, tgt_tokens, tags, order, grouped, fmt)
