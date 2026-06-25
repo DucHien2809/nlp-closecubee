@@ -75,3 +75,106 @@ def verify_prediction_alignment(predictions_path: str | Path, split_path: str | 
     )
     assert pred_ids == split_ids, "prediction ids do not match split ids in order"
     assert all("pred" in r for r in pred_rows), "every prediction row must include pred"
+
+
+def pointer_orders_from_scores(
+    pointer_scores,
+    keep_indices: Sequence[int],
+    top_k: int,
+) -> List[List[int]]:
+    """Return up to top_k successor paths from pointer scores.
+
+    `pointer_scores` is indexed as query rows `[BOS, w0, ...]` and key columns
+    `[w0, ..., EOS]`. This function is deterministic and forbids repeated source
+    indices in one path.
+    """
+    import heapq
+
+    if hasattr(pointer_scores, "detach"):
+        pointer_scores = pointer_scores.detach().cpu().tolist()
+    if not keep_indices:
+        return [[]]
+
+    width = len(pointer_scores[0]) - 1
+    eos = width
+    keep = set(keep_indices)
+    heap = [(0.0, 0, [], frozenset())]
+    finished: List[Tuple[float, List[int]]] = []
+
+    while heap and len(finished) < top_k:
+        neg_score, query_row, path, used = heapq.heappop(heap)
+        row = pointer_scores[query_row]
+        ranked = sorted(range(len(row)), key=lambda j: row[j], reverse=True)
+        for nxt in ranked[: max(2, top_k)]:
+            if nxt == eos:
+                finished.append((neg_score - float(row[nxt]), path))
+                continue
+            if nxt not in keep or nxt in used:
+                continue
+            heapq.heappush(
+                heap,
+                (
+                    neg_score - float(row[nxt]),
+                    nxt + 1,
+                    path + [nxt],
+                    frozenset(set(used) | {nxt}),
+                ),
+            )
+
+    unique: List[List[int]] = []
+    seen = set()
+    for _, path in sorted(finished, key=lambda x: x[0]):
+        key = tuple(path)
+        if key not in seen:
+            seen.add(key)
+            unique.append(path)
+        if len(unique) >= top_k:
+            break
+    if not unique:
+        unique.append(list(keep_indices))
+    return unique
+
+
+def _candidate_features(text: str, src_tokens: Sequence[str], order: Sequence[int], insertions: Dict[int, Tuple[str, ...]]) -> Dict[str, float]:
+    toks = text.split()
+    src_set = set(tok.lower() for tok in src_tokens)
+    inserted = sum(len(v) for v in insertions.values())
+    repeats = max(0, len(toks) - len(set((i, tok) for i, tok in enumerate(toks))))
+    outside = sum(1 for tok in toks if tok.lower() not in src_set and tok not in {".", "?", "!", ",", ";", ":"})
+    return {
+        "len_ratio": len(toks) / max(1, len(src_tokens)),
+        "deleted": max(0, len(src_tokens) - len(order)),
+        "inserted": inserted,
+        "outside_source": outside,
+        "repeat": repeats,
+    }
+
+
+def build_candidates_from_predictions(
+    src_tokens: Sequence[str],
+    orders: Sequence[Sequence[int]],
+    insertion_options: Sequence[Dict[int, Tuple[str, ...]]],
+    format_options: Sequence[str],
+    max_candidates: int,
+) -> List[EditCandidate]:
+    seen = set()
+    out: List[EditCandidate] = []
+    for order in orders:
+        for insertions in insertion_options:
+            for fmt in format_options:
+                text = render_edit(src_tokens, order, insertions, fmt)
+                if text in seen:
+                    continue
+                seen.add(text)
+                out.append(
+                    EditCandidate(
+                        text=text,
+                        order=list(order),
+                        insertions=dict(insertions),
+                        format_label=fmt,
+                        features=_candidate_features(text, src_tokens, order, insertions),
+                    )
+                )
+                if len(out) >= max_candidates:
+                    return out
+    return out
