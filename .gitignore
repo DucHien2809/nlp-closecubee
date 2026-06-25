@@ -5,6 +5,7 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
+.worktrees/
 
 # Data artifacts (the *raw* corpus stays outside this repo)
 data/processed/
