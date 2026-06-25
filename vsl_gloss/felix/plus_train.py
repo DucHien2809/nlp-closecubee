@@ -14,7 +14,7 @@ from ..utils import apply_overrides, get_logger, read_jsonl, set_seed, write_jso
 from .plus_data import FelixPlusCollator, FelixPlusDataset, build_insertion_vocab, default_format_vocab
 from .plus_decode import EditCandidate, build_candidates_from_predictions, verify_prediction_alignment
 from .plus_model import FelixPlusModel
-from .rerank import RerankWeights, choose_candidate, tune_weights
+from .rerank import RerankWeights, choose_candidate, select_predictions, tune_weights
 
 LOG = get_logger("felix.plus_train")
 
@@ -197,6 +197,17 @@ def run(cfg: Config) -> Dict:
         model.load_state_dict(best_state)
         model.to(device).eval()
 
+    val_groups = candidate_groups_for_records(val_records, tokenizer, model, device, cfg, insertion_vocab, format_vocab)
+    feature_names = sorted({name for group in val_groups for cand in group for name in cand.features})
+    rerank_weights = tune_weights(
+        val_groups,
+        [r["vsl"] for r in val_records],
+        feature_names=feature_names,
+        grid=fcfg.rerank_grid,
+        metric=fcfg.selection_metric,
+    )
+    save_checkpoint(model, tokenizer, out_dir / "model", insertion_vocab, format_vocab, rerank_weights)
+
     pred_path = predict_split(cfg, str(out_dir / "model"), split="test", name=cfg.experiment_name)
     verify_prediction_alignment(pred_path, test_path)
 
@@ -254,6 +265,86 @@ def decode_records(records: List[Dict], tokenizer, model, device, cfg: Config, i
     return preds
 
 
+def candidate_groups_for_records(records, tokenizer, model, device, cfg, insertion_vocab, format_vocab):
+    import torch
+    from .plus_data import FelixPlusCollator, build_plus_example
+    from .plus_decode import build_candidates_from_predictions, pointer_orders_from_scores
+
+    inv_format = {v: k for k, v in format_vocab.items()}
+    inv_insert = {v: k for k, v in insertion_vocab.items()}
+    collator = FelixPlusCollator(tokenizer.pad_token_id)
+    fcfg = cfg.felix_plus
+    out = []
+    model.eval()
+    with torch.no_grad():
+        for rec in records:
+            ex = build_plus_example(rec, tokenizer, insertion_vocab, format_vocab, fcfg.max_source_length)
+            if ex is None:
+                out.append([
+                    EditCandidate(
+                        text=rec["vie"],
+                        order=[],
+                        insertions={},
+                        format_label="final=NONE|case=preserve|spacing=1",
+                        features={"model": 0.0, "fallback": 1.0},
+                    )
+                ])
+                continue
+
+            batch = collator([ex])
+            feats = {
+                key: batch[key].to(device)
+                for key in ("input_ids", "attention_mask", "first_subword_idx", "word_mask")
+            }
+            pred = model(**feats)
+            tag_probs = pred.tag_logits.softmax(-1)[0]
+            keep_indices = [
+                i
+                for i in range(len(ex["src_tokens"]))
+                if int(tag_probs[i].argmax().item()) == 0
+            ]
+            if not keep_indices:
+                keep_indices = list(range(len(ex["src_tokens"])))
+
+            orders = pointer_orders_from_scores(
+                pred.pointer_logits[0],
+                keep_indices=keep_indices,
+                top_k=fcfg.pointer_top_k,
+            )
+
+            insertion_options = [{}]
+            top_insert = pred.insertion_logits.softmax(-1)[0]
+            for slot in range(min(top_insert.size(0), len(orders[0]) + 1)):
+                vals, ids = torch.topk(top_insert[slot], k=min(fcfg.insertion_top_k, top_insert.size(-1)))
+                for prob, label_id in zip(vals.tolist(), ids.tolist()):
+                    phrase = inv_insert.get(int(label_id), "NONE")
+                    if phrase != "NONE":
+                        insertion_options.append({slot: tuple(phrase.split())})
+
+            fmt_vals, fmt_ids = torch.topk(
+                pred.format_logits.softmax(-1)[0],
+                k=min(3, pred.format_logits.size(-1)),
+            )
+            format_options = [inv_format.get(int(i), "final=NONE|case=preserve|spacing=1") for i in fmt_ids.tolist()]
+
+            group = build_candidates_from_predictions(
+                src_tokens=ex["src_tokens"],
+                orders=orders,
+                insertion_options=insertion_options,
+                format_options=format_options,
+                max_candidates=fcfg.max_candidates,
+            )
+            out.append(group)
+    return out
+
+
+def _load_rerank_weights(model_dir: Path) -> RerankWeights:
+    path = model_dir / "rerank_weights.json"
+    if not path.exists():
+        return RerankWeights({"model": 1.0})
+    return RerankWeights({k: float(v) for k, v in read_json(path).items()})
+
+
 def predict_split(cfg: Config, model_dir: str, split: str, name: str) -> Path:
     import torch
     from transformers import AutoModel, AutoTokenizer
@@ -278,7 +369,8 @@ def predict_split(cfg: Config, model_dir: str, split: str, name: str) -> Path:
     model.to(device).eval()
 
     records = read_jsonl(cfg.paths.resolved("splits_dir") / f"{split}.jsonl")
-    preds = decode_records(records, tokenizer, model, device, cfg, insertion_vocab, format_vocab)
+    groups = candidate_groups_for_records(records, tokenizer, model, device, cfg, insertion_vocab, format_vocab)
+    preds = select_predictions(groups, _load_rerank_weights(model_dir))
     rows = [
         {"id": r["id"], "vie": r["vie"], "vsl": r["vsl"], "category": r["category"], "pred": p}
         for r, p in zip(records, preds)

@@ -23,3 +23,18 @@ def test_tune_weights_prefers_lower_validation_wer():
 
     weights = tune_weights(candidate_groups, refs, feature_names=["model"], grid=[-1.0, 1.0])
     assert choose_candidate(candidate_groups[0], weights).text == "Tôi đau đầu ."
+
+
+from vsl_gloss.felix.rerank import select_predictions
+
+
+def test_select_predictions_applies_one_candidate_per_group():
+    groups = [
+        [
+            EditCandidate("wrong", [], {}, "final=NONE|case=preserve|spacing=1", {"model": -1.0}),
+            EditCandidate("right", [], {}, "final=NONE|case=preserve|spacing=1", {"model": 0.0}),
+        ]
+    ]
+    weights = RerankWeights({"model": 1.0})
+
+    assert select_predictions(groups, weights) == ["right"]

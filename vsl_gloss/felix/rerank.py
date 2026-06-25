@@ -33,6 +33,10 @@ def _metric_value(preds: List[str], refs: List[str], metric: str) -> float:
     return m.get(metric, m["bleu"])
 
 
+def select_predictions(candidate_groups: Sequence[Sequence[EditCandidate]], weights: RerankWeights) -> List[str]:
+    return [choose_candidate(group, weights).text for group in candidate_groups]
+
+
 def tune_weights(
     candidate_groups: Sequence[Sequence[EditCandidate]],
     refs: Sequence[str],
