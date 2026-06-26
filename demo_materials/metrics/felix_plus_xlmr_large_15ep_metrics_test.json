@@ -1,0 +1,66 @@
+{
+  "overall": {
+    "n": 949,
+    "bleu": 84.916,
+    "wer": 12.346,
+    "exact_match": 28.451,
+    "chrf": 93.165,
+    "ter": 11.792
+  },
+  "overall_lowercased": {
+    "n": 949,
+    "bleu": 85.472,
+    "wer": 11.906,
+    "exact_match": 30.348,
+    "chrf": 93.467,
+    "ter": 11.792
+  },
+  "by_category": {
+    "deletion_only": {
+      "n": 592,
+      "bleu": 87.67,
+      "wer": 9.621,
+      "exact_match": 34.291,
+      "chrf": 95.372,
+      "ter": 9.335
+    },
+    "deletion_reorder": {
+      "n": 106,
+      "bleu": 81.485,
+      "wer": 15.502,
+      "exact_match": 15.094,
+      "chrf": 93.349,
+      "ter": 13.342
+    },
+    "identical": {
+      "n": 225,
+      "bleu": 77.442,
+      "wer": 16.123,
+      "exact_match": 20.0,
+      "chrf": 88.45,
+      "ter": 15.862
+    },
+    "lexical": {
+      "n": 16,
+      "bleu": 51.378,
+      "wer": 39.831,
+      "exact_match": 18.75,
+      "chrf": 74.629,
+      "ter": 37.288
+    },
+    "reorder_only": {
+      "n": 10,
+      "bleu": 62.896,
+      "wer": 25.0,
+      "exact_match": 30.0,
+      "chrf": 73.844,
+      "ter": 22.059
+    }
+  },
+  "_meta": {
+    "system": "felix_plus_xlmr_large_15ep",
+    "split": "test",
+    "n": 949,
+    "predictions": "/artifacts/outputs/felix_plus_xlmr_large_15ep/predictions_test.jsonl"
+  }
+}

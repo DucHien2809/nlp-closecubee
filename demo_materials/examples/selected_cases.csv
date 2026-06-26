@@ -1,0 +1,15 @@
+﻿id,case_type,category,reason,source,gold,vit5_pred,bartpho_pred,mbr_pred,felix_plus_pred
+76,correct,deletion_only,Đúng: xóa được từ chức năng/thừa.,Tên ký hiệu của bạn là gì ?,Tên ký hiệu bạn gì ?,Tên ký hiệu bạn gì ?,Tên ký hiệu bạn gì ?,Tên ký hiệu bạn gì ?,Tên ký hiệu bạn gì ?
+67,correct,reorder_only,Đúng: học được đảo trật tự gloss.,Tôi thích nhất màu trắng .,Tôi màu trắng thích nhất .,Tôi màu trắng thích nhất .,Tôi thích nhất màu trắng .,Tôi màu trắng thích nhất .,Tôi màu trắng thích nhất .
+28,correct,deletion_reorder,Đúng: kết hợp xóa từ và đổi trật tự.,1 năm có mấy tháng ?,1 năm tháng mấy ?,1 năm tháng mấy ?,1 năm tháng mấy ?,1 năm tháng mấy ?,1 năm tháng mấy ?
+14,correct,identical,Đúng: câu gần copy được giữ nguyên.,Bạn học lớp mấy ?,Bạn học lớp mấy ?,Bạn học lớp mấy ?,Bạn học lớp mấy ?,Bạn học lớp mấy ?,Bạn học lớp ?
+548,mbr_improvement,identical,MBR chọn đúng dù ít nhất một backbone sai.,Tôi có hai con mèo .,Tôi có hai con mèo .,Tôi có hai con mèo .,Tôi mèo hai .,Tôi có hai con mèo .,Tôi mèo có hai ?
+606,mbr_improvement,deletion_only,MBR chọn đúng dù ít nhất một backbone sai.,Nam đã đạt được một thỏa thuận .,Nam đạt được một thỏa thuận .,Nam đạt được một thỏa thuận .,Nam đạt được một thuận .,Nam đạt được một thỏa thuận .,Nam đạt được một thỏa ?
+1855,mbr_improvement,deletion_only,MBR chọn đúng dù ít nhất một backbone sai.,Khi nào thì Nam cần nó ?,Khi Nam nó ?,Khi Nam nó ?,Khi Nam cần nó ?,Khi Nam nó ?,khi Nam cần nó ?
+19,felix_correct,deletion_reorder,FELIX++ đúng: vừa xóa vừa đổi trật tự.,1 tuần có 7 ngày .,1 tuần ngày 7 .,1 tuần ngày 7 ngày .,1 tuần ngày 7.,1 tuần ngày 7 ngày .,1 tuần ngày 7 .
+11,error,reorder_only,Sai: khó đảo trật tự chính xác.,Con gà ăn thóc .,Con gà thóc ăn .,Con gà ăn thóc .,Con gà ăn thóc .,Con gà ăn thóc .,Con gà ăn ?
+114,error,deletion_only,Sai: xóa thiếu/thừa token.,Hôm qua là chủ nhật ngày 21 tháng 7 năm 2013,Hôm qua chủ nhật ngày 21 tháng 7 năm 2013,Hôm qua chủ nhật ngày 21 tháng 7 năm 2013.,Hôm qua chủ nhật ngày 21 tháng 7 năm 2013.,Hôm qua chủ nhật ngày 21 tháng 7 năm 2013.,Hôm qua chủ nhật ngày 21 tháng 7 năm 2013 ?
+44,error,lexical,Sai: biến đổi lexical/cụm hóa khó với dữ liệu ít.,Nhà bạn có mấy người ?,Gia đình bạn người mấy ?,Nhà bạn người mấy ?,Nhà bạn người mấy ?,Nhà bạn người mấy ?,Nhà bạn người mấy ?
+153,felix_error,lexical,FELIX++ sai trong khi MBR đúng; hữu ích để phân tích hạn chế edit-based hiện tại.,Nhanh lên nào !,Nhanh lên .,Nhanh lên .,Nhanh lên .,Nhanh lên .,Nhanh lên ?
+206,felix_error,identical,FELIX++ sai trong khi MBR đúng; hữu ích để phân tích hạn chế edit-based hiện tại.,Anh phải lòng em .,Anh phải lòng em .,Anh phải lòng em .,Anh phải lòng em .,Anh phải lòng em .,Anh phải lòng em ?
+216,felix_error,identical,FELIX++ sai trong khi MBR đúng; hữu ích để phân tích hạn chế edit-based hiện tại.,Hết thời gian .,Hết thời gian .,Hết thời gian .,Hết thời gian .,Hết thời gian .,Hết thời gian ?

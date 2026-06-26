@@ -1,0 +1,34 @@
+{
+  "num_records": 10000,
+  "num_unique_pairs": 9477,
+  "num_unique_sources": 9457,
+  "category_counts": {
+    "identical": 2385,
+    "reorder_only": 132,
+    "deletion_only": 6218,
+    "deletion_reorder": 1107,
+    "lexical": 158
+  },
+  "category_pct": {
+    "identical": 23.85,
+    "reorder_only": 1.32,
+    "deletion_only": 62.18,
+    "deletion_reorder": 11.07,
+    "lexical": 1.58
+  },
+  "src_len": {
+    "mean": 8.702,
+    "max": 42,
+    "min": 2
+  },
+  "tgt_len": {
+    "mean": 7.382,
+    "max": 28,
+    "min": 1
+  },
+  "len_delta_mean": -1.32,
+  "src_vocab_size": 3773,
+  "tgt_vocab_size": 3735,
+  "tgt_only_tokens": 21,
+  "tree_ok_count": 9996
+}

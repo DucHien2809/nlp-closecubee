@@ -1,0 +1,121 @@
+{
+  "splits": {
+    "train": {
+      "n": 7586,
+      "counts": {
+        "needs_pointer": 959,
+        "tag_only": 6501,
+        "needs_insertion": 126
+      },
+      "pct": {
+        "needs_pointer": 12.64,
+        "tag_only": 85.7,
+        "needs_insertion": 1.66
+      },
+      "representable_pct": 98.34,
+      "insertion_tokens": 184,
+      "by_category": {
+        "deletion_only": {
+          "tag_only": 4714,
+          "needs_pointer": 30
+        },
+        "deletion_reorder": {
+          "needs_pointer": 842
+        },
+        "identical": {
+          "tag_only": 1787
+        },
+        "lexical": {
+          "needs_insertion": 126
+        },
+        "reorder_only": {
+          "needs_pointer": 87
+        }
+      }
+    },
+    "val": {
+      "n": 942,
+      "counts": {
+        "tag_only": 808,
+        "needs_pointer": 118,
+        "needs_insertion": 16
+      },
+      "pct": {
+        "tag_only": 85.77,
+        "needs_pointer": 12.53,
+        "needs_insertion": 1.7
+      },
+      "representable_pct": 98.3,
+      "insertion_tokens": 19,
+      "by_category": {
+        "deletion_only": {
+          "tag_only": 588,
+          "needs_pointer": 3
+        },
+        "deletion_reorder": {
+          "needs_pointer": 105
+        },
+        "identical": {
+          "tag_only": 220
+        },
+        "lexical": {
+          "needs_insertion": 16
+        },
+        "reorder_only": {
+          "needs_pointer": 10
+        }
+      }
+    },
+    "test": {
+      "n": 949,
+      "counts": {
+        "needs_pointer": 119,
+        "tag_only": 814,
+        "needs_insertion": 16
+      },
+      "pct": {
+        "needs_pointer": 12.54,
+        "tag_only": 85.77,
+        "needs_insertion": 1.69
+      },
+      "representable_pct": 98.31,
+      "insertion_tokens": 22,
+      "by_category": {
+        "deletion_only": {
+          "tag_only": 589,
+          "needs_pointer": 3
+        },
+        "deletion_reorder": {
+          "needs_pointer": 106
+        },
+        "identical": {
+          "tag_only": 225
+        },
+        "lexical": {
+          "needs_insertion": 16
+        },
+        "reorder_only": {
+          "needs_pointer": 10
+        }
+      }
+    }
+  },
+  "oracle_ceiling_test": {
+    "tag+pointer+insertion": {
+      "n": 949,
+      "bleu": 99.633,
+      "wer": 0.298,
+      "exact_match": 98.419,
+      "chrf": 99.729,
+      "ter": 0.043
+    },
+    "tag+pointer only": {
+      "n": 949,
+      "bleu": 99.25,
+      "wer": 0.539,
+      "exact_match": 96.944,
+      "chrf": 99.518,
+      "ter": 0.312
+    }
+  }
+}
