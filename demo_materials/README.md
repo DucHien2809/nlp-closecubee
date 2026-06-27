@@ -1,19 +1,19 @@
-# Demo materials
+# Tài liệu phục vụ demo
 
-Thu muc nay gom cac file can cho demo va phan tich mau dung/sai trong slide.
+Thư mục này gồm các file cần cho demo và phân tích mẫu đúng/sai trong slide.
 
-## Noi dung chinh
+## Nội dung chính
 
-- `metrics/comparison_table.md`: bang metric gon cho slide ket qua.
-- `reports/leaderboard_test.md`: leaderboard day du tren test set.
-- `examples/selected_cases.md`: cac mau dung/sai da chon san, co SRC/REF/du doan cua ViT5, BARTpho, MBR, FELIX++.
-- `examples/*_errors_test.md` va `examples/*_correct_test.md`: danh sach mau dung/sai theo tung he thong.
-- `predictions/*_predictions_test.jsonl`: du doan day du neu can tra cuu them.
-- `configs/`: config da dung cho cac run.
+- `metrics/comparison_table.md`: bảng metric gọn cho slide kết quả.
+- `reports/leaderboard_test.md`: leaderboard đầy đủ trên tập test.
+- `examples/selected_cases.md`: các mẫu đúng/sai đã chọn sẵn, có SRC/REF và dự đoán của ViT5, BARTpho, MBR, FELIX++.
+- `examples/*_errors_test.md` và `examples/*_correct_test.md`: danh sách mẫu đúng/sai theo từng hệ thống.
+- `predictions/*_predictions_test.jsonl`: dự đoán đầy đủ nếu cần tra cứu thêm.
+- `configs/`: cấu hình đã dùng cho các lần chạy.
 
-## Model/checkpoint
+## Mô hình và checkpoint
 
-FELIX++ 15 epoch da duoc tai ve local:
+FELIX++ 15 epoch đã được tải về máy:
 
 ```text
 outputs/felix_plus_xlmr_large_15ep/model
@@ -21,7 +21,7 @@ outputs/felix_plus_xlmr_large_15ep/model/encoder/model.safetensors
 outputs/felix_plus_xlmr_large_15ep/model/heads.pt
 ```
 
-ViT5-base va BARTpho model/checkpoint van con tren Modal volume `vsl-artifacts`. Tai ve khi can demo inference local:
+Model/checkpoint của ViT5-base và BARTpho vẫn còn trên Modal volume `vsl-artifacts`. Tải về khi cần demo suy luận trên máy:
 
 ```powershell
 modal volume get vsl-artifacts /outputs/vit5_base_15ep ./outputs/vit5_base_15ep_backup
